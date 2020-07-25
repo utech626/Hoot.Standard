@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+   </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>RaptorDB</RootNamespace>
+    <Version>5.0.0</Version>
+    <Authors>Bob Brown, Mehdi Gholam</Authors>
+    <Company>UltraTech Web Solutions</Company>
+    <Description>Smallest full text search engine (lucene replacement) built from scratch using inverted WAH bitmap index, highly compact storage, operating in database and document modes
+Ported to .NET Standard from original project by Mehdi Gholam</Description>
+    <Copyright>Copyright (c) 2020 UltraTech Web Solutions, 2014 Mehdi Gholam,</Copyright>
+    <Product>hOOt Full Text Indexer</Product>
+    <PackageProjectUrl>http://www.codeproject.com/Articles/224722/hOOt-full-text-search-engine</PackageProjectUrl>
+    <AssemblyVersion>5.0.7511.20207</AssemblyVersion>
+    <FileVersion>5.0.7511.20207</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="fastBinaryJSON\" />
+    <Folder Include="fastJSON\" />
+    <Folder Include="MGIndex\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.24" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
