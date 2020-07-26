@@ -14,8 +14,8 @@ Ported to .NET Standard from original project by Mehdi Gholam</Description>
     <Copyright>Copyright (c) 2020 UltraTech Web Solutions, 2014 Mehdi Gholam,</Copyright>
     <Product>hOOt Full Text Indexer</Product>
     <PackageProjectUrl>http://www.codeproject.com/Articles/224722/hOOt-full-text-search-engine</PackageProjectUrl>
-    <AssemblyVersion>5.0.7511.20207</AssemblyVersion>
-    <FileVersion>5.0.7511.20207</FileVersion>
+    <AssemblyVersion>5.0.7512.20208</AssemblyVersion>
+    <FileVersion>5.0.7512.20208</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
