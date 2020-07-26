@@ -27,7 +27,6 @@ Ported to .NET Standard from original project by Mehdi Gholam</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Config\" />
     <Folder Include="fastBinaryJSON\" />
     <Folder Include="fastJSON\" />
     <Folder Include="MGIndex\" />
