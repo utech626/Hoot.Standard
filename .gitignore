@@ -2,9 +2,12 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/Hoot.Standard/bin/Release
-/Hoot.Standard/obj/Release
-/Hoot.Standard/bin/Debug
-/Hoot.Standard/obj/Debug
-*.user
+/Hoot.Standard/bin
+/Hoot.Standard/obj
+/SampleApp/bin
 /SampleApp/obj
+/Hoot.Tests/bin
+/Hoot.Tests/obj
+/.vs
+*.user
+
