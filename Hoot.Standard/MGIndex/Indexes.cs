@@ -77,23 +77,21 @@ namespace RaptorDB
     }
     #endregion
 
-    #region [  BoolIndex  ]
+    #region BoolIndex
+
     internal class BoolIndex : IIndex
     {
-        public BoolIndex(string path, string filename, string extension)
-        {
-            // create file
-            _filename = filename + extension;
-            _path = path;
+        private MGRB _bits = new MGRB();
+        private object _lock = new object();
+        private String _filePath;
 
-            if (File.Exists(Path.Combine(_path,_filename)))
+        public BoolIndex(string filePath)
+        {
+            _filePath = filePath;
+
+            if (File.Exists(filePath))
                 ReadFile();
         }
-
-        private MGRB _bits = new MGRB();
-        private string _filename;
-        private string _path;
-        private object _lock = new object();
 
         public MGRB GetBits()
         {
@@ -152,14 +150,15 @@ namespace RaptorDB
                 _bits.Optimize();
                 var o = _bits.Serialize();
                 var b = fastBinaryJSON.BJSON.ToBJSON(o, new fastBinaryJSON.BJSONParameters { UseExtensions = false });
-                File.WriteAllBytes(_path + _filename, b);
+                File.WriteAllBytes(_filePath, b);
             }
         }
 
         private void ReadFile()
         {
-            byte[] b = File.ReadAllBytes(_path + _filename);
+            byte[] b = File.ReadAllBytes(_filePath);
             var o = fastBinaryJSON.BJSON.ToObject<MGRBData>(b);
+
             _bits = new MGRB();
             _bits.Deserialize(o);
         }

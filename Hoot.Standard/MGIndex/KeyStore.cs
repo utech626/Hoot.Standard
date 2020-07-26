@@ -9,15 +9,14 @@ namespace RaptorDB
     #region [   KeyStoreString   ]
     internal class KeyStoreString : IDisposable
     {
-        public KeyStoreString(string filename, bool caseSensitve)
+        private bool _caseSensitive = false;
+        private KeyStore<int> _db;
+
+        public KeyStoreString(HootConfig config, bool caseSensitve)
         {
-            _db = KeyStore<int>.Open(filename, true);
+            _db = KeyStore<int>.Open(config, true);
             _caseSensitive = caseSensitve;
         }
-        bool _caseSensitive = false;
-
-        KeyStore<int> _db;
-
 
         public void Set(string key, string val)
         {
@@ -138,24 +137,13 @@ namespace RaptorDB
         }
     }
     #endregion
-
- 
+     
     internal class KeyStore<T> : IDisposable, IDocStorage<T> where T : IComparable<T>
     {
-        public KeyStore(string Filename, byte MaxKeySize, bool AllowDuplicateKeys)
-        {
-            Initialize(Filename, MaxKeySize, AllowDuplicateKeys);
-        }
-
-        public KeyStore(string Filename, bool AllowDuplicateKeys)
-        {
-            Initialize(Filename, Global.DefaultStringKeySize, AllowDuplicateKeys);
-        }
-
         private ILog log = LogManager.GetLogger(typeof(KeyStore<T>));
 
-        private string _Path = "";
-        private string _FileName = "";
+        //private string _Path = "";
+        //private string _FileName = "";
         private byte _MaxKeySize;
         private StorageFile<T> _archive;
         private MGIndex<T> _index;
@@ -164,19 +152,30 @@ namespace RaptorDB
         private IGetBytes<T> _T = null;
         private System.Timers.Timer _savetimer;
         private BoolIndex _deleted;
+        private object _savelock = new object();
+        private object _shutdownlock = new object();
 
-
-        public static KeyStore<T> Open(string Filename, bool AllowDuplicateKeys)
+        public KeyStore(HootConfig config, bool AllowDuplicateKeys)
+            : this(config, Global.DefaultStringKeySize, AllowDuplicateKeys)
         {
-            return new KeyStore<T>(Filename, AllowDuplicateKeys);
+
         }
 
-        public static KeyStore<T> Open(string Filename, byte MaxKeySize, bool AllowDuplicateKeys)
+        public KeyStore(HootConfig config, byte MaxKeySize, bool AllowDuplicateKeys)
         {
-            return new KeyStore<T>(Filename, MaxKeySize, AllowDuplicateKeys);
+            Initialize(config, MaxKeySize, AllowDuplicateKeys);
         }
 
-        object _savelock = new object();
+        public static KeyStore<T> Open(HootConfig config, bool AllowDuplicateKeys)
+        {
+            return new KeyStore<T>(config, AllowDuplicateKeys);
+        }
+
+        public static KeyStore<T> Open(HootConfig config, byte MaxKeySize, bool AllowDuplicateKeys)
+        {
+            return new KeyStore<T>(config, MaxKeySize, AllowDuplicateKeys);
+        }
+
         public void SaveIndex()
         {
             if (_index == null)
@@ -274,7 +273,6 @@ namespace RaptorDB
             return recno;
         }
 
-        private object _shutdownlock = new object();
         public void Shutdown()
         {
             lock (_shutdownlock)
@@ -306,37 +304,38 @@ namespace RaptorDB
             Shutdown();
         }
 
-        #region [            P R I V A T E     M E T H O D S              ]
+        #region Private Methods
+
         private void SaveLastRecord()
         {
             // save the last record number in the index file
             _index.SaveLastRecordNumber(_archive.Count());
         }
 
-        private void Initialize(string filename, byte maxkeysize, bool AllowDuplicateKeys)
+
+        private void Initialize(HootConfig config, byte maxkeysize, bool AllowDuplicateKeys)
         {
+            string _fn = Path.Combine(config.IndexPath, $"{config.FileName}_files.docs");
+
             _MaxKeySize = RDBDataType<T>.GetByteSize(maxkeysize);
             _T = RDBDataType<T>.ByteHandler();
 
-            _Path = Path.GetDirectoryName(filename);
+            if (!Directory.Exists(config.IndexPath))
+                Directory.CreateDirectory(config.IndexPath);
 
-            if (!Directory.Exists(_Path))
-                Directory.CreateDirectory(_Path);
-
-            _FileName = Path.GetFileNameWithoutExtension(filename);
-            string db = Path.ChangeExtension(Path.Combine(_Path, _FileName), _datExtension);
-            string idx = Path.ChangeExtension(Path.Combine(_Path, _FileName), _idxExtension);
+            string db = Path.ChangeExtension(_fn, _datExtension);
+            string idx = Path.ChangeExtension(_fn, _idxExtension);
 
             //LogManager.Configure(_Path + Path.DirectorySeparatorChar + _FileName + ".txt", 500, false);
 
-            _index = new MGIndex<T>(_Path, _FileName + _idxExtension, _MaxKeySize, /*Global.PageItemCount,*/ AllowDuplicateKeys);
+            _index = new MGIndex<T>(idx, _MaxKeySize, /*Global.PageItemCount,*/ AllowDuplicateKeys);
 
             if (Global.SaveAsBinaryJSON)
                 _archive = new StorageFile<T>(db, SF_FORMAT.BSON, false);
             else
                 _archive = new StorageFile<T>(db, SF_FORMAT.JSON, false);
 
-            _deleted = new BoolIndex(_Path, _FileName , "_deleted.idx");
+            _deleted = new BoolIndex(Path.Combine(config.IndexPath, $"{config.FileName}_deleted.idx"));
 
             log.Debug("Current Count = " + RecordCount().ToString("#,0"));
 

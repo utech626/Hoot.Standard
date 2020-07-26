@@ -209,6 +209,7 @@ namespace SampleApp
 					i = 0;
 					hoot.Save();
 				}
+				backgroundWorker1.ReportProgress(1, "File Load Complete.");
 			}
 			hoot.Save();
 			SetButton1Visiblablity(true);

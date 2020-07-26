@@ -3,3 +3,8 @@
 ################################################################################
 
 /Hoot.Standard/bin/Release
+/Hoot.Standard/obj/Release
+/Hoot.Standard/bin/Debug
+/Hoot.Standard/obj/Debug
+*.user
+/SampleApp/obj

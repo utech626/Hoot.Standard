@@ -66,8 +66,10 @@ namespace RaptorDB
         private IndexFile<T> _index;
         private bool _AllowDuplicates = true;
         private int _LastIndexedRecordNumber = 0;
+        private object _setlock = new object();
+        private double _totalsplits = 0;
 
-        public MGIndex(string path, string filename, byte keysize, bool allowdups)
+        public MGIndex(string filepath, byte keysize, bool allowdups)
         {
             if (Global.UseLessMemoryStructures)
                 _cache = new SafeSortedList<int, Page<T>>();
@@ -76,7 +78,7 @@ namespace RaptorDB
 
             _AllowDuplicates = allowdups;
 
-            _index = new IndexFile<T>(Path.Combine(path, filename), keysize);
+            _index = new IndexFile<T>(filepath, keysize);
             // load page list
             _index.GetPageList(_pageListDiskPages, _pageList, out _LastIndexedRecordNumber);
             if (_pageList.Count() == 0)
@@ -99,6 +101,7 @@ namespace RaptorDB
         {
             MGRB bits = new MGRB();
             T temp = default(T);
+
             if (from.CompareTo(to) > 0) // check values order
             {
                 temp = from;
@@ -184,7 +187,6 @@ namespace RaptorDB
             return new MGRB(); // blank results 
         }
 
-        private object _setlock = new object();
         public void Set(T key, int val)
         {
             lock (_setlock)
@@ -317,7 +319,8 @@ namespace RaptorDB
             return b;
         }
 
-        #region [  P R I V A T E  ]
+        #region Private Methods
+
         private MGRB doMoreOp(RDBExpression exp, T key)
         {
             bool found = false;
@@ -413,6 +416,7 @@ namespace RaptorDB
         {
             Page<T> page = LoadPage(_pageList.GetValue(pageidx).PageNumber);
             T[] keys = page.tree.Keys(); // avoid sync issues
+
             foreach (var k in keys)
             {
                 int bn = page.tree[k].DuplicateBitmapNumber;
@@ -421,7 +425,6 @@ namespace RaptorDB
             }
         }
 
-        private double _totalsplits = 0;
         private void SplitPage(Page<T> page)
         {
             // split the page
@@ -455,16 +458,21 @@ namespace RaptorDB
 
             _totalsplits += FastDateTime.Now.Subtract(dt).TotalSeconds;
         }
-
+        /// <summary>
+        /// find page in list of pages
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="pageinfo"></param>
+        /// <returns></returns>
         private Page<T> LoadPage(T key, out PageInfo pageinfo)
         {
             int pagenum = -1;
-            // find page in list of pages
-
             bool found = false;
             int pos = 0;
+
             if (key != null)
                 pos = FindPageOrLowerPosition(key, ref found);
+
             pageinfo = _pageList.GetValue(pos);
             pagenum = pageinfo.PageNumber;
 

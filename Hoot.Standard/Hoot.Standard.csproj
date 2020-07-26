@@ -13,9 +13,10 @@
 Ported to .NET Standard from original project by Mehdi Gholam</Description>
     <Copyright>Copyright (c) 2020 UltraTech Web Solutions, 2014 Mehdi Gholam,</Copyright>
     <Product>hOOt Full Text Indexer</Product>
-    <PackageProjectUrl>http://www.codeproject.com/Articles/224722/hOOt-full-text-search-engine</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/utech626/Hoot.Standard</PackageProjectUrl>
     <AssemblyVersion>5.0.7512.20208</AssemblyVersion>
     <FileVersion>5.0.7512.20208</FileVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

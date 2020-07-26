@@ -32,6 +32,8 @@
 			this.txtIndexFolder = new System.Windows.Forms.TextBox();
 			this.button6 = new System.Windows.Forms.Button();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.cbIgnoreNumeric = new System.Windows.Forms.CheckBox();
+			this.cbUseStopList = new System.Windows.Forms.CheckBox();
 			this.txtWhere = new System.Windows.Forms.TextBox();
 			this.button7 = new System.Windows.Forms.Button();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -48,8 +50,6 @@
 			this.lblStatus = new System.Windows.Forms.Label();
 			this.txtSearch = new System.Windows.Forms.TextBox();
 			this.btnSearch = new System.Windows.Forms.Button();
-			this.cbUseStopList = new System.Windows.Forms.CheckBox();
-			this.cbIgnoreNumeric = new System.Windows.Forms.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox3.SuspendLayout();
@@ -97,6 +97,30 @@
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "2. Set Folder to Index";
 			// 
+			// cbIgnoreNumeric
+			// 
+			this.cbIgnoreNumeric.AutoSize = true;
+			this.cbIgnoreNumeric.Checked = true;
+			this.cbIgnoreNumeric.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.cbIgnoreNumeric.Location = new System.Drawing.Point(222, 55);
+			this.cbIgnoreNumeric.Name = "cbIgnoreNumeric";
+			this.cbIgnoreNumeric.Size = new System.Drawing.Size(145, 19);
+			this.cbIgnoreNumeric.TabIndex = 3;
+			this.cbIgnoreNumeric.Text = "Ignore Numeric Works";
+			this.cbIgnoreNumeric.UseVisualStyleBackColor = true;
+			// 
+			// cbUseStopList
+			// 
+			this.cbUseStopList.AutoSize = true;
+			this.cbUseStopList.Checked = true;
+			this.cbUseStopList.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.cbUseStopList.Location = new System.Drawing.Point(66, 55);
+			this.cbUseStopList.Name = "cbUseStopList";
+			this.cbUseStopList.Size = new System.Drawing.Size(125, 19);
+			this.cbUseStopList.TabIndex = 2;
+			this.cbUseStopList.Text = "Use Stop Word List";
+			this.cbUseStopList.UseVisualStyleBackColor = true;
+			// 
 			// txtWhere
 			// 
 			this.txtWhere.Location = new System.Drawing.Point(66, 20);
@@ -134,9 +158,9 @@
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(53, 51);
+			this.button1.Location = new System.Drawing.Point(511, 51);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
+			this.button1.Size = new System.Drawing.Size(97, 23);
 			this.button1.TabIndex = 8;
 			this.button1.Text = "Load Hoot";
 			this.button1.UseVisualStyleBackColor = true;
@@ -260,30 +284,6 @@
 			this.btnSearch.Text = "Go";
 			this.btnSearch.UseVisualStyleBackColor = true;
 			this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-			// 
-			// cbUseStopList
-			// 
-			this.cbUseStopList.AutoSize = true;
-			this.cbUseStopList.Checked = true;
-			this.cbUseStopList.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.cbUseStopList.Location = new System.Drawing.Point(66, 55);
-			this.cbUseStopList.Name = "cbUseStopList";
-			this.cbUseStopList.Size = new System.Drawing.Size(125, 19);
-			this.cbUseStopList.TabIndex = 2;
-			this.cbUseStopList.Text = "Use Stop Word List";
-			this.cbUseStopList.UseVisualStyleBackColor = true;
-			// 
-			// cbIgnoreNumeric
-			// 
-			this.cbIgnoreNumeric.AutoSize = true;
-			this.cbIgnoreNumeric.Checked = true;
-			this.cbIgnoreNumeric.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.cbIgnoreNumeric.Location = new System.Drawing.Point(222, 55);
-			this.cbIgnoreNumeric.Name = "cbIgnoreNumeric";
-			this.cbIgnoreNumeric.Size = new System.Drawing.Size(145, 19);
-			this.cbIgnoreNumeric.TabIndex = 3;
-			this.cbIgnoreNumeric.Text = "Ignore Numeric Works";
-			this.cbIgnoreNumeric.UseVisualStyleBackColor = true;
 			// 
 			// Form1
 			// 
