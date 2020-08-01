@@ -39,6 +39,11 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+		BuildVersion_UseUniversalClock = True
+		BuildVersion_StartDate = 2020/8/1
+		BuildVersion_UpdateFileVersion = True
+		BuildVersion_UpdateAssemblyVersion = True
+		BuildVersion_BuildVersioningStyle = None.None.YearDayOfYearStamp.DeltaBaseDateInDays
 		SolutionGuid = {1824F37E-D280-49D9-B54C-1750C0611765}
 	EndGlobalSection
 EndGlobal
