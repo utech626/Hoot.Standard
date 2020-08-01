@@ -4,10 +4,12 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 #Project files
-.vs/
-Hoot.Standard/bin/
-Hoot.Tests/bin/
-SampleApp/bin/
+Hoot.Standard/bin
+Hoot.Standard/obj
+Hoot.Tests/bin
+Hoot.Tests/obj
+SampleApp/bin
+SampleApp/obj
 
 # User-specific files
 *.rsuser
