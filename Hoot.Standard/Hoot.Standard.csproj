@@ -14,8 +14,8 @@ Ported to .NET Standard from original project by Mehdi Gholam</Description>
     <Copyright>Copyright (c) 2020 UltraTech Web Solutions, 2014 Mehdi Gholam,</Copyright>
     <Product>hOOt Full Text Indexer</Product>
     <PackageProjectUrl>https://github.com/utech626/Hoot.Standard</PackageProjectUrl>
-    <AssemblyVersion>5.1.0801.2020</AssemblyVersion>
-    <FileVersion>5.1.0801.2020</FileVersion>
+    <AssemblyVersion>5.1.7518.20214</AssemblyVersion>
+    <FileVersion>5.1.7518.20214</FileVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 

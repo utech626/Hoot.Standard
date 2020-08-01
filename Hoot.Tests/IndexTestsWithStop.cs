@@ -10,7 +10,7 @@ using RaptorDB;
 
 namespace Hoot.Tests
 {
-	public class IndexTests
+	public class IndexTestsWithStop
 	{
 		protected HootConfig _config;
 
@@ -25,8 +25,8 @@ namespace Hoot.Tests
 				DocMode = true,
 				IndexPath = "FullTextIndexes",
 				FileName = "NunitTests",
-				UseStopList = false,
-				IgnoreNumerics = false
+				UseStopList = true,
+				IgnoreNumerics = true
 			};
 		}
 		/// <summary>
@@ -35,7 +35,6 @@ namespace Hoot.Tests
 		[Test, Order(1)]
 		public void BuildIndex()
 		{
-
 			if (Directory.Exists(_config.IndexPath))
 				Directory.Delete(_config.IndexPath, true);
 
@@ -68,7 +67,7 @@ namespace Hoot.Tests
 				throw new AssertionException($"Exception Building Index: {ex.Message} - {ex.StackTrace}");
 			}
 			Assert.AreEqual(59, _hoot.DocumentCount);
-			Assert.AreEqual(104427, _hoot.WordCount);
+			Assert.AreEqual(99697, _hoot.WordCount);
 			_hoot.Shutdown();
 		}
 		/// <summary>
@@ -80,7 +79,7 @@ namespace Hoot.Tests
 			RaptorDB.Hoot _hoot = new RaptorDB.Hoot(_config);
 
 			Assert.AreEqual(59, _hoot.DocumentCount);
-			Assert.AreEqual(104427, _hoot.WordCount);
+			Assert.AreEqual(99697, _hoot.WordCount);
 			_hoot.Shutdown();
 		}
 		/// <summary>
@@ -94,7 +93,7 @@ namespace Hoot.Tests
 			RaptorDB.Hoot _hoot = new RaptorDB.Hoot(_config);
 
 			Assert.AreEqual(59, _hoot.DocumentCount);
-			Assert.AreEqual(104427, _hoot.WordCount);
+			Assert.AreEqual(99697, _hoot.WordCount);
 
 			_d = _hoot.FindDocumentFileNames("score");
 			Assert.IsNotNull(_d);
@@ -134,7 +133,7 @@ namespace Hoot.Tests
 			//
 			_d = _hoot.FindDocumentFileNames("about +although +cannot +corresponding +indicates +regarding");
 			Assert.IsNotNull(_d);
-			Assert.AreEqual(59, _d.Count());
+			Assert.AreEqual(0, _d.Count());
 
 			_hoot.Shutdown();
 		}
