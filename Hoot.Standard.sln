@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elements", "Elements", "{D6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp", "SampleApp\SampleApp.csproj", "{02924541-C316-4364-8B68-AB0FC63CFA79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hoot.Tests", "Hoot.Tests\Hoot.Tests.csproj", "{D9BFD88B-AADE-48B7-94DD-3A606110C12F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hoot.Tests", "Hoot.Tests\Hoot.Tests.csproj", "{D9BFD88B-AADE-48B7-94DD-3A606110C12F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +39,11 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+		BuildVersion_UseUniversalClock = True
+		BuildVersion_StartDate = 2020/8/1
+		BuildVersion_UpdateFileVersion = True
+		BuildVersion_UpdateAssemblyVersion = True
+		BuildVersion_BuildVersioningStyle = None.None.YearDayOfYearStamp.DeltaBaseDateInDays
 		SolutionGuid = {1824F37E-D280-49D9-B54C-1750C0611765}
 	EndGlobalSection
 EndGlobal

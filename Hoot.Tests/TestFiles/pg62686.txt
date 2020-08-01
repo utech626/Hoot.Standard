@@ -1,0 +1,2799 @@
+﻿Project Gutenberg's USDA Farmers' Bulletin No. 67, by Bernhard E. Fernow
+
+This eBook is for the use of anyone anywhere in the United States and most
+other parts of the world at no cost and with almost no restrictions
+whatsoever.  You may copy it, give it away or re-use it under the terms of
+the Project Gutenberg License included with this eBook or online at
+www.gutenberg.org.  If you are not located in the United States, you'll have
+to check the laws of the country where you are located before using this ebook.
+
+Title: USDA Farmers' Bulletin No. 67
+       Forestry For Farmers
+
+Author: Bernhard E. Fernow
+
+Release Date: July 17, 2020 [EBook #62686]
+
+Language: English
+
+
+*** START OF THIS PROJECT GUTENBERG EBOOK USDA FARMERS' BULLETIN NO. 67 ***
+
+
+
+
+Produced by Tom Cosmas
+
+
+
+
+
+
+
+
+
+
+Transcriber Note: Text emphasis denoted as _Italics_.
+
+
+
+
+                   U. S. DEPARTMENT OF AGRICULTURE.
+
+                              ----------
+
+                       FARMERS' BULLETIN No. 67.
+
+                              ----------
+
+
+
+                         FORESTRY FOR FARMERS.
+
+
+                                  BY
+
+                             B. E. FERNOW,
+
+                 _Chief of the Division of Forestry._
+
+                              ----------
+
+
+ [Reprinted from the Yearbooks of the U. S. Department of Agriculture
+                          for 1894 and 1895.]
+
+
+                            [Illustration]
+
+
+                              WASHINGTON:
+
+                      GOVERNMENT PRINTING OFFICE.
+
+                                 1898.
+
+                              ----------
+
+
+                        LETTER OF TRANSMITTAL.
+
+                                       U. S. Department of Agriculture,
+                                                  Division of Forestry,
+                                  _Washington, D. C., December 4, 1897._
+
+Sir: I have the honor to recommend that the two articles contributed
+by me to the Yearbooks for 1894 and for 1895 on forestry for farmers
+be reprinted as a Farmers' Bulletin. The articles contain information
+in popular form regarding the growth of trees, the planting of a
+forest, treatment of the wood lot, the cultivation of the wood crop,
+influence of trees, etc. A wider distribution of this information, for
+which there is still considerable demand, would, I believe, result in
+acquainting farmers with a subject the importance of which has not
+always been duly recognized.
+
+Very respectfully,
+
+                                                 B. E. Fernow, _Chief_.
+
+Approved:
+
+  James Wilson, _Secretary_.
+
+
+
+                           ---------------
+                               CONTENTS.
+                              ----------
+
+
+                                                     Page.
+
+  How trees grow                                        3
+    Food materials and conditions of growth             3
+    Soil conditions                                     4
+    Light conditions                                    6
+    Physiology of tree growth                           9
+    "Sap up and sap down"                              10
+    Progress of development                            11
+    Growth in length and ramification                  11
+    Growth in thickness                                14
+    Form development                                   17
+    Rate of growth                                     19
+    Reproduction                                       21
+
+  How to plant a forest                                22
+    What trees to plant                                23
+    Methods of planting                                26
+
+  How to treat the wood lot                            28
+    Improvement cuttings                               29
+    Methods of reproducing the wood crop               31
+    Size of openings                                   34
+    Wind mantle                                        34
+    Coppice                                            35
+    Plan of management                                 37
+
+  How to cultivate the wood crop                       37
+    Effect of light on wood production                 38
+    Number of trees per acre                           38
+    Weeding and cleaning the crop                      40
+   Methods of thinning                                 40
+    What trees to remove                               41
+
+  The relation of forests to farms                     42
+    The forest waters the farm                         44
+    The forest tempers the farm                        45
+    The forest protects the farm                       45
+    The forest supplies the farm with useful material  46
+
+
+
+
+FORESTRY FOR FARMERS.
+
+
+
+The following five chapters have been written with the view of aiding
+farmers who own small timber tracts or wood lots, or who wish to plant
+some part of their land to forest. This country varies so greatly in
+soil, climate, and flora that it is only possible, within the limits
+assigned for the present discussion, to outline general principles
+everywhere applicable. Nevertheless, wherever suggestions have
+approximated the laying down of rules of practice, the writer has had
+mainly in mind the conditions prevalent in our northeastern States.
+Moreover, for the reason already referred to, limitation of space, it
+has not been possible to give more than a comprehensive view, without
+much detail.
+
+The succeeding chapters should be read connectedly, as they are more
+or less interdependent. The first treats of the behavior of a forest
+plant; the second, of the principles which should guide the planter
+in setting a crop; the third, of the manner in which a natural forest
+crop should be produced; the fourth points out how the crop should be
+managed afterwards in order to secure the best results in quantity
+and quality of material; while the fifth chapter is devoted to a
+consideration of the relation of forests to farms.
+
+
+
+
+1. HOW TREES GROW.
+
+
+Trees, like most other plants, originate from seed, build up a body
+of cell tissues, form foliage, flower, and fruit, and take up food
+material from the soil and air, which they convert into cellulose and
+other compounds, from which all their parts are formed. They rely, like
+other plants, upon moisture, heat, and light as the means of performing
+the functions of growth. Yet there are some peculiarities in their
+behavior, their life and growth, which require special attention on the
+part of a tree grower or forest planter, and these we shall briefly
+discuss.
+
+
+FOOD MATERIALS AND CONDITIONS OF GROWTH.
+
+Trees derive their food and solid substance in part from the air and
+in part from the soil. The solid part of their bodies is made up
+of cellulose, which consists largely of carbon (44 per cent of its
+weight), with hydrogen and oxygen added in almost the same proportions
+as in water. The carbon is derived from the carbonic acid of the air,
+which enters into the leaves and, under the influence of light, air,
+and water, is there decomposed; the oxygen is exhaled; the carbon is
+retained and combined with elements derived from the water, forming
+compounds, such as starch, sugar, etc., which are used as food
+materials, passing down the tree through its outer layers to the very
+tips of the roots, making new wood all along the branches, trunk, and
+roots.
+
+This process of food preparation, called "assimilation," can be
+carried on only in the green parts, and in these only when exposed to
+light and air; hence foliage, air, and light at the top are essential
+prerequisites for tree growth, and hence, other conditions being
+favorable, the more foliage and the better developed it is, and the
+more light this foliage has at its disposal for its work, the more
+vigorously will the tree grow.
+
+In general, therefore, pruning, since it reduces the amount of foliage,
+reduces also, for the time, the amount of wood formed; and just so
+shading, reducing the activity of foliage, reduces the growth of wood.
+
+
+SOIL CONDITIONS.
+
+From the soil trees take mainly water, which enters through the roots
+and is carried through the younger part of the tree to the leaves, to
+be used in part on its passage for food and wood formation and in part
+to be given up to the air by transpiration.
+
+In a vigorously growing tree the solid wood substance itself will
+contain half its weight in the form of water chemically combined, and
+the tree, in addition, will contain from 40 to 65 per cent and more of
+its dry weight in water mechanically or "hygroscopically" held. This
+last, when the tree is cut, very largely evaporates; yet well-seasoned
+wood still contains 10 to 12 per cent of such water. The weight of a
+green tree, a pine, for instance, is made up, in round numbers, of
+about 30 per cent of carbon and 70 per cent or water, either chemically
+or hygroscopically held, while a birch contains a still larger
+percentage of water.
+
+The largest part of the water which passes through the tree is
+transpired--i. e., given off to the air in vapor. The amounts thus
+transpired during the season vary greatly with the species of tree,
+its age, the amount of foliage at work, the amount of light at its
+disposal, the climatic conditions (rain, temperature, winds, relative
+humidity), and the season. These amounts are, however, very large when
+compared with the quantity retained; so that while an acre of forest
+may store in its trees, say, 1,000 pounds of carbon, 15 to 20 pounds
+of mineral substances, and 5,000 pounds of water in a year, it will
+have transpired--taken up from, the soil and returned to the air--from
+500,000 to 1,500,000 pounds of water (one-quarter to one-half as much
+as agricultural crops).
+
+Mineral substances are taken up only in very small quantities, and
+these are mostly the commoner sorts, such as lime, potash, magnesia,
+and nitrogen. These are carried in solution to the leaves, where they
+are used (as perhaps also on their passage through the tree), with a
+part of the water, in food preparation. The main part of the mineral
+substances taken up remains, however, as the water transpires, in the
+leaves and young twigs, and is returned to the soil when the leaves are
+shed or when the tree is cut and the brush left to decompose and make
+humus.
+
+Hence the improvement of the fertility of the soil by wood crops is
+explained, the minerals being returned in more soluble form to the
+soil; as also the fact that wood crops do not exhaust the soil of its
+minerals, provided the leaves and litter are allowed to remain on the
+ground.
+
+For this reason there is no necessity of alternating wood crops, as far
+as their mineral needs are concerned; the same kind of trees can be
+grown on the same soil continuously, provided the soil is not allowed
+to deteriorate from other causes.
+
+As the foliage can perform its work of food assimilation only when
+sufficient water is at its disposal, the amount of growth is also
+dependent not only on the presence of sufficient sources of supply, but
+also on the opportunity had by the roots to utilize the supply, and
+this opportunity is dependent upon the condition of the soil. If the
+soil is compact, so that the rain water can not penetrate readily, and
+runs off superficially, or if it is of coarse grain and so deep that
+the water rapidly sinks out of reach of the roots and can not be drawn
+up by capillary action, the water supply is of no avail to the plants;
+but if the soil is porous and moderately deep (depth being the distance
+from the surface to the impenetrable subsoil, rock, or ground water)
+the water not only can penetrate but also can readily be reached and
+taken up by the roots.
+
+The moisture of the soil being the most important element in it for
+tree growth, the greatest attention must be given to its conservation
+and most advantageous distribution through the soil.
+
+No trees grow to the best advantage in very dry or very wet soil,
+although some can live and almost thrive in such unfavorable
+situations. A moderately but evenly moist soil, porous and deep enough
+or fissured enough to be well drained, and yet of such a structure that
+the water supplies from the depths can readily be drawn up and become
+available to the roots--that is the soil on which all trees grow most
+thriftily.
+
+The agriculturist procures this condition of the soil as far as
+possible by plowing, drainage, and irrigation, and he tries by
+cultivating to keep the soil from compacting again, as it does under
+the influence of the beating rain and of the drying out of the upper
+layers by sun and wind.
+
+The forest grower can not rely upon such methods, because they are
+either too expensive or entirely impracticable. He may, indeed, plow
+for his first planting, and cultivate the young trees, but in a few
+years this last operation will become impossible and the effects of the
+first operation will be lost. He must, therefore, attain his object in
+another manner, namely, by shading and mulching the soil. The shading
+is done at first by planting very closely, so that the ground may be
+protected as soon as possible from sun and wind, and by maintaining the
+shade well throughout the period of growth. This shade is maintained,
+if necessary, by more planting, and in case the main crop in later life
+thins out inordinately in the crowns or tops, or by the accidental
+death of trees, it may even become desirable to introduce an underbrush.
+
+The mulching is done by allowing the fallen leaves and twigs to remain
+and decay, and form a cover of rich mold or humus. This protective
+cover permits the rain and snow waters to penetrate without at the same
+time compacting the soil, keeping it granular and in best condition for
+conducting water, and at the same time preventing evaporation at the
+surface.
+
+The soil moisture, therefore, is best maintained by proper soil cover,
+which, however, is needful only in naturally dry soils. Wet soils,
+although supporting tree growth, do not, if constantly wet, produce
+satisfactory wood crops, the growth being very slow. Hence they must be
+drained and their water level sunk below the depth of the root system.
+
+Irrigation is generally too expensive to be applied to wood crops,
+except perhaps in the arid regions, where the benefit of the shelter
+belt may warrant the expense.
+
+Attention to favorable moisture conditions in the soil requires the
+selection of such kinds of trees as shade well for a long time, to
+plant closely, to protect the woody undergrowth (but not weeds), and to
+leave the litter on the ground as a mulch.
+
+Different species, to be sure, adapt themselves to different degrees of
+soil moisture, and the crop should therefore be selected with reference
+to its adaptation to available moisture supplies.
+
+While, as stated, all trees thrive best with a moderate and even supply
+of moisture, some can get along with very little, like the conifers,
+especially pines; others can exist even with an excessive supply, as
+the bald cypress, honey locust, some oaks, etc. The climate, however,
+must also be considered in this connection, for a tree species,
+although succeeding well enough on a dry soil in an atmosphere which
+does not require much transpiration, may not do so in a drier climate
+on the same soil.
+
+In the selection of different kinds of trees for different soils, the
+water conditions of the soil should, therefore, determine the choice.
+
+
+LIGHT CONDITIONS.
+
+To insure the largest amount of growth, full enjoyment of sunlight is
+needed. But as light is almost always accompanied by heat and relative
+dryness of air, which demands water from the plant, and may increase
+transpiration from the leaves inordinately, making them pump too hard,
+as it were, young seedlings of tree species whose foliage is not built
+for such strains require partial shading for the first year or two. The
+conifers belong to this class.
+
+In later life the light conditions exert a threefold influence on the
+development of the tree, namely, with reference to soil conditions,
+with reference to form development, and with reference to amount of
+growth.
+
+The art of the forester consists in regulating the light conditions so
+as to secure the full benefit of the stimulating effect of light on
+growth, without its deteriorating influences on the soil and on form
+development.
+
+As we have seen, shade is desirable in order to preserve soil moisture.
+Now, while young trees of all kinds, during the "brush" stage of
+development, have a rather dense foliage, as they grow older they
+vary in habit, especially when growing in the forest. Some, like the
+beech, the sugar maple, the hemlock, and the spruce, keep up a dense
+crown; others, like the chestnut, the oaks, the walnut, the tulip
+tree, and the white pine, thin out more and more, and when fully
+grown have a much less dense foliage; Anally, there are some which do
+not keep up a dense shade for any length of time, like the black and
+honey locust, with their small, thin leaves; the catalpa, with its
+large but few leaves at the end of the branchlets only, and the larch,
+with its short, scattered bunches of needles. So we can establish a
+comparative scale of trees with reference to the amount of shade which
+they can give continuously, as densely foliaged and thinly foliaged,
+in various gradations. If we planted all beech or sugar maple, the
+desirable shading of the soil would never be lacking, while if we
+planted all locust or catalpa the sun would soon reach the soil and
+dry it out, or permit a growth of grass or weeds, which is worse,
+because those transpire still larger quantities of water than the bare
+ground evaporates or an undergrowth of woody plants would transpire.
+Of course, a densely foliaged tree has many more leaves to shed than a
+thinly foliaged one, and therefore makes more litter, which increases
+the favorable mulch cover of the soil. Another reason for keeping the
+ground well shaded is that the litter then decomposes slowly, but into
+a desirable humus, which acts favorably upon the soil, while if the
+litter is exposed to light, an undesirable, partly decomposed "raw"
+humus is apt to be formed.
+
+Favorable soil conditions, then, require shade, while wood growth is
+increased by full enjoyment of light; to satisfy both requirements,
+mixed planting, with proper selection of shade-enduring and
+light-needing species, is resorted to.
+
+As the different species afford shade in different degrees, so they
+require for their development different degrees of light. The dense
+foliage of the beech, with a large number of leaves in the interior
+of the crown, proves that the leaves can exist and perform their work
+with a small amount of light; the beech is a shade-enduring tree. The
+scanty foliage of the birches, poplars, or pines shows that these are
+light-needing trees; hence they are never found under the dense shade
+of the former, while the shade-enduring can develop satisfactorily
+under the light shade of the thin-foliaged kinds. Very favorable soil
+conditions increase the shade endurance of the latter, and climatic
+conditions also modify their relative position in the scale.
+
+All trees ultimately thrive best--i. e., grow most vigorously--in the
+full enjoyment of light, but their energy then goes into branching.
+Crowded together, with the side light cut off, the lower lateral
+branches soon die and fall, while the main energy of growth is put into
+the shaft and the height growth is stimulated. The denser shade of the
+shade-enduring kinds, if placed as neighbors to light-needing ones, is
+most effective in producing this result, provided that the light is not
+cut off at the top; and thus, in practice, advantage is taken of the
+relative requirements for light of the various species.[1]
+
+[1] This relation of the different species to varying light conditions;
+their comparative shading value and shade endurance, is one of the most
+important facts to be observed and utilized by the forester. European
+foresters have done this, but since they had to deal with only a few
+species and over a limited territory, they could quite readily classify
+their trees with reference to their shade endurance, and take it for
+granted that shade endurance and density of foliage or shading value
+were more or less identical. With our great wealth of useful species it
+will be necessary and profitable to be more exact in the classification.
+
+The forester finds in close planting and in mixed growth a means of
+securing tall, clear trunks, free from knots, and he is able, moreover,
+by proper regulation of light conditions, to influence the form
+development, and also the quality of his crop, since slow growth and
+rapid growth produce wood of different character.
+
+There are some species which, although light-foliaged and giving
+comparatively little shade, are yet shade-enduring--i. e., can subsist,
+although not develop favorably, under shade; the oaks are examples
+of this kind. Others, like the black cherry, bear a dense crown for
+the first twenty years, perhaps, seemingly indicating great shade
+endurance; but the fact that the species named soon clears itself
+of its branches and finally has a thin crown, indicates that it is
+light-needing, though a good shader for the first period of its life.
+Others, again, like the catalpa, which is shady and shade-enduring, as
+the difficulty with which it clears itself indicates, leaf out so late
+and lose their foliage so early that their shading value is thereby
+impaired. Black locust and honey locust, on the other hand, leave
+no doubt either as to their light-needing or their inferior shading
+quality.
+
+That soil conditions and climatic conditions also modify crown
+development and shade endurance has been well recognized abroad, but in
+our country this influence is of much more importance on account of the
+great variation in those conditions. Thus the box elder, an excellent
+shader in certain portions of the West, is a failure as soil cover in
+others where it nevertheless will grow.
+
+We see, then, that in determining the shading value as well as the
+shade endurance of one species in comparison with another, with
+reference to forestry purposes, not only soil and climate but also the
+character of foliage and its length of season must be considered.
+
+
+PHYSIOLOGY OF TREE GROWTH.
+
+As we have seen, root and foliage are the main life organs of the tree.
+The trunk and branches serve to carry the crown upward and expose it to
+the light, which is necessary in order to prepare the food and increase
+the volume of the tree, and also as conductors of food materials up
+and down between root and foliage. A large part of the roots, too,
+aside from giving stability to the tree, serve only as conductors of
+water and food material; only the youngest parts, the fibrous roots,
+beset with innumerable fine hairs, serve to take up the water and
+minerals from the soil. These fine roots, root hairs, and young parts
+are therefore the essential portion of the root system. A tree may
+have a fine, vigorous-looking root system, yet if the young parts and
+fibrous roots are cut off or allowed to dry out, which they readily
+do--some kinds more so than others--thereby losing their power to take
+up water, such a tree is apt to die. Under very favorable moisture
+and temperature conditions, however, the old roots may throw out now
+sprouts and replace the fibrous roots. Some species, like the willows,
+poplars, locusts, and others, are especially capable of doing so.
+All trees that "transplant easily" probably possess this capacity of
+renewing the fibrous roots readily, or else are less subject to drying
+out. But it may be stated as a probable fact that most transplanted
+trees which die soon after the planting do so because the fibrous roots
+have been curtailed too much in taking up, or else have been allowed to
+dry out on the way from the nursery or forest to the place of planting;
+they were really dead before being set. Conifers--pines, spruces,
+etc.--are especially sensitive; maples, oaks, catalpas, and apples
+will, in this respect, stand a good deal of abuse.
+
+Hence, in transplanting, the first and foremost care of the forest,
+grower, besides taking the sapling up with least injury, is the proper
+protection of its root fibers against drying out.
+
+The water, with the minerals in solution, is taken up by the roots
+when the soil is warm enough, but to enable the roots to act they must
+be closely packed with the soil. It is conveyed mostly through the
+outer, which are the younger, layers of the wood of root, trunk, and
+branches to the leaves. Here, as we have seen, under the influence of
+light and heat it is in large part transpired and in part combined
+with the carbon into organic compounds, sugar, etc., which serve as
+food materials. These travel from the leaf into the branchlet, and
+down through the outer layers of the trunk to the very tips of the
+root, forming new wood all the way, new buds, which lengthen into
+shoots, leaves, and flowers, and also new rootlets. To live and grow,
+therefore, the roots need the food elaborated in the leaves, just as
+the leaves need the water sent up from the roots.
+
+Hence the interdependence of root system and crown, which must be kept
+in proportion when transplanting. At least, the root system must be
+sufficient to supply the needs of the crown.
+
+
+"SAP UP AND SAP DOWN."
+
+The growing tree, in all its parts, is more or less saturated with
+water, and as the leaves, under the influence of sun and wind and
+atmospheric conditions generally transpire, new supplies are taken in
+through the roots and conveyed to the crown. This movement takes place
+even in winter, in a slight degree, to supply the loss of water by
+evaporation from the branches. In the growing season it is so active
+as to become noticeable; hence the saying that the sap is "up," or
+"rising," and when, toward the end of the season, the movement becomes
+less, the sap is said to be "down." But this movement of water is
+always upward; hence the notion that there is a stream upward at one
+season and in one part of the tree, and a stream downward at another
+season and perhaps in another part of the tree, is erroneous. The
+downward movement is of food materials, and the two movements of water
+upward and food downward take place simultaneously, and depend, in
+part at least, one upon the other, the food being carried to the young
+parts, wherever required, by a process of diffusion from cell to cell
+known as "osmosis."
+
+[Illustration: Fig. 1.--Physiological importance of different parts of
+the tree; pathways of water and food materials. (Schematic.)]
+
+These food materials are, by the life processes of the active cells,
+changed in chemical composition as need be, from sugar, which is
+soluble, into starch, which is insoluble, and back into sugar, and
+combined with nitrogenous substances to make the cell-forming material,
+protoplasm (fig. 1).
+
+In the fall, when the leaves cease to elaborate food, both the upward
+and the downward movement, more or less simultaneously, come to rest
+(the surplus of food materials, as starch, and sometimes as sugar,
+being stored for the winter in certain cell tissues), to begin again
+simultaneously when in spring the temperature is high enough to
+reawaken activity, when the stored food of last year is dissolved
+and started on its voyage. The exact manner in which this movement of
+water upward and food materials downward takes place, and the forces
+at work, are not yet fully understood, nor is there absolute certainty
+as to the parts of the tree in which the movement takes place. It
+appears, however, that while all the so-called "sapwood" is capable
+of conducting water (the heartwood is probably not), the most active
+movement of both water and food materials takes place in the cambium
+(the growing cells immediately beneath the bark) and youngest parts of
+the bark.
+
+The deductions from these processes important to the planter are:
+That injury to the living bark or bast means injury to growth, if not
+destruction to life; that during the period of vegetation transplanting
+can be done only with great caution; that the best time to move trees
+is in the fall, when the leaves have dropped and the movement of
+water and food materials has mostly ceased, or in spring, before the
+movement begins again, the winter being objectionable only because of
+the difficulty of working the soil and of keeping the roots protected
+against frost. All things considered, spring planting, before activity
+in the tree has begun, is the best, although it is not impossible to
+plant at other times.
+
+
+PROGRESS OF DEVELOPMENT.
+
+Like the wheat or corn plant, the tree seed require as conditions for
+sprouting sufficient moisture, warmth, and air. Tree seeds, however,
+differ from grain in that most of the kinds lose their power of
+germination easily; with few exceptions (locust, pine, spruce), they
+can not be kept for any length of time.
+
+The first leaves formed often differ essentially in shape from those
+of the mature tree, which may cause their being confounded with other
+plants, weeds, etc.
+
+The little seedlings of many, especially the conifers, are quite
+delicate, and remain very small the first season; they need, therefore,
+the protecting shade of mother trees, or artificial shading, and also
+protection against weeds. The amount of light or shade given requires
+careful regulation for some of them; too much light and heat will kill
+them, and so will too much shade. This accounts for the failure of many
+seedlings that spring up in the virgin forest.
+
+The planter, then, is required to know the nature and the needs of
+the various kinds of seeds and seedlings, so as to provide favorable
+conditions, when he will avoid sowing in the open field such as require
+the care which it is impracticable to give outside of the nursery.
+
+[Illustration: Fig. 2.--Bud development of beech. _B_, as it would be
+if all formed buds were to live; _A_, as it is, many buds failing to
+develop.]
+
+
+GROWTH IN LENGTH AND RAMIFICATION.
+
+While the stalk of wheat or corn grows for one season, exhausts
+itself in seed production, and then dies, the tree continues to grow
+from season to season, in length as well as in thickness. The growth
+in length of shaft and branches proceeds from buds, made up of cell
+tissues, which can subdivide and lengthen into shoots, as well as make
+leaves. These buds are formed during summer, and when winter begins
+contain embryo leaves, more or less developed, under the protecting
+cover of scales (fig. 3). When spring stimulates the young plant to
+new activity, the buds swell, shed their scales, distend their cells,
+increasing their number by subdivision, and thus the leaves expand, and
+the bud lengthens into a shoot and twig. During the season new buds are
+formed, and the whole process repeats itself from year to year, giving
+rise to the ramification and height growth of the tree. The end buds
+being mostly stronger and better developed, the main axis of tree or
+branch increases more rapidly than the rest. All these buds originate
+from the youngest, central part of the shoot, the pith, and hence
+when the tree grows in thickness, enveloping the base of the limbs,
+their connection with the pith can always be traced. This is the usual
+manner of bud formation; in addition, so-called "adventitious" buds
+maybe formed from the young living wood in later life, which are not
+connected with the pith. Such buds are those which develop into sprouts
+from the stump when the tree is cut; also those which give rise to
+what are known as "water sprouts." Many buds, although formed, are,
+however, not developed at once, and perhaps not at all, especially as
+the tree grows older; these either die or remain "dormant," often for a
+hundred years, to spring into life when necessary (fig. 4).
+
+[Illustration: Fig. 3.--Buds of maple. _A_, longitudinal section
+through tip of a maple twig; _g_, end bud; _s_, lateral buds; _l_,
+scars of leaves of last season. _B_, cross-section through end bud,
+showing folded leaves in center and scales surrounding them.]
+
+The fact that each ordinary limb starts as a bud from the pith is an
+important one to the timber grower; it explains knotty timber and gives
+him the hint that in order to obtain clear timber the branches first
+formed must be soon removed, either by the knife or by proper shading,
+which kills the branches and thus "clears" the shaft.
+
+[Illustration: Fig. 4.--Dormant bud, _K_, on a 12-year old branch of
+beech. The bud is still capable of development and is connected with
+the pith, _mm_, of the stem by a line trace of pith, _S_.]
+
+[Illustration: Fig. 5.--Section through a 12-year old stem of beech,
+showing manner of bud and limb formation, _a_, dormant buds; _b_, their
+trace of pith extending to the pith of the stem; _c_, a limb which
+started two years ago from a dormant bud; _d_, normal limb; _e_, a limb
+dead for four years; _f_, adventitious buds.]
+
+The planter has it also in his power to influence the form development
+of the tree by removing some of the buds, giving thereby better chance
+to the remaining ones. This pruning of buds is, where practicable,
+often better practice than the pruning of limbs.
+
+Since the tree does not grow in length except by its buds it is evident
+that a limb which started to grow at the height of 6 feet has its base
+always 6 feet from the ground, and if allowed to grow to size, must be
+surrounded by the wood which accumulates on the main stem or trunk. If
+a limb is killed and broken off early, only a slender stub composed
+entirely of rapidly decaying sapwood, is left, occasioning, therefore,
+only a small defect in the heart of the tree; but if left to grow to
+considerable age, the base of the limb is encased by the wood of the
+stem, which, when the tree is cut into lumber, appears as a knot. The
+longer the limb has been allowed to grow, the farther out is the timber
+knotty and the thicker is the knot. If the limb remained alive, the
+knot is "sound," closely grown together with the fibers of the tree.
+If the limb died off, the remaining stub may behave in different ways.
+In pines it will be largely composed of heartwood, very resinous and
+durable; separated from the fibers of the overgrowing wood, it forms a
+"loose" knot, which is apt to fall out of a board, leaving a hole.
+
+In broad-leaved trees, where no resin assists in the process of
+healing, the stub is apt to decay, and this decay, caused by the
+growth of fungi, is apt to penetrate into the tree (fig. 6). In parks
+and orchards, pruning is resorted to, and the cuts are painted or
+tarred to avoid the decay. In well-managed forests and dense woods
+in general, the light is cut off, the limb is killed when young and
+breaks away, the shaft "clears itself," and the sound trunk furnishes
+a good grade of material. The difference in development of the branch
+system, whether in full enjoyment of light, in open stand, or with the
+side light cut off, in dense position, is shown in the accompanying
+illustration (fig. 7).
+
+[Illustration: Fig. 6.--Section through partly decayed knot in
+oak wood. _a_, wood of knot; _b_ and _c_, wood callus of the stem
+covering the wound; shaded portion, decayed wood, black part, a cavity
+remaining.]
+
+Both trees start alike; the one retains its branches, the other loses
+them gradually, the stubs being in time overgrown; finally the second
+has a clear shaft, with a crown concentrated at the top, while the
+first is beset with branches and branch stubs for its whole length
+(fig. 8).
+
+When ripped open lengthwise, the interior exhibits the condition shown
+in figure 9, the dead parts of the knot being indicated in heavier
+shading. Since the brandies grow in more or less regular whorls,
+several knots, stumps, or limbs are met every 6 to 24 inches through
+the entire stem.
+
+Hence, in forest planting, trees are placed and kept for some time
+close together, in order to decrease the branching in the lower part of
+the tree and thus produce a clean bole and clear lumber.
+
+
+GROWTH IN THICKNESS.
+
+The young seedling and the young shoot of the older tree much resemble
+in interior structure that of any herbaceous plant, being composed of a
+large amount of pith, loose squarish cells, and a few bundles of long
+fibers symmetrically distributed about the center, the whole covered
+with a thin skin or epidermis. Each strand or bundle of fibers, called
+fibro-vascular (fiber-vessel) bundles, consists of two kinds, namely,
+wood fibers on the inner side and bast fibers of different structure
+on the outer side. Between these two sets of fibers, the bast and the
+wood, there is a row of cells which form the really active, growing
+part of the plantlet, the cambium. The cambium cells are actively
+subdividing and expanding, giving off wood cells to the interior and
+bast cells to the exterior, and extending at the same time side-wise,
+until at the end of the season not only are the wood and bast portions
+increased in lines radiating from the center, but the cambium layer,
+the wood cells, and the bast cells of all the bundles (scattered at
+the beginning) join at the sides to form a complete ring, or rather
+hollow cylinder, around the central pith. Only here and there the pith
+cells remain, interrupting the wood cylinder and giving rise to the
+system of cells known as medullary rays. The cross-section now shows a
+comparatively small amount of pith and bast or bark and a larger body
+of strong wood fibers. The new shoot at the end, to be sure, has the
+same appearance and arrangement as the young plantlet had, the pith
+preponderating, and the continuous cylinder of cambium, bast, and wood
+being separated into strands or bundles.
+
+[Illustration: Fig. 7.--Development in and out of the forest. _A_,
+young tree alike. In both cases; _B_ and _C_, successive stages of tree
+grown in the open; _B´_ and _C´_, corresponding stages of the tree
+grown in the forest. Numbers refer to annual growth in height.]
+
+During the season, through the activity of the cambial part of the
+bundles, the same changes take place in the new shoot as did the
+previous year in the young seedling, while at the same time the cambium
+in the yearling part also actively subdivides, forming new wood and
+bast cells, and thus a second ring, or rather cylinder, is formed. The
+cambium of the young shoot is always a continuation of that of the ring
+or cylinder formed the year before, and this cambium cylinder always
+keeps moving outward, so that at the end of the season, when activity
+ceases, it is always the last minute layer of cells on the outside of
+the wood, between wood proper and bark. It is here, therefore, that
+the life of the tree lies, and any injury to the cambium must interfere
+with the growth and life of the tree.
+
+[Illustration: Fig. 8.--Tree in and out of the forest. _D_, tree grown
+in the open; _D´_, tree grown in the forest.]
+
+The first wood cells which the cambium forms in the spring are usually
+or always of a more open structure, thin-walled, and with a large
+opening or "lumen," comparable to a blown-up paper bag; so large, in
+fact, sometimes, is the "lumen" that the width of the cells can be
+seen on a cross-section with the naked eye, as, for instance, in oak,
+ash, elm, the so-called "pores" are this open wood formed in spring.
+The cells, which are formed later in summer, have mostly thick walls,
+are closely crowded and compressed, and show a very small opening or
+"lumen," being comparable, perhaps, to a very thick wooden box. They
+appear in the cross-section not only denser but of a deeper color, on
+account of their crowded, compressed condition and thicker walls. Since
+at the beginning of the next season again thin-walled cells with wide
+openings or lumina are formed, this difference in the appearance of
+"spring wood" and "summer wood" enables us to distinguish the layer of
+wood formed each year. This "annual ring" is more conspicuous in Some
+kinds than in others. In the so-called "ring porous" woods, like oak,
+ash, elm, the rings are easily distinguished by the open spring wood;
+in the conifers, especially pines, by the dark-colored summer wood;
+while in maple, birch, tulip, etc., only a thin line of flattened,
+hence darker and regularly aligned, summer cells, often hardly
+recognizable, distinguishes The rings from each other. Cutting through
+a tree, therefore, we can not only ascertain its age by counting its
+annual layers in the cross-section, but also determine how much wood is
+formed each year (fig. 10). We can, in fact, retrace the history of
+its growth, the vicissitudes through which it has passed, by the record
+preserved in its ring growth.
+
+To ascertain the age of a tree correctly, however, we must cut so near
+to the ground as to include the growth of the first year's little
+plantlet; any section higher up shows as many years too few as it took
+the tree to reach that height.
+
+[Illustration: Fig. 9.--Sections of logs showing the relative
+development of knots. _E_, from tree grown in the open; _E´_, from tree
+grown in a dense forest; _a_ and _c_, whorls of knots; _b_, dead limb;
+_sk_, "sound knot;" _dk_, "dead knot."]
+
+This annual-ring formation is the rule in all countries which have
+distinct seasons of summer and winter and temporary cessation of
+growth. Only exceptionally a tree may fail to make its growth
+throughout its whole length on account of loss of foliage or other
+causes; and occasionally, when its growth has been disturbed during
+the season, a "secondary" ring, resembling the annual ring, and
+distinguishable only by the expert, may appear and mar the record.
+
+To the forest planter this chapter on ring growth is of great
+importance, because not only does this feature of tree life afford the
+means of watching the progress of his crop, calculating the amount of
+wood formed, and therefrom determining when it is most profitable for
+him to harvest (namely, when the annual or periodic wood growth falls
+below a certain amount), but since the proportion of summer wood and
+spring wood determines largely the quality of the timber, and since he
+has it in his power to influence the preponderance of the one or other
+by adaptation of species to soils and by their management, ring growth
+furnishes an index for regulating the quality of his crop.
+
+
+FORM DEVELOPMENT.
+
+If a tree is allowed to grow in the open, it has a tendency to branch,
+and makes a low and spreading crown. In order to lengthen its shaft and
+to reduce the number of branches it is necessary to narrow its growing
+space, to shade its sides so that the lower branches and their foliage
+do not receive light enough to perform their functions. When the side
+shade is dense enough, these branches die and finally break off under
+the influence of winds and fungous growth; wood then forms over the
+scars and we get a clean shaft which carries a crown high up beyond the
+reach of shade from neighbors.
+
+[Illustration: Fig. 10.--Scheme to Illustrate the arrangement of annual
+growth. 1, 2, 3, etc., represent the parts of the stem grown during the
+first, second, third, etc., twenty years of the life of the tree, _k_,
+knots; the shaded part of each is the "dead knot" of lumber.]
+
+The branches being prevented from spreading out, the shaft is forced
+to grow upward, and hence, when crowded by others, trees become taller
+and more cylindrical in form, while in the open, where they can spread,
+they remain lower and more conical in form (figs. 11, 12).
+
+There are, to be sure, different natural types of development, some,
+like the walnuts, oaks, beeches, and the broad-leaved trees generally,
+having greater tendency to spread than others, like spruces, firs,
+and conifers in general, which lengthen their shaft in preference
+to spreading, even in the open. This tendency to spreading is also
+influenced by soil conditions and climate, as well as by the age of the
+tree. When the trees cease to grow in height, their crowns broaden, and
+this takes place sooner in shallow soils than in deep, moist ones; but
+the tendency can be checked and all can be made to develop the shaft at
+the expense of the branches by proper shading from the sides.
+
+It follows that the forest planter, who desires to produce long and
+clean shafts and best working quality of timber, must secure and
+maintain side shade by a close stand, while the landscape gardener,
+who desires characteristic form, must maintain an open stand and full
+enjoyment of light for his trees.
+
+Now, as we have seen, different species afford different amounts of
+shade, and in proportion to the shade which they afford can they
+endure shade. The beech or sugar maple or spruce, which maintain a
+large amount of foliage under the dense shade of their own crown, show
+that their leaves can live and functionate with a small amount of
+light. They are shade-enduring trees. On the other hand, the black
+walnut, the locust, the catalpa, the poplars, and the larch show by the
+manner in which their crowns thin out, the foliage being confined to
+the ends of the branches, that their leaves require more light--they
+are light-needing trees; so that the scale which arranges the trees
+according to the amount of shade they exert serves also to measure
+their shade endurance.
+
+In making, therefore, mixed plantations, the different kinds must be so
+grouped and managed that the shady trees will not outgrow and overtop
+the light-needing; the latter must either have the start of the former
+or must be quicker growers.
+
+[Illustration: Fig. 11.--Oak tree grown in the open.]
+
+[Illustration: Fig. 12.--Maple tree grown in the forest.]
+
+
+RATE OF GROWTH.
+
+Not only do different species grow more or less rapidly in height and
+girth, but there is in each species a difference in the rate of growth
+during different periods of life, and a difference in the persistence
+of growth.
+
+It stands to reason that trees grow differently in different soils and
+situations, and hence we can not compare different species with respect
+to their rate of growth except as they grow under the same conditions.
+
+Thus the black walnut may grow as fast as or faster than the ash on
+a rich, deep, moist, warm soil, but will soon fall to the rear in a
+wetter, colder, and shallower soil.
+
+Given the same conditions, some species will start on a rapid upward
+growth at once, like the poplars, aspen, locust, and silver maple,
+making rapid progress (the most rapid from their tenth to their
+fifteenth year), but decreasing soon in rate and reaching their maximum
+height early. Others, like the spruce, beech, and sugar maple, will
+begin slowly, often occupying several, sometimes as many as 10 to
+15, years before they appear to grow at all, their energy all going
+into root growth. Then comes a period of more and more accelerated
+growth, which reaches its maximum rate at 25 or 30 years; and when the
+cottonwood or aspen has reached the end of its growth in height the
+spruce or pine is still at its best rate, and continues to grow for a
+long time at that rate; in later life the rate decreases, yet height
+growth sometimes does not cease altogether for centuries. As a rule,
+the light-needing species are the ones which show the rapid height
+growth at the start, while the shade-enduring are slow at the start,
+but persistent growers.
+
+This fact is important in explaining the alternations of forest
+growth in nature; the persistent shade-enduring species crowd out the
+light-needing, and the latter rapidly take possession of any openings
+that fire or storm has made. It is also important with reference to
+the management of wood crops and starting of mixed plantations; the
+light-needing species must be mixed only with such shade-enduring
+species as are slower growers than themselves.
+
+The diameter growth shows also periodic changes in its rate, and is,
+of course, influenced in the same way by soil, climate, and light
+conditions, as the height growth.
+
+In the juvenile or brush stage, lasting 6 to 10 years in light-needing
+and 20 to 40 years in shade-enduring species, the diameter grows
+comparatively little, all energy being directed to height growth and
+root growth. When the crown has been definitely formed, more food
+material is available for wood formation, and the increase in foliage
+is accompanied by a more rapid increase of trunk diameter; in favorable
+situations, the highest rate occurs between the fortieth and sixtieth
+years; in the poorer situations, between the fiftieth and eightieth
+years, which rate continues for some time. Then comes a period of
+slower rate, which finally in old age dwindles down almost to zero.
+
+But neither the diameter growth nor the width of the annual rings alone
+tells us directly what amount of wood is forming. The outer rings,
+being laid over a larger circumference, although thinner than the
+preceding rings, may yet have greater cubic contents. The statements
+of diameter growth are, therefore, misleading if we are interested in
+knowing how much wood is forming.
+
+Accordingly the growth in volume must be considered separately, as
+determined by the enlargement of the cross-section area and the height.
+The growth in volume or mass accretion is quite small in young trees,
+so that when wood is cut young the smallest amount of crop per year
+is harvested, while, if it is allowed to grow, an increase more than
+proportionate to the number of years may be obtained.
+
+Only when the tree has a fully developed crown does it begin to make
+much wood. Its volume growth progresses then at a uniform rate, and
+continues to do so for decades, and sometimes for a century or more.
+
+On poorer sites the rate is slower, but remains longer on the increase,
+while on good sites the maximum rate is soon reached.
+
+Of course, in a forest, where light conditions are not most favorable,
+because form development and soil conditions require shade, the total
+wood formation is less than in an isolated tree, favorably placed.
+Just so the dominant trees in a forest--i. e., those which have their
+crowns above all others--show, of course, the advantage they have
+over the inferior trees which are suffering from the shade of their
+neighbors.
+
+Finally, if we would take into consideration an entire forest growth,
+and determine, for instance, how much wood an acre of such forest
+produces at different periods, we must not overlook the fact that the
+number of trees per acre changes as the trees grow older. Some of them
+are overshaded and crowded out by the others, so that a young growth of
+spruce might start with 100,000 little seedlings to the acre, of which
+in the twentieth year only 10,000 would be alive, while in the fortieth
+year the number would be reduced to 1,200, and in the hundredth year to
+280. Hence the rate of growth of any single tree gives no idea of what
+the acre of forest will do.
+
+Tims, while a single good white pine might grow the fastest in volume
+when about one hundred years old, then making wood at the rate of,
+say, 1.5 cubic feet per year, an acre of pine on good soil, containing
+about 1,600 trees, may make the most wood in the thirtieth year, then
+growing at the rate of 170 cubic feet per acre, while in the hundredth
+year the rate would not exceed 70 cubic feet; and an acre of pine in a
+poorer location, with about 1,400 trees, may make the most wood in the
+fortieth year, at the rate of 100 cubic feet per acre.
+
+From the consideration of the relation of light conditions to soil
+conditions, to form development, and to rate of growth, we may make the
+following deductions of interest to the forest planter:
+
+In order to secure the best results in wood production, in quantity
+and quality, at the same time preserving favorable soil conditions,
+the forest should be composed of various species, a mixture of
+light-needing and shade-enduring kinds. The light-needing ones should
+be of quicker growth; the shady ones, in larger numbers, should
+be slower growers. For the first fifteen to twenty-five years the
+plantation should be kept as dense as possible, to secure clear shafts
+and good growth in height; then it should be thinned, to increase crown
+development and diameter growth; the thinning, however, is not to be so
+severe that the crowns can not close up again in two or three years;
+the thinning is to be repeated again and again, always favoring the
+best developed trees.
+
+
+REPRODUCTION.
+
+All trees reproduce themselves naturally from seed. Man can secure
+their reproduction also from cuttings or layers; and some kinds can
+reproduce themselves by shoots from the stump when the parent tree has
+been cut. This latter capacity is possessed in a varying degree by
+different species; chestnuts, oaks, elms, maples, poplars, and willows
+are most excellent sprouters; most conifers do not sprout at all, and
+the shoots of those that do sprout soon die (Sequoia or California
+redwood seems to be an exception). Sprouts of broad-leaved trees
+develop differently from seedlings, growing very rapidly at first, but
+soon lessening in the rate of growth and never attaining the height and
+perhaps not the diameter of trees grown from the seed; they are also
+shorter lived. With age the stumps lose their capacity for sprouting.
+To secure best results, the parent tree should be cut close to the
+ground in early spring, avoiding severe frost, and a sharp cut should
+be made which will not sever the bark from the trunk.
+
+Not all trees bear seed every year, and plentiful seed production,
+especially in a forest, occurs, as a rule, periodically. The periods
+differ with species, climate, and season.
+
+Not all seeds can germinate, and in some species the number of seeds
+that can germinate is very small, and they lose their power of
+germination when kept a few hours, like the willows. Others, if kept
+till they have become dry, will "lie over" in the soil a year or more
+before germinating. The same thing will occur if they are covered too
+deep in the soil, provided they germinate at all under such conditions.
+
+In order to germinate, seeds must have warmth, air, and moisture.
+The preparation of a seed bed is, therefore, necessary in order to
+supply these conditions in most favorable combination. In the natural
+forest millions of seeds rot or dry without sprouting, and millions
+of seedlings sprout, but soon perish under the too dense shade of the
+mother trees.
+
+Man, desiring to reproduce a valuable wood crop, cannot afford to be
+as lavish as nature, and must therefore improve upon nature's methods,
+making more careful preparation for the production of his crop, either
+by growing the seedlings in nurseries and transplanting them, or else
+by cutting away the old growth in such a manner as to secure to the
+young self-grown crop better chances for life and development.
+
+
+
+
+2. HOW TO PLANT A FOREST.
+
+
+Forest planting and tree planting are two different things. The
+orchardist, who plants for fruit; the landscape gardener, who plants
+for form; the roadside planter, who plants for shade, all have objects
+in view different from that of the forest planter, and therefore
+select and use their plant material differently. They deal with single
+individual trees, each one by itself destined for a definite purpose.
+The forester, on the other hand, plants a crop like the farmer; he
+deals not with the single seed or plant, but with masses of trees; the
+individual tree has value to him only as apart of the whole. It may
+come to harvest for its timber, or it may not come to harvest, and yet
+have answered its purpose as a part of the whole in shading the ground,
+or acting as nurse or "forwarder" as long as it was necessary.
+
+His object is not to grow trees, but to produce wood, the largest
+amount of the best quality per acre, whether it be stored in one tree
+or in many, and his methods must be directed to that end.
+
+As far as the manner of setting out plants or sowing seeds is
+concerned, the same general principles and the same care in
+manipulation are applicable as in any other planting, except as the
+coat of operating on so Large a scale may necessitate less careful
+methods than the gardener or nurseryman can afford to apply; the
+nearer, however, the performance of planting can be brought to the
+careful manner of the gardener, the surer the success. The principles
+underlying such methods have been discussed in the chapter "How trees
+grow;" in the present chapter it is proposed to point out briefly
+the special considerations which should guide the forest planter in
+particular.
+
+
+WHAT TREES TO PLANT.
+
+_Adaptability to climate_ is the first requisite in the species to be
+planted.
+
+It is best to choose from the native growth of the region which is
+known to be adapted to it. With regard to species not native, the
+reliance must be placed upon the experience of neighboring planters
+and upon experiment (at first on a small scale), after study of the
+requirements of the kinds proposed for trial.
+
+Adaptation must be studied, not only with reference to temperature
+ranges and rainfall, but especially with reference to atmospheric
+humidity and requirements of transpiration.
+
+Many species have a wide range of natural distribution, and hence
+of climatic adaptation. If such are to be used, it is important to
+secure seeds from that part of the range of natural distribution where
+the plants must be hardiest, i. e., the coldest and driest region in
+which it occurs, which insures hardy qualities in the offspring. For
+instance, the Douglas spruce from the humid and evenly tempered Pacific
+Slope will not be as hardy as that grown from seed collected on the dry
+and frigid slopes of the Rockies. Lack of attention to this requisite
+accounts for many failures. It must also be kept in mind that, while
+a species may be able to grow in another than its native climate, its
+wood may not there have the same valuable qualities which it develops
+in its native habitat.
+
+_Adaptability to soil_ must be studied less with reference to mineral
+constituents than to physical condition. Depth and moisture conditions,
+and the structure of the soil, which influences the movement of water
+in it, are the most important elements. While all trees thrive best
+in a moist to "fresh" soil of moderate depth (from 2 to 4 feet) and
+granular structure, some can adapt themselves to drier or wetter,
+shallow, and compact soils. Fissures in rocks into which the roots can
+penetrate often stand for depth of soil, and usually aid in maintaining
+favorable moisture conditions. In soils of great depth (i. e., from the
+surface to the impenetrable subsoil) and of coarse structure water may
+drain away so fast as not to be available to the roots.
+
+Soil moisture must always be studied in conjunction with atmospheric
+moisture; for, while a species may thrive in an arid soil, when the
+demands of transpiration are not great, it may not do so when aridity
+of atmosphere is added. Trees of the swamp are apt to be indifferent to
+soil moisture and to thrive quite well, if not better, in drier soils.
+
+_Adaptability to site._--While a species may be well adapted to the
+general climatic conditions of a region, and in general to the soil,
+there still remains to be considered its adaptability to the particular
+"site," under which term we may comprise the total effect of general
+climate, local climate, and soil. The general climatic conditions are
+locally influenced, especially by the slope, exposure, or aspect, and
+the surroundings. Thus we know that eastern exposures are more liable
+to frost, western exposures more liable to damage from winds, southern
+more apt to be hot and to dry out, and northern to be cooler and
+damper, having in consequence a shorter period of vegetation. Hollows
+and lowlands are more exposed to frosts and more subject to variations
+in soil moisture, etc.
+
+Hence for these various situations it is advisable to select species
+which can best withstand such local dangers.
+
+_The use value, or utility_, of the species is next to be considered.
+This must be done with reference to the commercial and domestic demand,
+and the length of time it takes the species to attain its value. The
+greater variety of purposes a wood may serve--i. e., the greater its
+general utility--and the sooner it attains its use value the better.
+White pine for the northeastern States as a wood is like the apple
+among fruits, making an all-round useful material in large quantities
+per acre in short time. Tulip poplar, applicable to a wider climatic
+range, is almost as valuable, while oak, ash, and hickory are standard
+woods in the market. Other woods are of limited application. Thus the
+black locust, which grows most quickly into useful posts, has only a
+limited market, much more limited than it should have; hickory soon
+furnishes valuable hoop poles from the thinnings, and later the best
+wagon material, not, however, large quantities in a short time; while
+black walnut of good quality is very high in price, the market is also
+limited, and the dark color of the heartwood, for which it is prized,
+is attained only by old trees. The black cherry, used for similar
+purposes, attains its value much sooner.
+
+By planting various species together, variety of usefulness may be
+secured and the certainty of a market increased.
+
+_The forest value_ of the species is only in part expressed by its use
+value. As has been shown in another place, the composition of the crop
+must be such as to insure maintenance of favorable soil conditions,
+as well as satisfactory development of the crop itself. Some species,
+although of high use value, like ash, oak, etc, are poor preservers of
+soil conditions, allowing grass and weeds to enter the plantation and
+to deteriorate the soil under their thin foliage. Others, like beech,
+sugar maple, box elder, etc., although of less use value, being dense
+foliaged and preserving a shady crown for a long time, are of great
+forest value as soil improvers.
+
+Again, as the value of logs depends largely on their freedom from
+knots, straightness, and length, it is of importance to secure these
+qualities. Some valuable species, if grown by themselves, make crooked
+trunks, do not clean their shafts of branches, and are apt to spread
+rather than lengthen. If planted in close companionship with others,
+they are forced by these "nurses or forwarders" to make better growths
+and clean their shafts of branches.
+
+Furthermore, from financial considerations, it is well to know that
+some species develop more rapidly and produce larger quantities of
+useful material per acre than others; thus the white pine is a "big
+cropper," and, combining with this a tolerably good shading quality,
+and being in addition capable of easy reproduction, it is of highest
+"forest value."
+
+Hence, as the object of forestry is to make money from continued wood
+crops, use value and forest value must both be considered in The
+selection of materials for forest planting.
+
+_Mutual relationship of different species_, with reference especially
+to their relative height growth and their relative light requirements,
+must be considered in starting a mixed plantation.
+
+Mixed forest plantations (made of several kinds) have so many
+advantages over pure plantations (made of one kind) that they should
+be preferred, except for very particular reasons. Mixed plantations
+are capable of producing larger quantities of better and more varied
+material, preserve soil conditions hotter, are less liable to damage
+from winds, fires, and insects, and can be more readily reproduced.
+
+The following general rules should guide in making up the composition
+of a mixed plantation:
+
+  _a._ Shade-enduring kinds should form the bulk (five-eighths to
+  seven-eighths) of the plantation, except on specially favored
+  soils where no deterioration is to be feared from planting only
+  light-needing kinds, and in which case those may even be planted by
+  themselves.
+
+  _b._ The light-needing trees should be surrounded by shade-enduring
+  of slower growth, so that the former may not be overtopped, but have
+  the necessary light and be forced by side shade to straight growth.
+
+  _c._ Shade-enduring species may be grown in admixture with each
+  other when their rate of height growth is about equal, or when the
+  slower-growing kind can be protected against the quicker-growing (for
+  instance, by planting a larger proportion of the former in groups or
+  by cutting back the latter).
+
+  _d._ The more valuable timber trees which are to form the main crop
+  should be so disposed individually, and planted in such numbers among
+  the secondary crop or nurse crop, that the latter can be thinned out
+  first without disturbing the former.
+
+Where a plantation of light-foliaged trees has been made (black walnut,
+for instance), it can be greatly improved by "under-planting" densely
+with a shade-enduring kind, which will choke out weed growth, improve
+the soil, and thereby advance the growth of the plantation.
+
+The selection and proper combination of species with reference to
+this mutual relationship to each other and to the soil are the most
+important elements of success.
+
+_Availability_ of the species also still needs consideration in
+this country; for, although a species may be very well adapted to
+the purpose in hand, it may be too difficult to obtain material
+for planting in quantity or at reasonable prices. While the beech
+is one of the best species for shade endurance, and hence for soil
+cover, seedlings can not be had as yet in quantity. Western conifers,
+although promising good material for forest planting, are at present
+too high priced for general use. Some eastern trees can be secured
+readily--either their seed or seedlings--from the native woods; others
+must be grown in nurseries before they can be placed in the field.
+
+_Whether to procure seeds or plants_, and if the latter, what kind,
+depends upon a number of considerations. The main crop, that which is
+to furnish the better timber, had best be planted with nursery-grown
+plants, if of slow-growing kinds, perhaps once transplanted, with
+well-developed root systems, the plants in no case to be more than 2 to
+3 years old. The secondary or nurse crop may then be sown or planted
+with younger and less costly material taken from the woods or grown in
+seed beds, or else cuttings may be used.
+
+In some localities--for instance, the Western plains--the germinating
+of seeds in the open field is so uncertain, and the life of the young
+seedlings for the first year or two so precarious, that the use of
+seeds in the field can not be recommended. In such locations careful
+selection and treatment of the planting material according to the
+hardships which it must encounter can alone insure success.
+
+Seedlings from 6 to 12 inches high furnish the best material. The
+planting of large-sized trees is not excluded, but is expensive and
+hence often impracticable, besides being less sure of success, since
+the larger-sized tree is apt to lose a greater proportion of its roots
+in transplanting.
+
+
+METHODS OF PLANTING.
+
+_Preparation of soil_ is for the purpose of securing a favorable start
+for the young crop; its effects are lost after the first few years.
+Most land that is to be devoted to forest planting does not admit of
+as careful preparation as for agricultural crops, nor is it necessary
+where the climate is hot too severe and the soil not too compact to
+prevent the young crop from establishing itself. Thousands of acres in
+Germany are planted annually without any soil preparation, yearling
+pine seedlings being set with a dibble in the unprepared ground. This
+absence of preparation is even necessary in sandy soils, like that
+encountered in the sand-hills of Nebraska, which may, if disturbed,
+be blown out and shifted. In other cases a partial removal of a too
+rank undergrowth or soil cover and a shallow scarifying or hoeing is
+resorted to, or else furrows are thrown up and the trees set out in
+them.
+
+In land that has been tilled, deep plowing (10 to 12 inches) and
+thorough pulverizing give the best chances for the young crop to
+start. For special conditions, very dry or very moist situations,
+special methods are required. The best methods for planting in the
+semiarid regions of the far West have not yet been developed. Thorough
+cultivation, as for agricultural crops, with subsequent culture, is
+successful, but expensive. A plan which might be tried would consist in
+breaking the raw prairie in June and turning over a shallow sod, sowing
+a crop of oats or alfalfa, harvesting it with a high stubble, then
+opening furrows for planting and leaving the ground between furrows
+undisturbed, so as to secure the largest amount of drainage into the
+furrows and a mulch between the rows.
+
+_The time for planting_ depends on climatic and soil conditions and
+the convenience of the planter. Spring planting is preferable except
+in southern latitudes, especially in the West, where the winters are
+severe and the fall apt to be dry, the soil therefore not in favorable
+condition for planting.
+
+The time for fall planting is after the leaves have fallen; for spring
+planting, before or just when life begins anew. In order to be ready in
+time for spring planting, it is a good practice to take up the plants
+in the fall and "heel them in" over winter (covering them, closely
+packed, in a dry trench of soil). Conifers can be planted later in
+spring and earlier in fall than broad-leaved trees.
+
+_The density_ of the trees is a matter in which most planters fail. The
+advantages of close planting lie in the quicker shading of the soil,
+hence the better preservation of its moisture and improved growth and
+form development of the crop. These advantages must be balanced against
+the increased cost of close planting. The closer the planting, the
+sooner will the plantation be self-sustaining and the surer the success.
+
+If planted in squares, or, better still, in quincunx order (the trees
+in every other row alternating at equal distances), which is most
+desirable on account of the more systematic work possible and the more
+complete cover which it makes, the distance should not be more than 4
+feet, unless for special reasons and conditions, while 2 feet apart is
+not too close, and still closer planting is done by nature with the
+best success.
+
+The following numbers of trees per acre are required when planting at
+distances as indicated:
+
+  1½ by 1½ feet  19,360  |  2 by 4 feet    6,445
+  1½ by 2 feet   14,520  |  3 by 3 feet    4,840
+  2  by 2 foot   10,890  |  3 by 4 feet    3,630
+  2  by 3 feet    7,260  |  4 by 4 feet    2,722
+
+To decrease expense, the bulk of the plantation may be made of the
+cheapest kinds of trees that may serve as soil cover and secondary or
+nurse crop, the main crop of from 300 to 600 trees to consist of better
+kinds, and with better planting material, mainly of light-needing
+species. These should be evenly disposed through the plantation, each
+closely surrounded by the nurse crop. It is, of course, understood that
+not all trees grow up; a constant change in numbers by the death (or
+else timely removal) of the overshaded takes place, so that the final
+crop shows at 100 years a close cover, with hardly 300 trees to the
+acre.
+
+_After-culture_ is not entirely avoidable, especially under unfavorable
+climatic conditions, and if the planting was not close enough. Shallow
+cultivation between the rows is needed to prevent weed growth and to
+keep the soil open, until it is shaded by the young trees, which may
+take a year with close planting and two or three years with rows 4 by 4
+feet apart, the time varying also with the species.
+
+It is rare that a plantation succeeds in all its parts; gaps or fail
+places occur, as a rule, and must be filled in by additional planting
+as soon as possible, if of larger extent than can be closed up in a few
+years by the neighboring growth.
+
+When the soil is protected by a complete leaf canopy, the forest crop
+may be considered as established, and the after-treatment will consist
+of judicious thinning.
+
+
+
+
+3. HOW TO TREAT THE WOOD LOT.
+
+
+In the northeastern States it is the custom to have connected with
+the farm apiece of virgin woodland, commonly called the wood lot. Its
+object primarily is to supply the farmer with the firewood, fence
+material, and such dimension timbers as he may need from time to time
+for repairs on buildings, wagons, etc.
+
+As a rule, the wood lot occupies, as it ought to, the poorer part of
+the farm, the rocky or stony, the dry or the wet portions, which are
+not well fitted for agricultural crops. As a rule, it is treated as
+it ought not to be, if the intention is to have it serve its purpose
+continuously; it is cut and culled without regard to its reproduction.
+
+As far as firewood supplies go, the careful farmer will first use
+the dead and dying trees, broken limbs, and leavings, which is quite
+proper. The careless man avoids the extra labor which such material
+requires, and takes whatever splits best, no matter whether the
+material could be used for better purposes or not.
+
+When it comes to the cutting of other material, fence rails, posts, or
+dimension timber, the general rule is to go into the lot and select
+the best trees of the best kind for the purpose. This looks at first
+sight like the natural, most practical way of doing. It is the method
+which the lumberman pursues when he "culls" the forest, and is, from
+his point of view perhaps, justifiable, for he only desires to secure
+at once what is most profitable in the forest. But for the farmer, who
+proposes to use his wood lot continuously for supplies of this kind, it
+is a method detrimental to his object, and in time it leaves him with a
+lot of poor, useless timber which encumbers the ground and prevents the
+growth of a better crop.
+
+Our woods are mostly composed of many species of trees; they are mixed
+woods. Some of the species are valuable for some special purposes,
+others are applicable to a variety of purposes, and again others
+furnish but poor material for anything but firewood, and even for that
+use they may not be of the best.
+
+Among the most valuable in the northeastern woods we should mention
+the white pine--king of all--the white ash, white and chestnut oak,
+hickories, tulip tree, black walnut, and black cherry, the last three
+being now nearly exhausted; next, spruce and hemlock, red pine, sugar
+maple, chestnut, various oaks of the black or red oak tribe, several
+species of ash and birch, black locust; lastly, elms and soft maples,
+basswood, poplars, and sycamore.
+
+Now, by the common practice of culling the best it is evident that
+gradually all the best trees of the best kinds are taken out, leaving
+only inferior trees or inferior kinds--the weeds among trees, if one
+may call them such--and thus the wood lot becomes well-nigh useless.
+
+It does not supply that for which it was intended; the soil, which was
+of little use for anything but a timber crop before, is still further
+deteriorated under this treatment, and being compacted by the constant
+running of cattle, the starting of a crop of seedlings is made nearly
+impossible. It would not pay to turn it into tillage ground or pasture;
+the farm has by so much lost in value. In other words, instead of using
+the interest on his capital, interest and capital have been used up
+together; the goose that laid the golden egg has been killed.
+
+This is not necessary if only a little system is brought into the
+management of the wood lot and the smallest care is taken to avoid
+deterioration and secure reproduction.
+
+
+IMPROVEMENT CUTTINGS.
+
+The first care should be to improve the crop in its composition.
+Instead of culling it of its best material, it should be culled of its
+weeds, the poor kinds, which we do not care to reproduce, and which,
+like all other weeds, propagate themselves only too readily. This
+weeding must not, however, be done all sit once, as it could be in
+a field crop, for in a full-grown piece of woodland each tree has a
+value, even the weed trees, as soil cover.
+
+The great secret of success in all crop production lies in the
+regulating of water supplies; the manuring in part and the cultivating
+entirely, as well as drainage and irrigation, are means to this end. In
+forestry these means are usually not practicable, and hence other means
+are resorted to. The principal of these is to keep the soil as much as
+possible under cover, either by the shade which the foliage of the tall
+trees furnishes, or by that from the underbrush, or by the litter which
+accumulates and in decaying forms a humus cover, a most excellent mulch.
+
+A combination of these three conditions, viz, a dense crown cover,
+woody underbrush where the crown cover is interrupted, and a heavy
+layer of well-decomposed humus, gives the best result. Under such
+conditions, first of all, the rain, being intercepted by the foliage
+and litter, reaches the ground only gradually, and therefore does not
+compact the soil as it does in the open field, but leaves it granular
+and open, so that the water can readily penetrate and move in the soil.
+Secondly, the surface evaporation is considerably reduced by the shade
+and lack of air circulation in the dense woods, be that more moisture
+remains for the use of the trees. When the shade of the crowns overhead
+(the so-called "crown cover," or "canopy,") is perfect, but little
+undergrowth will be seen; but where the crown cover is interrupted
+or imperfect, an undergrowth will appear. If this is composed of
+young trees, or even shrubs, it is an advantage, but if of weeds, and
+especially grass, it is a misfortune, because these transpire a great
+deal more water than the woody plants and allow the soil to deteriorate
+in structure and therefore in water capacity.
+
+Some weeds and grasses, to be sure, are capable of existing where but
+little light reaches the soil. When they appear it is a sign to the
+forester that he must be careful not to thin out the crown cover any
+more. When the more light-needing weeds and grasses appear it is a sign
+that too much light reaches the ground, and that the soil is already
+deteriorated. If this state continues, the heavy drain which the
+transpiration of these weeds makes upon the soil moisture, without any
+appreciable conservative action by their shade, will injure the soil
+still further.
+
+The overhead shade or crown cover may be imperfect because there are
+not enough trees on the ground to close up the interspaces with their
+crowns, or else because the kinds of trees which make up the forest do
+not yield much shade; thus it can easily be observed that a beech, a
+sugar maple, a hemlock, is so densely foliaged that but little light
+reaches the soil through its crown canopy, while an ash, an oak, a
+larch, when full grown, in the forest, allows a good deal of light to
+penetrate.
+
+Hence, in our weeding process for the improvement of the wood crop,
+we must be careful not to interrupt the crown cover too much, and
+thereby deteriorate the soil conditions. And for the same reason, in
+the selection of the kinds that are to be left or to be taken out, we
+shall not only consider their use value but also their shading value,
+trying to bring about such a mixture of shady and less shady kinds as
+will insure a continuously satisfactory crown cover, the shade-enduring
+kinds to occupy the lower stratum in the crown canopy, and to be more
+numerous than the light-needing.
+
+The forester, therefore, watches first the conditions of his soil
+cover, and his next care is for the condition of the overhead shade,
+the "crown cover;" for a change in the condition of the latter brings
+change into his soil conditions, and, inversely, from the changes
+in the plant cover of the soil he judges whether he may or may not
+change the light conditions. The changes of the soil cover teach him
+more often when "to let alone" than when to go on with his operations
+of thinning out; that is to say, he can rarely stop short of that
+condition which is most favorable. Hence the improvement cuttings must
+be made with caution and only very gradually, so that no deterioration
+of the soil conditions be invited. We have repeated this injunction
+again and again, because all success in the management of future wood
+crops depends upon the care bestowed upon the maintenance of favorable
+soil conditions.
+
+As the object of this weeding is not only to remove the undesirable
+kinds from the present crop, but to prevent as much as possible their
+reappearance in subsequent crops, it maybe advisable to cut such kinds
+as sprout readily from the stump in summer time--June or July--when the
+stumps are, likely to die without sprouting.
+
+It may take several years' cutting to bring the composition of the main
+crop into such a condition as to satisfy us.
+
+
+METHODS OF REPRODUCING THE WOOD CROP.
+
+Then comes the period of utilizing the main crop. As we propose to keep
+the wood lot as such, and desire to reproduce a satisfactory wood crop
+in place of the old one, this latter must be cut always with a view to
+that reproduction. There are various methods pursued for this purpose
+in large forestry operations which are not practicable on small areas,
+especially when these are expected to yield only small amounts of
+timber, and these little by little as required. It is possible, to be
+sure, to cut the entire crop and replant a new one, or else to use the
+ax skillfully and bring about a natural reproduction in a few years;
+but we want in the present case to lengthen out the period during which
+the old crop is cut, and hence must resort to other methods. There are
+three methods practicable.
+
+We may clear narrow strips or bands entirely, expecting the neighboring
+growth to furnish the seed for covering the strip with a new crop--"the
+strip method;" or we can take out single trees here and there, relying
+again on an after growth from seed shed by the surrounding trees--the
+"selection method;" or, finally, instead of single trees, we may cut
+entire groups of trees hero and there in the same manner, the gaps to
+be filled, as in the other cases, with a young crop from the seed of
+the surrounding trees, and this we may call the "group method."
+
+In _the strip method_, in order to secure sufficient seeding of the
+cleared strip, the latter must not be so broad that the seed from the
+neighboring growth can not be carried over it by the wind. In order to
+get the best results from the carrying power of the wind (as well as to
+avoid windfalls when the old growth is suddenly opened on the windward
+side) the strips should be located on the side opposite the prevailing
+winds. Oaks, beech, hickory, and nut trees in general with heavy seeds
+will not seed over any considerable breadth of strip, while with maple
+and ash the breadth may be made twice as great as the height of the
+timber, and the mother trees with lighter seeds, like spruce and pine,
+or birch and elm, maybe able to cover strips of a breadth of 3 or 4 and
+even 8 times their height. But such broad strips are hazardous, since
+with insufficient seed fall, or fail years in the seed, the strip may
+remain exposed to sun and wind for several years without a good cover
+and deteriorate. It is safer, therefore, to make the strips no broader
+than just the height of the neighboring timber, in which case not only
+has the seed better chance of covering the ground, but the soil and
+seedlings have more protection from the mother crop. In hilly country
+the strips must not be made in the direction of the slope, for the
+water would wash out soil and seed.
+
+Every year, then, or from time to time, a new strip is to be cleared
+and "regenerated." But if the first strip failed to cover itself
+satisfactorily, the operation is stopped, for it would be unwise to
+remove the seed trees further by an additional clearing. Accordingly,
+this method should be used only where the kinds composing the mother
+crop are frequent and abundant seeders and give assurance of reseeding
+the strips quickly and successfully.
+
+[Illustration: Fig. 13.--Showing plan of group system in regenerating
+a forest crop. 1, 2, 3, 4, successive groups of young timber, 1 being
+the oldest, 4 the youngest, 5 old timber; _a_, wind mantle, specially
+managed to secure protection.]
+
+The other two methods have greater chances of success in that they
+preserve the soil conditions more surely, and there is more assurance
+of seeding from the neighboring trees on all sides.
+
+_The selection method_, by which single trees are taken out all over
+the forest, is the same as has been practiced by the farmer and
+lumberman hitherto, only they have forgotten to look after the young
+crop. Millions of seed may fall to the ground and germinate, but
+perish from the excessive shade of the mother trees. If we wish to be
+successful in establishing a new crop, it will be necessary to be ready
+with the ax all the time and give light as needed by the young crop.
+The openings made by taking out single trees are so small that there is
+great danger of the young crop being lost, or at least impeded in its
+development, because it is impracticable to come in time to its relief
+with the ax.
+
+The best method, therefore, in all respects, is the "_group method_"
+which not only secures continuous soil cover, chances for full seeding,
+and more satisfactory light conditions, but requires loss careful
+attention, or at least permits more freedom of movement and adaptation
+to local conditions (fig. 13).
+
+It is especially adapted to mixed woods, as it permits securing for
+each species the most desirable light conditions by making the openings
+larger or smaller, according as the species we wish to favor in a
+particular group demand more or less shade. Further, when different
+species are ripe for regeneration at different times, this plan makes
+it possible to take them in hand as needed. Again, we can begin with
+one group or we can take in hand several groups simultaneously, as may
+be desirable and practicable.
+
+We start our groups of new crop either where a young growth is already
+on the ground, enlarging around it, or where old timber has reached
+its highest usefulness and should be cut in order that we may not lose
+the larger growth which young trees would make; or else we choose a
+place which is but poorly stocked, where, if it is not regenerated,
+the soil is likely to deteriorate further. The choice is affected
+further by the consideration that dry situations should be taken in
+hand earlier than those in which the soil and site are more favorable,
+and that some species reach maturity and highest use value earlier
+than others and should therefore be reproduced earlier. In short, we
+begin the regeneration when and where the necessity for it exists, or
+where the young crop has the best chance to start most satisfactorily
+with the least artificial aid. Of course, advantage should betaken of
+the occurrence of seed years, which come at different intervals with
+different species.
+
+If we begin with a group of young growth already on the ground, our
+plan is to remove gradually the old trees standing over them when no
+longer required for shade, and then to cut away the adjoining old
+growth and enlarge the opening in successive narrow bands around the
+young growth. When the first band has seeded itself satisfactorily, and
+the young growth has come to require more light (which may take several
+years), we remove another band around it, and thus the regeneration
+progresses. Where no young growth already exists, of course the first
+opening is made to afford a start, and afterwards the enlargement
+follows as occasion requires.
+
+
+SIZE OF OPENINGS.
+
+The size of the openings and the rapidity with which they should be
+enlarged vary, of course, with local conditions and the species which
+is to 'be favored, the light-needing species requiring larger openings
+and quicker light additions than the shade-enduring. It is difficult to
+give any rules, since the modifications due to local conditions are so
+manifold, requiring observation and judgment. Caution in not opening
+too much at a time and too quickly may avoid failure in securing good
+stands.
+
+In general, the first openings may contain from one-fourth to one-half
+an acre or more, and the gradual enlarging may progress by clearing
+bands of a breadth not to exceed the height of the surrounding timber.
+
+The time of the year when the cutting is to be done is naturally in
+winter, when the farmer has the most leisure, and when the wood seasons
+best after felling and is also most readily moved. Since it is expected
+that the seed fallen in the autumn will sprout in the spring, all wood
+should, of course, be removed from the seed ground.
+
+The first opening, as well as the enlargement of the groups, should
+not be made at once, but by gradual thinning out, if the soil is
+not in good condition to receive and germinate the seed and it is
+impracticable to put it in such condition by artificial means--hoeing
+or plowing.
+
+It is, of course, quite practicable--nay, sometimes very desirable--to
+prepare the soil for the reception and germination of the seed. Where
+undesirable undergrowth has started, it should be cut out, and where
+the soil is deteriorated with weed growth or compacted by the tramping
+of cattle, it should be hoed or otherwise scarified, so that the seed
+may find favorable conditions. To let pigs do the plowing and the
+covering of acorns is not an uncommon practice abroad.
+
+It is also quite proper, if the reproduction from the seed of the
+surrounding mother trees does not progress satisfactorily, to assist,
+when an opportunity is afforded, by planting such desirable species as
+were or were not in the composition of the original crop.
+
+It may require ten, twenty, or forty years or more to secure the
+reproduction of a wood lot in this way. A new growth, denser and better
+than the old, with timber of varying age, will be the result. The
+progress of the regeneration in groups is shown on the accompanying
+plan, the different shadings showing the successive additions of young
+crop, the darkest denoting the oldest parts, first regenerated. If we
+should make a section through any one of the groups, this, ideally
+represented, would be like figure 14, the old growth on the outside,
+the youngest new crop adjoining it, and tiers of older growths of
+varying height toward the center of the group.
+
+
+WIND MANTLE.
+
+On the plan there will be noted a strip specially shaded, surrounding
+the entire plat (fig. 13, _a_), representing a strip of timber which
+should surround the farmer's wood lot, and which he should keep as
+dense as possible, especially favoring undergrowth. This part, if
+practicable, should be kept reproduced as coppice or by the method of
+selection, i. e., by taking out trees hero and there. When gaps are
+made, they should be filled, if possible, by introducing shade-enduring
+kinds, which, like the spruces and firs and beech, retain their
+branches down to the foot for a long time. This mantle is intended to
+protect the interior against the drying influence of winds, which are
+bound to enter the small wood lot and deteriorate the soil. The smaller
+the lot, the more necessary and desirable it is to maintain such a
+protective cover or wind-break.
+
+[Illustration: Fig. 14.--Appearance of regeneration by group method.]
+
+
+COPPICE.
+
+Besides reproducing a wood crop from the seed of mother trees or by
+planting, there is another reproduction possible by sprouts from the
+stump. This, to be sure, can be done only with broad-leaved species,
+since conifers, with but few exceptions, do not sprout from the stump.
+When a wood lot is cut over and over again, the reproduction taking
+place by such sprouts we call coppice.
+
+Most wooded areas in the Eastern States have been so cut that
+reproduction from seed could not take place, and hence we have large
+areas of coppice, with very few seedling trees interspersed. As we
+have seen in the chapter on "How trees grow," the sprouts do not
+develop into as good trees as the seedlings. They grow faster, to be
+sure, in the beginning, but do not grow as tall and are apt to be
+shorter lived.
+
+For the production of firewood, fence, and post material, coppice
+management may suffice, but not for dimension timber. And even to keep
+the coppice in good reproductive condition, care should be taken to
+secure a certain proportion of seedling trees, since the old stumps,
+after repeated cutting, tail to sprout and die out.
+
+Soil and climate influence the success of the coppice; shallow
+soils produce weaker but more numerous sprouts and are more readily
+deteriorated by the repeated laying bare of the soil; a mild climate is
+most favorable to a continuance of the reproductive power of the stump.
+
+Some species sprout more readily than others; hence the composition
+of the crop will change, unless attention is paid to it. In the
+coppice, as in any other management of a natural wood crop, a desirable
+composition must first be secured, which is done by timely improvement
+cuttings, as described in a previous section.
+
+The best trees for coppice in the northeastern States are the chestnut,
+various oaks, hickory, ash, elm, maples, basswood, and black locust,
+which are all good sprouters.
+
+When cutting is done for reproduction, the time and manner are the main
+care. The best results are probably obtained, both financially and with
+regard to satisfactory reproduction, when the coppice is cut between
+the twentieth and thirtieth years. All cutting must be done in early
+spring or in winter, avoiding, however, days of severe frost, which is
+apt to sever the bark from the trunk and to kill the cambium. Cutting
+in summer kills the stump, as a rule. The cut should be made slanting
+downward, and as smooth as possible, to prevent collection of moisture
+on the stump and the resulting decay, and as close as possible to
+the ground, where the stump is less exposed to injuries, and the new
+sprouts, starting close to the ground, may strike independent roots.
+
+Fail places or gaps should be filled by planting. This can be readily
+done by bending to the ground some of the neighboring sprouts, when 2
+to 3 years old, notching, fastening them down with a wooden hook or a
+stone, and covering them with soil a short distance (4 to 6 inches)
+from the end. The sprout will then strike root, and after a year or so
+may be severed from the mother stock by a sharp cut (fig. 15).
+
+For the recuperation of the crop, it is desirable to maintain a supply
+of seedling trees, which may be secured either by the natural seeding
+of a few mother trees of the old crop which are left, or by planting.
+This kind of management, coppice with seedling or standard trees
+intermixed, if the latter are left regularly and well distributed over
+the wood lot, leads to a management called "standard coppice." In this
+it is attempted to avoid the drawbacks of the coppice, viz, failure to
+produce dimension material and running out of the stocks. The former
+object is, however, only partially accomplished, as the trees grown
+without sufficient side shading are apt to produce branchy boles and
+hence knotty timber, besides injuring the coppice by their shade.
+
+
+PLAN OF MANAGEMENT.
+
+In order to harmonize the requirements of the wood lot from a
+sylvicultural point of view, and the needs of the farmer for wood
+supplies, the cutting must follow some systematic plan.
+
+The improvement cuttings need not, in point of time, have been made all
+over the lot before beginning the cuttings for regeneration, provided
+they have been made in those parts which are to be regenerated. Both
+the cuttings may go on simultaneously, and this enables the farmer
+to gauge the amount of cutting to his consumption. According to the
+amount of wood needed, one or more groups may be started at the same
+time. It is, however, desirable, for the sake of renewing the crop
+systematically, to arrange the groups in a regular order over the lot.
+
+[Illustration: Fig. 15.--Method of layering to produce new stocks in
+coppice wood.]
+
+
+
+
+4. HOW TO CULTIVATE THE WOOD CROP.
+
+
+Where only firewood is desired, i. e., wood without special form, size,
+or quality, no attention to the crop is necessary, except to insure
+that it covers the ground completely. Nevertheless, even in such a
+crop, which is usually managed as coppice,[2] some of the operations
+described in this chapter may prove advantageous. Where, however, not
+only quantity but useful quality of the crop is also to be secured,
+the development of the wood crop may be advantageously influenced by
+controlling the supply of light available to the individual trees.
+
+[2] See page 35 for description of coppice.
+
+It may be proper to repeat here briefly what has been explained in
+previous pages regarding the influence of light on tree development.
+
+
+EFFECT OF LIGHT ON WOOD PRODUCTION.
+
+Dense shade preserves soil moisture, the most essential element for
+wood production; a close stand of suitable kinds of trees secures this
+shading and prevents the surface evaporation of soil moisture, making
+it available for wood production. But a close stand also cuts off side
+light and confines the lateral growing space, and hence prevents the
+development of side branches and forces the growth energy of the soil
+to expend itself in height growth; the crown is carried up, and long,
+cylindrical shafts, clear of branches, are developed; a close stand
+thus secures desirable form and quality. Yet, since the quality of
+wood production or accretion (other things being equal) is in direct
+proportion to the amount of foliage and the available light, and since
+an open position promotes the development of a larger crown and of
+more foliage, an open stand tends to secure a larger amount of wood
+accretion on each tree. On the other hand, a tree grown in the open,
+besides producing more branches, deposits a larger proportion of wood
+at The base, so that the shape of the bole becomes more conical, a
+form which in sawing proves unprofitable; whereas a tree grown in the
+dense forest both lengthens its shaft at the expense of branch growth
+and makes a more even deposit of wood over the whole trunk, thus
+attaining a more cylindrical form. While, then, the total amount of
+wood production per acre may be as large in a close stand of trees as
+in an open one (within limits), the distribution of this amount among
+a larger or smaller number of individual trees produces different
+results in the quality of the crop. And since the size of a tree or log
+is important in determining its usefulness and value, the sooner the
+individual trees reach useful size, without suffering in other points
+of quality, the more profitable the whole crop.
+
+
+NUMBER OF TREES PER ACRE.
+
+The care of the forester, then, should be to maintain the smallest
+number of individuals on the ground which will secure the greatest
+amount of wood growth in the most desirable form of which the soil and
+climate are capable, without deteriorating the soil conditions. He
+tries to secure the most advantageous individual development of single
+trees without suffering the disadvantages resulting from too open
+stand. The solution of this problem requires the greatest skill and
+judgment, and rules can hardly be formulated with precision, since for
+every species or combination of species and conditions these rules must
+be modified.
+
+In a well-established young crop the number of seedlings per acre
+varies greatly, from 3,000 to 100,000, according to soil, species, and
+the manner in which it originated, whether planted, sown, or seeded
+naturally.[3] Left to themselves, the seedlings, as they develop, begin
+to crowd each other. At first this crowding results only in increasing
+the height growth and in preventing the spread and full development
+of side branches; by and by the lower branches failing to receive
+sufficient light finally die and break off--the shaft "clears itself."
+Then a distinct development of definite crowns takes place, and after
+some years a difference of height growth in different individuals
+becomes marked. Not a few trees fail to reach the general upper crown
+surface, and, being more or less overtopped, we can readily classify
+them according to height and development of crown, the superior or
+"dominating" ones growing more and more vigorously, the inferior or
+"dominated" trees falling more and more behind, and finally dying for
+lack of light, and thus a natural reduction in numbers, or thinning,
+takes place. This natural thinning goes on with varying rates at
+different ages continuing through the entire life of the crop, so
+that, while only 4,000 trees per acre may be required in the tenth
+year to make a dense crown cover or normally close stand, untouched by
+man, in the fortieth year 1,200 would suffice to make the same dense
+cover, in the eightieth year 350 would be a full stand, and in the one
+hundredth not more than 250, according to soil and species, more or
+less. As we can discern three stages in the development of a single
+tree--the juvenile, adolescent, and mature--so, in the development
+of a forest growth, we may distinguish three corresponding stages,
+namely, the "thicket" or brushwood, the "pole-wood" or sapling, and
+the "timber" stage. During The thicket stage, in which the trees have
+a bushy appearance, allowing hardly any distinction of stem and crown,
+the height growth is most rapid. This period may last, according to
+conditions and species, from 5 or 10 to 30 and even 40 years--longer on
+poor soils and with shade-enduring species, shorter with light-needing
+species on good soils--and, while it lasts, it is in the interest of
+the wood grower to maintain the close stand, which produces the long
+shaft, clear of branches, on which at a later period the wood that
+makes valuable, clear timber, may accumulate. Form development is now
+most important. The lower branches are to die and break off before they
+become too large. (See illustrations of the progress of "clearing,"
+on pp. 15 and 16.) With light-needing species and with deciduous
+trees generally this dying off is accomplished more easily than with
+conifers. The spruces and even the white pine require very dense
+shading to "clear" the shaft. During this period it is only necessary
+to weed out the undesirable kinds, such as trees infested by insect
+and fungus, shrubs, sickly, stunted, or bushy trees which are apt to
+overtop and prevent the development of their better neighbors. In
+short, our attention is now devoted mainly to improving the composition
+of the crop.
+
+[3] If the crop does not, at 3 to 5 years of age, shade the ground
+well, with a complete crown cover, or canopy, it can not be said to be
+well established and should be filled out by planting.
+
+
+WEEDING AND CLEANING THE CROP.
+
+This weeding or cleaning is easily done with shears when the crop is
+from 3 to 5 years old. Later, mere cutting back of the undesirable
+trees with a knife or hatchet maybe practiced. In well-made artificial
+plantations this weeding is rarely needed until about the eighth or
+tenth year. But in natural growths the young crop is sometimes so dense
+as to inordinately interfere with the development of the individual
+trees. The stems then remain so slender that there is danger of their
+being bent or broken by storm or snow when the growth is thinned out
+later. In such cases timely thinning is indicated to stimulate more
+rapid development of the rest of the crop. This can be done most
+cheaply by cutting swaths or lanes one yard wide and us far apart
+through the crop, leaving strips standing. The outer trees of the
+strip, at least, will then shoot ahead and become the main crop. These
+weeding or improvement cuttings, which must be made gradually and be
+repeated every two or three years, are best performed during the summer
+months, or in August and September, when it is easy to judge what
+should be taken out.
+
+
+METHODS OF THINNING.
+
+During the "thicket" stage, then, which may last from 10 to 25 and
+more years, the crop is gradually brought into proper composition and
+condition. When the "pole-wood" stage is reached, most of the saplings
+being now from 3 to 6 inches in diameter and from 15 to 25 feet in
+height, the variation in sizes and in appearance becomes more and more
+marked. Some of the taller trees begin to show a long, clear shaft and
+a definite crown. The trees can be more or less readily classified
+into height and size classes. The rate at which the height growth has
+progressed begins to fall off and diameter growth increases. Now comes
+the time when attention must be given to increasing this diameter
+growth by reducing the number of individuals and thus having all the
+wood which the soil can produce deposited on fewer individuals. This
+is done by judicious and often repeated thinning, taking out some of
+the trees and thereby giving more light and increasing the foliage of
+those remaining; and as the crowns expand, so do the trunks increase
+their diameter in direct proportion. These thinnings must, however, be
+made cautiously lest at the same time the soil is exposed too much, or
+the branch growth of those trees which are to become timber wood is
+too much stimulated. So varying are the conditions to be considered,
+according to soil, site, species, and development of the crop, that it
+is well-nigh impossible, without a long and detailed discussion, to
+lay down rules for the proper procedure. In addition the opinions of
+authorities differ largely both as to manner and degree of thinning,
+the old school advising moderate, and the new school severer thinnings.
+
+For the farmer, who can give personal attention to detail and whose
+object is to grow a variety of sizes and kinds of wood, the following
+general method may perhaps be most useful:
+
+First determine which trees are to be treated as the main crop or
+"final harvest" crop. For this 300 to 500 trees per acre of the
+best grown and most useful kinds may be selected, which should be
+distributed as uniformly as possible over the acre. These, then--or
+as many as may live till the final harvest--are destined to grow into
+timber and are to form the special favorites as much as possible. They
+may at first be marked to insure recognition; later on they will be
+readily distinguished by their superior development The rest, which we
+will call the "subordinate" crop, is then to serve merely as filler,
+nurse, and soil cover.
+
+
+WHAT TREES TO REMOVE.
+
+It is now necessary, by careful observation of the surroundings of
+each of the "final harvest" crop trees, or "superiors," as we may call
+them, to determine what trees of the "subordinate" crop trees, or
+"inferiors," must be removed. All nurse trees that threaten to overtop
+the superiors must either be cut out or cut back and topped, if that
+is practicable, so that the crown of the superiors can develop freely.
+Those that are only narrowing in the superiors from the side, without
+preventing their free top development, need not be interfered with,
+especially while they are still useful in preventing the formation and
+spreading of side branches on the superiors. As soon as the latter
+have fully cleared their shafts, these crowding inferiors must be
+removed. Care must be taken, however, not to remove too many at a time,
+thus opening the crown cover too severely and thereby exposing the
+soil to the drying influence of the sun. Gradually, as the crowns of
+inferiors standing farther away begin to interfere with those of the
+superiors, the inferiors are removed, and thus the full effect of the
+light is secured in the accretion of the main harvest crop; at the same
+time the branch growth has been prevented and the soil has been kept
+shaded. Meanwhile thinnings may also be made in the subordinate crop,
+in order to secure also the most material from this part of the crop.
+This is done by cutting out all trees that threaten to be killed by
+their neighbors. In this way many a useful stick is saved and the dead
+material, only good for firewood, lessened. It is evident that trees
+which in the struggle for existence have fallen behind, so as to be
+overtopped by their neighbors, can not, either by their presence or by
+their removal, influence the remaining growth. They are removed only in
+order to utilize their wood before it decays.
+
+It may be well to remark again that an undergrowth of woody plants
+interferes in no way with the development of the main crop, but, on
+the contrary, aids by its shade in preserving favorable moisture
+conditions. Its existence, however, shows in most cases that the crown
+cover is not as dense as it should be, and hence that thinning is not
+required. Grass and weed growth, on the other hand, is emphatically
+disadvantageous and shows that the crown cover is dangerously open.
+
+The answer to the three questions, When to begin the thinnings, How
+severely to thin, and How often to repeat the operation, must always
+depend upon the varying appearance of the growth and the necessities
+in each case. The first necessity for interference may arise with
+light-needing species as early as the twelfth or fifteenth year; with
+shade-enduring, not before the twentieth or twenty-fifth year. The
+necessary severity of the thinning and the repetition are somewhat
+interdependent. It is better to thin carefully and repeat the operation
+oftener than to open up so severely at once as to jeopardize the soil
+conditions. Especially in younger growths and on poorer soil, it is
+best never to open a continuous crown cover so that it could not close
+up again within 3 to 5 years; rather repeat the operation oftener.
+Later, when the trees have attained heights of 50 to 60 feet and clear
+boles (which may be in 40 to 50 years, according to soil and kind) the
+thinning may be more severe, so as to require repetition only every 6
+to 10 years.
+
+The condition of the crown cover, then, is the criterion which directs
+the ax. As soon as the crowns again touch or interlace, the time has
+arrived to thin again. In mixed growths it must not be overlooked that
+light-needing species must be specially protected against shadier
+neighbors. Shade-enduring trees, such as the spruces, beech, sugar
+maple, and hickories, bear overtopping for a time and will then grow
+vigorously when more light is given, while light-needing species, like
+the pines, larch, oaks, and ash, when once suppressed, may never be
+able to recover.
+
+Particular attention is called to the necessity of leaving a rather
+denser "wind mantle" all around small groves. In this part of the
+grove the thinning must be less severe, unless coniferous trees on the
+outside can be encouraged by severe thinning to hold their branches low
+down, thus increasing their value as wind-breaks.
+
+The thinnings, then, while giving to the "final harvest" crop all the
+advantage of light for promoting its rapid development into serviceable
+timber size, furnish also better material from the subordinate crop.
+At 60 to 70 years of age the latter may have been entirely removed and
+only the originally selected "superiors" remain on the ground, or as
+many of them as have not died and been removed; 250 to 400 of these
+per acre will make a perfect stand of most valuable form and size,
+ready for the final harvest, which should be made as indicated in the
+preceding chapter.
+
+
+
+
+5.--THE RELATION OF FORESTS TO FARMS.
+
+
+That all things in nature are related to each other and interdependent
+is a common saying, a fact doubted by nobody, yet often forgotten or
+neglected in practical life. The reason is partly indifference and
+partly ignorance as to the actual nature of the relationship; hence we
+suffer, deservedly or not.
+
+The farmer's business, more than any other, perhaps, depends for
+its success upon a true estimate of and careful regard for this
+inter-relation, he adapts his crop to the nature of the soil, the
+manner of its cultivation to the changes of the seasons, and altogether
+he shapes conditions and places them in their proper relations to each
+other and adapts himself to them.
+
+Soil, moisture, and heat are the three factors which, if properly
+related and utilized, combine to produce his crops. In some directions
+he can control these factors more or less readily; in others they are
+withdrawn from his immediate influence, and he is seemingly helpless.
+He can maintain the fertility of the soil by manuring, by proper
+rotation of crops, and by deep culture; he can remove surplus moisture
+by ditching and draining; he can, by irrigation systems, bring water
+to his crops, and by timely cultivation prevent excessive evaporation,
+thereby rendering more water available to the crop; but he can not
+control the rainfall nor the temperature changes of the seasons. Recent
+attempts to control the rainfall by direct means exhibit one of the
+greatest follies and misconceptions of natural forces we have witnessed
+during this age. Nevertheless, by indirect means the farmer has it
+in his power to exercise much greater control over these forces than
+he has attempted hitherto. He can prevent or reduce the unfavorable
+effects of temperature changes; he can increase the available water
+supplies, and prevent the evil effects of excessive rainfall; he can so
+manage the waters which fall as to get the most benefit from them and
+avoid the harm which they are able to inflict.
+
+Before attempting to control the rainfall itself by artifice, we should
+study how to secure the best use of that which falls, as it comes
+within reach of human agencies and becomes available by natural causes.
+
+How poorly we understand the use of these water supplies is evidenced
+yearly by destructive freshets and floods, with the accompanying
+washing of soil, followed by droughts, low waters, and deterioration of
+agricultural lands. It is claimed that annually in the United States
+about 200 square miles of fertile soil are washed into brooks and
+rivers, a loss of soil capital which can not be repaired for centuries.
+At the same time millions of dollars are appropriated yearly in the
+river and harbor bills to dig out the lost farms from the rivers,
+and many thousands of dollars' worth of crops and other property are
+destroyed by floods and overflows; not to count the large loss from
+droughts which this country suffers yearly in one part or the other,
+and which, undoubtedly, could be largely avoided, if we knew how to
+manage the available water supplies.
+
+The regulation, proper distribution, and utilization of the rain waters
+in humid as well as in arid regions--water management--is to be the
+great problem of successful-agriculture in the future.
+
+One of the most powerful means for such water management lies in the
+proper distribution and maintenance of forest areas. Nay, we can say
+that the most successful water management is not possible without
+forest management.
+
+
+THE FOREST WATERS THE FARM.
+
+Whether forests increase the amount of precipitation within or near
+their limits is still an open question, although there are indications
+that under certain conditions large, dense forest areas may have such
+an effect. At any rate, the water transpired by the foliage is certain,
+in some degree, to increase the relative humidity near the forest,
+and thereby increase directly or indirectly the water supplies in its
+neighborhood. This much we can assert, also, that while extended plains
+and fields, heated by the sun, and hence giving rise to warm currents
+of air, have the tendency to prevent condensation of the passing
+moisture-bearing currents, forest areas, with their cooler, moister air
+strata, do not have such a tendency, and local showers may therefore
+become more frequent in their neighborhood. But, though no increase in
+the amount of rainfall may be secured by forest areas, the availability
+of whatever falls is increased for the locality by a well-kept and
+properly located forest growth. The foliage, twigs, and branches break
+the fall of the raindrops, and so does the litter of the forest floor,
+hence the soil under this cover is not compacted as in the open field,
+but kept loose and granular, so that the water can readily penetrate
+and percolate; the water thus reaches the ground more slowly, dripping
+gradually from the leaves, branches, and trunks, and allowing more time
+for it to sink into the soil. This percolation is also made easier by
+the channels along the many roots. Similarly, on account of the open
+structure of the soil and the slower melting of the snow under a forest
+cover in spring, where it lies a fortnight to a month longer than in
+exposed positions and melts with less waste from evaporation, the snow
+waters more fully penetrate the ground. Again, more snow is caught and
+preserved under the forest cover than on the wind-swept fields and
+prairies.
+
+All these conditions operate together, with the result that larger
+amounts of the water sink into the forest soil and to greater depths
+than in open fields. This moisture is conserved because of the reduced
+evaporation in the cool and still forest air, being protected from
+the two great moisture-dissipating agents, sun and wind. By these
+conditions alone the water supplies available in the soil are increased
+from 50 to 60 per cent over those available on the open field.
+Owing to those two causes, then--increased percolation and decreased
+evaporation--larger amounts of moisture become available to feed the
+springs and subsoil waters, and these become finally available to the
+farm, if the forest is located at a higher elevation than the field.
+The great importance of the subsoil water especially and the influence
+of forest areas upon it has so far received too little attention and
+appreciation. It is the subsoil water that is capable of supplying the
+needed moisture in times of drought.
+
+
+THE FOREST TEMPERS THE FARM.
+
+Another method by which a forest belt becomes a conservator of moisture
+lies in its wind-breaking capacity, by which both velocity and
+temperature of winds are modified and evaporation from the fields to
+the leeward is reduced.
+
+On the prairie, wind-swept every day and every hour, the farmer has
+learned to plant a wind-break around his buildings and orchards, often
+only a single-row of trees, and finds even that a desirable shelter,
+tempering both the hot winds of summer and the cold blasts of winter.
+The fields he usually leaves unprotected; yet a wind-break around his
+crops to the windward would bring him increased yield, and a timber
+belt would act still more effectively. Says a farmer from Illinois:
+
+  My experience is that now in cold and stormy winters fields protected
+  by timber belts yield full crops, while fields not protected yield
+  only one-third of a crop. Twenty-five or thirty years ago we never
+  had any wheat killed by winter frost, and every year we had a full
+  crop of peaches, which is now very rare. At that time we had plenty
+  of timber around our fields and orchards, now cleared away.
+
+Not only is the temperature of the winds modified by passing over
+and through the shaded and cooler spaces of protecting timber bolts
+disposed toward the windward and alternating with the fields, but their
+velocity is broken and moderated, and since with reduced velocity the
+evaporative power of the winds is very greatly reduced, so more water
+is left available for crops. Every foot in height of a forest growth
+will protect 1 rod in distance, and several bolts in succession would
+probably greatly increase the effective distance. By preventing deep
+freezing of the soil the winter cold is not so much prolonged, and
+the frequent fogs and mists that hover near forest areas prevent many
+frosts. That stock will thrive better where it can find protection from
+the cold blasts of winter and from the heat of the sun in summer is a
+well-established fact.
+
+
+THE FOREST PROTECTS THE FARM.
+
+On the sandy plains, where the winds are apt to blow the sand, shifting
+it hither and thither, a forest belt to the windward is the only means
+to keep the farm protected.
+
+In the mountain and hill country the farms are apt to suffer from
+heavy rains washing away the soil. Where the tops and slopes are
+bared of their forest cover, the litter of the forest floor burnt up,
+the soil trampled and compacted by cattle and by the patter of the
+raindrops, the water can not penetrate the soil readily, but is earned
+off superficially, especially when the soil is of, day and naturally
+compact. As a result the waters, rushing over the surface down the
+hill, run together in rivulets and streams and acquire such a force as
+to be able to move loose particles and even stones; the ground becomes
+furrowed with gullies and runs; the fertile soil is washed away; the
+fields below are covered with silt; the roads are damaged; the water
+courses tear their banks, and later run dry because the waters that
+should feed them by subterranean channels have been carried away in the
+flood.
+
+The forest cover on the hilltops and steep hillsides which are not fit
+for cultivation prevents this erosive action of the waters by the same
+influence by which it increases available water supplies. The important
+effects of a forest cover, then, are retention of larger quantities of
+water and carrying them off under ground and giving them up gradually,
+thus extending the time of their usefulness and preventing their
+destructive action.
+
+In order to be thoroughly effective, the forest growth must be
+dense, and, especially, the forest floor must not be robbed of its
+accumulations of foliage, surface mulch and litter, or its underbrush
+by fire, nor must it be compacted by the trampling of cattle.
+
+On the gentler slopes, which are devoted to cultivation, methods of
+underdraining, such as horizontal ditches partly filled with stones and
+covered with soil, terracing, and contour plowing, deep cultivation,
+sodding, and proper rotation of crops, must be employed to prevent
+damage from surface waters.
+
+
+THE FOREST SUPPLIES THE FARM WITH USEFUL MATERIAL.
+
+All the benefits derived from the favorable influence of forest bolts
+upon water conditions can be had without losing any of the useful
+material that the forest produces. The forest grows to be cut and to be
+utilized; it is a crop to be harvested. It is a crop which, if properly
+managed, does not need to be replanted; it reproduces itself.
+
+When once established, the ax, if properly guided by skillful hands, is
+the only tool necessary to cultivate it and to reproduce it. There is
+no necessity of planting unless the wood lot has been mismanaged.
+
+The wood lot, then, if properly managed, is not only the guardian of
+the farm, but it is the savings bank from which fair interest can be
+annually drawn, utilizing for the purpose the poorest part of the farm.
+Nor does the wood lot require much attention; it is to the farm what
+the workbasket is to the good housewife--a means with which improve
+the odds and ends of time, especially during the winter, when other
+farm business is at a standstill.
+
+It may be added that the material which the farmer can secure from the
+wood lot, besides the other advantages recited above, is of far greater
+importance and value than is generally admitted.
+
+On a well-regulated farm of 160 acres, with its 4 miles and more
+of fencing and with its wood fires in range and stove, at least 25
+cords of wood are required annually, besides material for repair of
+buildings, or altogether the annual product of probably 40 to 50 acres
+of well-stocked forest is needed. The product may represent, according
+to location, an actual stumpage value of from $1 to $3 per acre, a sure
+crop coming every year without regard to weather, without trouble and
+work, and raised on the poorest part of the farm. It is questionable
+whether such net results could be secured with the same steadiness from
+any other crop. Nor must it be overlooked that the work in harvesting
+this crop falls into a time when little else could be done.
+
+Wire fences and coal fires are, no doubt, good substitutes, but they
+require ready cash, and often the distance of haulage makes them
+rather expensive. Presently, too, when the virgin woods have been
+still further culled of their valuable stores, the farmer who has
+preserved a sufficiently large and well-tended wood lot will be able
+to derive a comfortable money revenue from it by supplying the market
+with wood of various kinds and sizes. The German State forests, with
+their complicated administrations, which eat up 4 per cent of the gross
+income, yield, with prices of wood about the same as in our country,
+an annual net revenue of from $1 to $4 and more per acre. Why should
+not the farmer, who does not pay salaries to managers, overseers, and
+forest guards, make at least as much money out of this crop when he is
+within reach of a market?
+
+With varying conditions the methods would of course vary. In a general
+way, if he happens to have a virgin growth of mixed woods, the first
+care would be to improve the composition of the wood lot by cutting
+out the less desirable kinds, the weeds of tree growth, and the poorly
+grown trees which impede the development of more deserving neighbors.
+
+The wood thus cut he will use as firewood or in any other way, and,
+even if he could not use it at all, and had to burn it up, the
+operation would pay indirectly by leaving him a better crop. Then he
+may use the rest of the crop, gradually cutting the trees as needed,
+but he must take care that the openings are not made too large, so
+that they can readily fill out with young growth from the seed of
+the remaining trees, and he must also pay attention to the young
+aftergrowth, giving it light as needed. Thus without ever resorting to
+planting he may harvest the old timber and have a now crop taking its
+place and perpetuate the wood lot without in any way curtailing his use
+of the same.
+
+
+FARMERS' BULLETINS.
+
+These bulletins are sent free of charge to any address upon application
+to the Secretary of Agriculture. Washington, D. C. Only the following
+are available for distribution:
+
+
+  No. 15. Some Destructive Potato Diseases: What They Are and How to
+            Prevent Thorn. Pp. 8.
+  No. 16. Leguminous Plants for Green Manuring and for Feeding. Pp. 24.
+  No. 18. Forage Plants for the South. Pp. 30.
+  No. 19. Important Insecticides: Directions For Their Preparation
+            and Use. Pp. 20.
+  No. 21. Barnyard Manure. Pp. 32.
+  No. 22. Feeding Farm Animals. Pp. 32.
+  No. 23. Foods: Nutritive Value and Cost. Pp. 32.
+  No. 24. Hog Cholera and Swine Plague. Pp. 16.
+  No. 25. Peanuts: Culture and Uses. Pp. 24.
+  No. 26. Sweet Potatoes: Culture and Uses. Pp. 30.
+  No. 27. Flax for Seed and Fiber. Pp. 16.
+  No. 28. Weeds; and How to Kill Them. Pp. 30.
+  No. 29. Souring of Milk, and Other Changes in Milk Products. Pp. 28.
+  No. 30. Grape Diseases on the Pacific Coast. Pp. 16.
+  No. 31. Alfalfa, or Lucern. Pp. 23.
+  No. 32. Silos and Silage. Pp. 31.
+  No. 33. Peach Growing for Market. Pp. 24.
+  No. 34. Meats: Composition and Cooking. Pp. 29.
+  No. 35. Potato Culture. Pp. 23.
+  No. 36. Cotton Seed and Its Products. Pp. 10.
+  No. 37. Katir Corn: Characteristics, Culture, and Uses. Pp. 12.
+  No. 38. Spraying for Fruit Diseases. Pp. 12.
+  No. 39. Onion Culture. Pp. 31.
+  No. 40. Farm Drainage. Pp. 24.
+  No. 41. Fowls: Care and Feeding. Pp. 24.
+  No. 42. Facts About Milk. Pp. 29.
+  No. 43. Sewage Disposal on the Farm. Pp. 22.
+  No. 44. Commercial Fertilizers. Pp. 24.
+  No. 45. Some Insects Injurious to Stored Grain. Pp. 32.
+  No. 46. Irrigation in Humid Climates. Pp. 27.
+  No. 47. Insects Affecting the Cotton Plant. Pp. 32.
+  No. 48. The Manuring of Cotton. Pp. 10.
+  No. 49. Sheep Feeding. Pp. 24.
+  No. 50. Sorghum as a Forage Crop. Pp. 24.
+  No. 51. Standard Varieties of Chickens. Pp. 48.
+  No. 52. The Sugar Beet. Pp. 48.
+  No. 53. How to Grow Mushrooms. Pp. 20.
+  No. 54. Some Common Birds in Their Relation to Agriculture. Pp. 40.
+  No. 55. The Dairy Herd: Its Formation and Management. Pp. 24.
+  No. 56. Experiment Station Work--I. Pp. 30.
+  No. 57. Butter Making on the Farm. Pp. 15.
+  No. 58. The Soy Bean as a Forage Crop. Pp. 24.
+  No. 59. Bee Keeping. Pp. 32.
+  No. 60. Methods of Curing Tobacco. Pp. 10.
+  No. 61. Asparagus Culture. Pp. 40.
+  No. 62. Marketing Farm Produce. Pp. 28.
+  No. 63. Care of Milk on the Farm. Pp. 40.
+  No. 64. Ducks and Geese. Pp. 48.
+  No. 65. Experiment Station Work--II. Pp. 32.
+  No. 66. Meadows and Pastures. Pp. 24.
+  No. 67. Forestry for Farmers. Pp. 48.
+  No. 68. The Black Rot of the Cabbage. Pp. 22.
+  No. 69. Experiment Station Work--III. Pp. 32.
+  No. 70. The Principal Insect Enemies of the Grape. Pp. 24.
+  No. 71. Some Essentials of Beef Production. Pp. 24.
+  No. 72. Cattle Ranges of the Southwest. Pp. 32.
+  No. 73. Experiment Station Work--IV. Pp. 32.
+  No. 74. Milk as Food. Pp. 39.
+  No. 75. The Grain Smuts. Pp. 20.
+  No. 76. Tomato Growing. Pp. 30.
+  No. 77. The Liming of Soils. Pp. 19.
+  No. 78. Experiment Station Work--V. Pp. 32.
+  No. 79. Experiment Station Work--VI. Pp. 28.
+  No. 80. The Peach Twig-borer--an Important Enemy of Stone Fruits. Pp. 10.
+  No. 81. Corn Culture in the South. Pp. 24.
+  No. 82. The Culture of Tobacco. Pp. 23.
+  No. 83. Tobacco Soils. Pp. 23.
+  No. 84. Experiment Station Work--VII. Pp. 82.
+  No. 85. Fish as Food. Pp. 30.
+  No. 86. Thirty Poisonous Plants. Pp. 32.
+  No. 87. Experiment Station Work--VIII. (In press.)
+  No. 88. Alkali Lands. Pp. 23.
+  No. 89. Cowpeas. (In press.)
+
+
+       *       *       *       *       *
+
+
+Transcriber Note
+
+Illustrations were move so a to prevent splitting paragraphs. Minor
+typos corrected. Illustrations were obtained from the The Internet
+Archive and the University of North Texas' USDA Farmers' Bulletins
+Digital Library.
+
+
+
+
+
+
+
+End of the Project Gutenberg EBook of USDA Farmers' Bulletin No. 67, by 
+Bernhard E. Fernow
+
+*** END OF THIS PROJECT GUTENBERG EBOOK USDA FARMERS' BULLETIN NO. 67 ***
+
+***** This file should be named 62686-8.txt or 62686-8.zip *****
+This and all associated files of various formats will be found in:
+        http://www.gutenberg.org/6/2/6/8/62686/
+
+Produced by Tom Cosmas
+Updated editions will replace the previous one--the old editions will
+be renamed.
+
+Creating the works from print editions not protected by U.S. copyright
+law means that no one owns a United States copyright in these works,
+so the Foundation (and you!) can copy and distribute it in the United
+States without permission and without paying copyright
+royalties. Special rules, set forth in the General Terms of Use part
+of this license, apply to copying and distributing Project
+Gutenberg-tm electronic works to protect the PROJECT GUTENBERG-tm
+concept and trademark. Project Gutenberg is a registered trademark,
+and may not be used if you charge for the eBooks, unless you receive
+specific permission. If you do not charge anything for copies of this
+eBook, complying with the rules is very easy. You may use this eBook
+for nearly any purpose such as creation of derivative works, reports,
+performances and research. They may be modified and printed and given
+away--you may do practically ANYTHING in the United States with eBooks
+not protected by U.S. copyright law. Redistribution is subject to the
+trademark license, especially commercial redistribution.
+
+START: FULL LICENSE
+
+THE FULL PROJECT GUTENBERG LICENSE
+PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+
+To protect the Project Gutenberg-tm mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase "Project
+Gutenberg"), you agree to comply with all the terms of the Full
+Project Gutenberg-tm License available with this file or online at
+www.gutenberg.org/license.
+
+Section 1. General Terms of Use and Redistributing Project
+Gutenberg-tm electronic works
+
+1.A. By reading or using any part of this Project Gutenberg-tm
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement. If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or
+destroy all copies of Project Gutenberg-tm electronic works in your
+possession. If you paid a fee for obtaining a copy of or access to a
+Project Gutenberg-tm electronic work and you do not agree to be bound
+by the terms of this agreement, you may obtain a refund from the
+person or entity to whom you paid the fee as set forth in paragraph
+1.E.8.
+
+1.B. "Project Gutenberg" is a registered trademark. It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement. There are a few
+things that you can do with most Project Gutenberg-tm electronic works
+even without complying with the full terms of this agreement. See
+paragraph 1.C below. There are a lot of things you can do with Project
+Gutenberg-tm electronic works if you follow the terms of this
+agreement and help preserve free future access to Project Gutenberg-tm
+electronic works. See paragraph 1.E below.
+
+1.C. The Project Gutenberg Literary Archive Foundation ("the
+Foundation" or PGLAF), owns a compilation copyright in the collection
+of Project Gutenberg-tm electronic works. Nearly all the individual
+works in the collection are in the public domain in the United
+States. If an individual work is unprotected by copyright law in the
+United States and you are located in the United States, we do not
+claim a right to prevent you from copying, distributing, performing,
+displaying or creating derivative works based on the work as long as
+all references to Project Gutenberg are removed. Of course, we hope
+that you will support the Project Gutenberg-tm mission of promoting
+free access to electronic works by freely sharing Project Gutenberg-tm
+works in compliance with the terms of this agreement for keeping the
+Project Gutenberg-tm name associated with the work. You can easily
+comply with the terms of this agreement by keeping this work in the
+same format with its attached full Project Gutenberg-tm License when
+you share it without charge with others.
+
+1.D. The copyright laws of the place where you are located also govern
+what you can do with this work. Copyright laws in most countries are
+in a constant state of change. If you are outside the United States,
+check the laws of your country in addition to the terms of this
+agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg-tm work. The Foundation makes no
+representations concerning the copyright status of any work in any
+country outside the United States.
+
+1.E. Unless you have removed all references to Project Gutenberg:
+
+1.E.1. The following sentence, with active links to, or other
+immediate access to, the full Project Gutenberg-tm License must appear
+prominently whenever any copy of a Project Gutenberg-tm work (any work
+on which the phrase "Project Gutenberg" appears, or with which the
+phrase "Project Gutenberg" is associated) is accessed, displayed,
+performed, viewed, copied or distributed:
+
+  This eBook is for the use of anyone anywhere in the United States and
+  most other parts of the world at no cost and with almost no
+  restrictions whatsoever. You may copy it, give it away or re-use it
+  under the terms of the Project Gutenberg License included with this
+  eBook or online at www.gutenberg.org. If you are not located in the
+  United States, you'll have to check the laws of the country where you
+  are located before using this ebook.
+
+1.E.2. If an individual Project Gutenberg-tm electronic work is
+derived from texts not protected by U.S. copyright law (does not
+contain a notice indicating that it is posted with permission of the
+copyright holder), the work can be copied and distributed to anyone in
+the United States without paying any fees or charges. If you are
+redistributing or providing access to a work with the phrase "Project
+Gutenberg" associated with or appearing on the work, you must comply
+either with the requirements of paragraphs 1.E.1 through 1.E.7 or
+obtain permission for the use of the work and the Project Gutenberg-tm
+trademark as set forth in paragraphs 1.E.8 or 1.E.9.
+
+1.E.3. If an individual Project Gutenberg-tm electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any
+additional terms imposed by the copyright holder. Additional terms
+will be linked to the Project Gutenberg-tm License for all works
+posted with the permission of the copyright holder found at the
+beginning of this work.
+
+1.E.4. Do not unlink or detach or remove the full Project Gutenberg-tm
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg-tm.
+
+1.E.5. Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg-tm License.
+
+1.E.6. You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including
+any word processing or hypertext form. However, if you provide access
+to or distribute copies of a Project Gutenberg-tm work in a format
+other than "Plain Vanilla ASCII" or other format used in the official
+version posted on the official Project Gutenberg-tm web site
+(www.gutenberg.org), you must, at no additional cost, fee or expense
+to the user, provide a copy, a means of exporting a copy, or a means
+of obtaining a copy upon request, of the work in its original "Plain
+Vanilla ASCII" or other form. Any alternate format must include the
+full Project Gutenberg-tm License as specified in paragraph 1.E.1.
+
+1.E.7. Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg-tm works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+
+1.E.8. You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg-tm electronic works
+provided that
+
+* You pay a royalty fee of 20% of the gross profits you derive from
+  the use of Project Gutenberg-tm works calculated using the method
+  you already use to calculate your applicable taxes. The fee is owed
+  to the owner of the Project Gutenberg-tm trademark, but he has
+  agreed to donate royalties under this paragraph to the Project
+  Gutenberg Literary Archive Foundation. Royalty payments must be paid
+  within 60 days following each date on which you prepare (or are
+  legally required to prepare) your periodic tax returns. Royalty
+  payments should be clearly marked as such and sent to the Project
+  Gutenberg Literary Archive Foundation at the address specified in
+  Section 4, "Information about donations to the Project Gutenberg
+  Literary Archive Foundation."
+
+* You provide a full refund of any money paid by a user who notifies
+  you in writing (or by e-mail) within 30 days of receipt that s/he
+  does not agree to the terms of the full Project Gutenberg-tm
+  License. You must require such a user to return or destroy all
+  copies of the works possessed in a physical medium and discontinue
+  all use of and all access to other copies of Project Gutenberg-tm
+  works.
+
+* You provide, in accordance with paragraph 1.F.3, a full refund of
+  any money paid for a work or a replacement copy, if a defect in the
+  electronic work is discovered and reported to you within 90 days of
+  receipt of the work.
+
+* You comply with all other terms of this agreement for free
+  distribution of Project Gutenberg-tm works.
+
+1.E.9. If you wish to charge a fee or distribute a Project
+Gutenberg-tm electronic work or group of works on different terms than
+are set forth in this agreement, you must obtain permission in writing
+from both the Project Gutenberg Literary Archive Foundation and The
+Project Gutenberg Trademark LLC, the owner of the Project Gutenberg-tm
+trademark. Contact the Foundation as set forth in Section 3 below.
+
+1.F.
+
+1.F.1. Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+works not protected by U.S. copyright law in creating the Project
+Gutenberg-tm collection. Despite these efforts, Project Gutenberg-tm
+electronic works, and the medium on which they may be stored, may
+contain "Defects," such as, but not limited to, incomplete, inaccurate
+or corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged disk or
+other medium, a computer virus, or computer codes that damage or
+cannot be read by your equipment.
+
+1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the "Right
+of Replacement or Refund" described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg-tm trademark, and any other party distributing a Project
+Gutenberg-tm electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from. If you
+received the work on a physical medium, you must return the medium
+with your written explanation. The person or entity that provided you
+with the defective work may elect to provide a replacement copy in
+lieu of a refund. If you received the work electronically, the person
+or entity providing it to you may choose to give you a second
+opportunity to receive the work electronically in lieu of a refund. If
+the second copy is also defective, you may demand a refund in writing
+without further opportunities to fix the problem.
+
+1.F.4. Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you 'AS-IS', WITH NO
+OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
+
+1.F.5. Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of
+damages. If any disclaimer or limitation set forth in this agreement
+violates the law of the state applicable to this agreement, the
+agreement shall be interpreted to make the maximum disclaimer or
+limitation permitted by the applicable state law. The invalidity or
+unenforceability of any provision of this agreement shall not void the
+remaining provisions.
+
+1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg-tm electronic works in
+accordance with this agreement, and any volunteers associated with the
+production, promotion and distribution of Project Gutenberg-tm
+electronic works, harmless from all liability, costs and expenses,
+including legal fees, that arise directly or indirectly from any of
+the following which you do or cause to occur: (a) distribution of this
+or any Project Gutenberg-tm work, (b) alteration, modification, or
+additions or deletions to any Project Gutenberg-tm work, and (c) any
+Defect you cause.
+
+Section 2. Information about the Mission of Project Gutenberg-tm
+
+Project Gutenberg-tm is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of
+computers including obsolete, old, middle-aged and new computers. It
+exists because of the efforts of hundreds of volunteers and donations
+from people in all walks of life.
+
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg-tm's
+goals and ensuring that the Project Gutenberg-tm collection will
+remain freely available for generations to come. In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg-tm and future
+generations. To learn more about the Project Gutenberg Literary
+Archive Foundation and how your efforts and donations can help, see
+Sections 3 and 4 and the Foundation information page at
+www.gutenberg.org
+
+
+
+Section 3. Information about the Project Gutenberg Literary Archive Foundation
+
+The Project Gutenberg Literary Archive Foundation is a non profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service. The Foundation's EIN or federal tax identification
+number is 64-6221541. Contributions to the Project Gutenberg Literary
+Archive Foundation are tax deductible to the full extent permitted by
+U.S. federal laws and your state's laws.
+
+The Foundation's principal office is in Fairbanks, Alaska, with the
+mailing address: PO Box 750175, Fairbanks, AK 99775, but its
+volunteers and employees are scattered throughout numerous
+locations. Its business office is located at 809 North 1500 West, Salt
+Lake City, UT 84116, (801) 596-1887. Email contact links and up to
+date contact information can be found at the Foundation's web site and
+official page at www.gutenberg.org/contact
+
+For additional contact information:
+
+    Dr. Gregory B. Newby
+    Chief Executive and Director
+    gbnewby@pglaf.org
+
+Section 4. Information about Donations to the Project Gutenberg
+Literary Archive Foundation
+
+Project Gutenberg-tm depends upon and cannot survive without wide
+spread public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine readable form accessible by the widest
+array of equipment including outdated equipment. Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States. Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements. We do not solicit donations in locations
+where we have not received written confirmation of compliance. To SEND
+DONATIONS or determine the status of compliance for any particular
+state visit www.gutenberg.org/donate
+
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States. U.S. laws alone swamp our small staff.
+
+Please check the Project Gutenberg Web pages for current donation
+methods and addresses. Donations are accepted in a number of other
+ways including checks, online payments and credit card donations. To
+donate, please visit: www.gutenberg.org/donate
+
+Section 5. General Information About Project Gutenberg-tm electronic works.
+
+Professor Michael S. Hart was the originator of the Project
+Gutenberg-tm concept of a library of electronic works that could be
+freely shared with anyone. For forty years, he produced and
+distributed Project Gutenberg-tm eBooks with only a loose network of
+volunteer support.
+
+Project Gutenberg-tm eBooks are often created from several printed
+editions, all of which are confirmed as not protected by copyright in
+the U.S. unless a copyright notice is included. Thus, we do not
+necessarily keep eBooks in compliance with any particular paper
+edition.
+
+Most people start at our Web site which has the main PG search
+facility: www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.

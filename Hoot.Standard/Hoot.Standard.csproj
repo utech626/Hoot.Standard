@@ -6,16 +6,17 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <RootNamespace>RaptorDB</RootNamespace>
-    <Version>5.0.0</Version>
+    <Version>5.1.1</Version>
     <Authors>Bob Brown, Mehdi Gholam</Authors>
     <Company>UltraTech Web Solutions</Company>
     <Description>Smallest full text search engine (lucene replacement) built from scratch using inverted WAH bitmap index, highly compact storage, operating in database and document modes
 Ported to .NET Standard from original project by Mehdi Gholam</Description>
     <Copyright>Copyright (c) 2020 UltraTech Web Solutions, 2014 Mehdi Gholam,</Copyright>
     <Product>hOOt Full Text Indexer</Product>
-    <PackageProjectUrl>http://www.codeproject.com/Articles/224722/hOOt-full-text-search-engine</PackageProjectUrl>
-    <AssemblyVersion>5.0.7512.20208</AssemblyVersion>
-    <FileVersion>5.0.7512.20208</FileVersion>
+    <PackageProjectUrl>https://github.com/utech626/Hoot.Standard</PackageProjectUrl>
+    <AssemblyVersion>5.1.0801.2020</AssemblyVersion>
+    <FileVersion>5.1.0801.2020</FileVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -50,5 +51,7 @@ Ported to .NET Standard from original project by Mehdi Gholam</Description>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties BuildVersion_BuildVersioningStyle="None.None.DeltaBaseYearDayOfYear.YearMonthDayStamp" BuildVersion_IncrementBeforeBuild="False" BuildVersion_ReplaceNonNumerics="False" BuildVersion_StartDate="" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_UseUniversalClock="" /></VisualStudio></ProjectExtensions>
 
 </Project>

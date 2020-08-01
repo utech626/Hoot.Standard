@@ -14,12 +14,25 @@ namespace RaptorDB
 {
 	public class Hoot
 	{
-		#region Public Properties
+		#region Private Fields
 
-		/// <summary>
-		/// Use Doc Mode
-		/// </summary>
-		public bool DocMode => HootConfOptions.DocMode;
+		//private SafeSortedList<string, int> _words = new SafeSortedList<string, int>();
+		private BitmapIndex _bitmaps;
+
+		private BoolIndex _deleted;
+		private KeyStoreString _docs;
+		private int _lastDocNum = 0;
+		private object _lock = new object();
+		private ILog _log = LogManager.GetLogger(typeof(Hoot));
+
+		private bool _shutdowndone = false;
+		private ITokenizer _tokenizer;
+
+		private SafeDictionary<string, int> _words = new SafeDictionary<string, int>();
+		private bool _wordschanged = true;
+		#endregion Private Fields
+
+		#region Public Properties
 
 		/// <summary>
 		/// Get Document Count
@@ -30,30 +43,9 @@ namespace RaptorDB
 		}
 
 		/// <summary>
-		/// Words file name
-		/// </summary>
-		public String FileName => HootConfOptions.FileName;
-
-		/// <summary>
 		/// Configuration file
 		/// </summary>
 		public HootConfig HootConfOptions { get; set; }
-
-		/// <summary>
-		/// Ignore all numeric words
-		/// Example: 0000000
-		/// </summary>
-		public bool IgnoreNumerics => HootConfOptions.IgnoreNumerics;
-
-		/// <summary>
-		/// Path to indexes
-		/// </summary>
-		public String IndexPath => HootConfOptions.IndexPath;
-
-		/// <summary>
-		/// Use Stop List while Indexing
-		/// </summary>
-		public bool UseStopList => HootConfOptions.UseStopList;
 
 		/// <summary>
 		/// Get Word Count
@@ -78,15 +70,10 @@ namespace RaptorDB
 		/// <summary>
 		/// Construct a new Hoot Index
 		/// </summary>
-		/// <param name="IndexPath">
-		/// Path to Index File
-		/// </param>
-		/// <param name="FileName">
-		/// File Name
-		/// </param>
-		/// <param name="DocMode">
-		/// Document Mode
-		/// </param>
+		/// <param name="IndexPath">Path to Index File Storage</param>
+		/// <param name="FileName">Filename prefix for indexes</param>
+		/// <param name="DocMode">Use Document Mode</param>
+		[Obsolete]
 		public Hoot(string IndexPath, string FileName, bool DocMode)
 			: this(IndexPath, FileName, DocMode, new tokenizer())
 		{
@@ -96,14 +83,11 @@ namespace RaptorDB
 		/// <summary>
 		/// Construct a new Hoot Index
 		/// </summary>
-		/// <param name="IndexPath">
-		/// </param>
-		/// <param name="FileName">
-		/// </param>
-		/// <param name="DocMode">
-		/// </param>
-		/// <param name="tokenizer">
-		/// </param>
+		/// <param name="IndexPath">Path to Index File Storage</param>
+		/// <param name="FileName">Filename prefix for indexes</param>
+		/// <param name="DocMode">Use Document Mode</param>
+		/// <param name="tokenizer">Custom Tokenizer to parse text </param>
+		[Obsolete]
 		public Hoot(string indexPath, string fileName, bool docMode, ITokenizer tokenizer)
 			: this(new HootConfig { IndexPath = indexPath, FileName = fileName, DocMode = docMode }, tokenizer)
 		{
@@ -112,8 +96,7 @@ namespace RaptorDB
 		/// <summary>
 		/// Initialize with the Configuration file
 		/// </summary>
-		/// <param name="config">
-		/// </param>
+		/// <param name="config">Configuration File</param>
 		public Hoot(HootConfig config)
 			: this(config, new tokenizer())
 		{
@@ -122,34 +105,34 @@ namespace RaptorDB
 		/// <summary>
 		/// Construct a new object using configuration file and custom tokenizer
 		/// </summary>
-		/// <param name="config">
-		/// </param>
-		/// <param name="tokenizer">
-		/// </param>
+		/// <param name="config">Configuration file</param>
+		/// <param name="tokenizer">Custom Tokenizer to parse text </param>
 		public Hoot(HootConfig config, ITokenizer tokenizer)
 		{
 			HootConfOptions = config;
 
 			_tokenizer = (tokenizer != null) ? tokenizer : new tokenizer();
-			_tokenizer.InitializeStopList(IndexPath);
 
-			if (!Directory.Exists(IndexPath))
-				Directory.CreateDirectory(IndexPath);
+			if (!Directory.Exists(config.IndexPath))
+				Directory.CreateDirectory(config.IndexPath);
 
 			_log.Debug("Starting hOOt....");
-			_log.Debug($"Storage Folder = {IndexPath}");
+			_log.Debug($"Storage Folder = {config.IndexPath}");
 
-			if (DocMode)
+			_tokenizer.InitializeStopList(config.IndexPath);
+
+			_log.Debug($"Stop List Words saved to {config.IndexPath}");
+
+			if (config.DocMode)
 			{
-				_docs = new KeyStoreString(Path.Combine(IndexPath, "files.docs"), false);
+				_docs = new KeyStoreString(Path.Combine(config.IndexPath, $"files.docs"), false);
 				//
 				// read deleted
 				//
-				_deleted = new BoolIndex(IndexPath, "_deleted", ".hoot");
-
+				_deleted = new BoolIndex(Path.Combine(config.IndexPath, $"_deleted.hoot"));
 				_lastDocNum = (int)_docs.Count();
 			}
-			_bitmaps = new BitmapIndex(IndexPath, FileName + "_hoot.bmp");
+			_bitmaps = new BitmapIndex(Path.Combine(config.IndexPath, $"{config.FileName}_hoot.bmp"));
 			//
 			// read words
 			//
@@ -162,14 +145,9 @@ namespace RaptorDB
 		/// <summary>
 		/// Fetch a Document
 		/// </summary>
-		/// <typeparam name="T">
-		/// Type of Document
-		/// </typeparam>
-		/// <param name="docnum">
-		/// Document Number
-		/// </param>
-		/// <returns>
-		/// </returns>
+		/// <typeparam name="T">Type of Document</typeparam>
+		/// <param name="docnum">Document Number</param>
+		/// <returns></returns>
 		public T Fetch<T>(int docnum)
 		{
 			string b = _docs.ReadData(docnum);
@@ -179,10 +157,8 @@ namespace RaptorDB
 		/// <summary>
 		/// Find Documents File Names
 		/// </summary>
-		/// <param name="filter">
-		/// </param>
-		/// <returns>
-		/// </returns>
+		/// <param name="filter"></param>
+		/// <returns></returns>
 		public IEnumerable<string> FindDocumentFileNames(string filter)
 		{
 			checkloaded();
@@ -202,12 +178,9 @@ namespace RaptorDB
 		/// <summary>
 		/// Find Documents
 		/// </summary>
-		/// <typeparam name="T">
-		/// </typeparam>
-		/// <param name="filter">
-		/// </param>
-		/// <returns>
-		/// </returns>
+		/// <typeparam name="T"></typeparam>
+		/// <param name="filter"></param>
+		/// <returns></returns>
 		public IEnumerable<T> FindDocuments<T>(string filter)
 		{
 			checkloaded();
@@ -227,10 +200,8 @@ namespace RaptorDB
 		/// <summary>
 		/// Find Rows
 		/// </summary>
-		/// <param name="filter">
-		/// </param>
-		/// <returns>
-		/// </returns>
+		/// <param name="filter"></param>
+		/// <returns></returns>
 		public IEnumerable<int> FindRows(string filter)
 		{
 			checkloaded();
@@ -265,10 +236,8 @@ namespace RaptorDB
 		/// <summary>
 		/// Index a text String
 		/// </summary>
-		/// <param name="recordnumber">
-		/// </param>
-		/// <param name="text">
-		/// </param>
+		/// <param name="recordnumber"></param>
+		/// <param name="text"></param>
 		public void Index(int recordnumber, string text)
 		{
 			Index(recordnumber, text, new NoFilter());
@@ -277,28 +246,22 @@ namespace RaptorDB
 		/// <summary>
 		/// Index a Text String using a filter
 		/// </summary>
-		/// <param name="recordnumber">
-		/// </param>
-		/// <param name="text">
-		/// </param>
-		/// <param name="filter">
-		/// </param>
+		/// <param name="recordnumber"></param>
+		/// <param name="text"></param>
+		/// <param name="filter"></param>
 		public void Index(int recordnumber, string text, IHootFilter filter)
 		{
 			checkloaded();
-			filter.InitializeFilter(IndexPath);
+			filter.InitializeFilter(HootConfOptions.IndexPath);
 			AddtoIndex(recordnumber, filter.FilterText(text));
 		}
 
 		/// <summary>
 		/// Index a Document
 		/// </summary>
-		/// <param name="doc">
-		/// </param>
-		/// <param name="deleteold">
-		/// </param>
-		/// <returns>
-		/// </returns>
+		/// <param name="doc"></param>
+		/// <param name="deleteold"></param>
+		/// <returns></returns>
 		public int Index(Document doc, bool deleteold)
 		{
 			return (Index(doc, deleteold, new NoFilter()));
@@ -307,16 +270,13 @@ namespace RaptorDB
 		/// <summary>
 		/// Index a Document
 		/// </summary>
-		/// <param name="doc">
-		/// </param>
-		/// <param name="deleteold">
-		/// </param>
-		/// <returns>
-		/// </returns>
+		/// <param name="doc"></param>
+		/// <param name="deleteold"></param>
+		/// <returns></returns>
 		public int Index(Document doc, bool deleteold, IHootFilter filter)
 		{
 			checkloaded();
-			filter.InitializeFilter(IndexPath);
+			filter.InitializeFilter(HootConfOptions.IndexPath);
 
 			_log.Info("Indexing Doc : " + doc.FileName);
 
@@ -347,10 +307,8 @@ namespace RaptorDB
 		/// <summary>
 		/// Check if a File is Indexed
 		/// </summary>
-		/// <param name="filename">
-		/// </param>
-		/// <returns>
-		/// </returns>
+		/// <param name="filename"></param>
+		/// <returns></returns>
 		public bool IsIndexed(string filename)
 		{
 			byte[] b;
@@ -373,12 +331,9 @@ namespace RaptorDB
 		/// <summary>
 		/// Query the Index
 		/// </summary>
-		/// <param name="filter">
-		/// </param>
-		/// <param name="maxsize">
-		/// </param>
-		/// <returns>
-		/// </returns>
+		/// <param name="filter"></param>
+		/// <param name="maxsize"></param>
+		/// <returns></returns>
 		public MGRB Query(string filter, int maxsize)
 		{
 			checkloaded();
@@ -388,8 +343,7 @@ namespace RaptorDB
 		/// <summary>
 		/// Remove a Document
 		/// </summary>
-		/// <param name="number">
-		/// </param>
+		/// <param name="number"></param>
 		public void RemoveDocument(int number)
 		{
 			// add number to deleted bitmap
@@ -399,14 +353,13 @@ namespace RaptorDB
 		/// <summary>
 		/// Remove a Document by File Name
 		/// </summary>
-		/// <param name="filename">
-		/// </param>
-		/// <returns>
-		/// </returns>
+		/// <param name="filename"></param>
+		/// <returns></returns>
 		public bool RemoveDocument(string filename)
 		{
 			// remove doc based on filename
 			byte[] b;
+
 			if (_docs.Get(filename.ToLower(), out b))
 			{
 				Document d = fastJSON.JSON.ToObject<Document>(fastJSON.Reflection.UnicodeGetString(b));
@@ -450,47 +403,22 @@ namespace RaptorDB
 					_bitmaps = null;
 				}
 
-				if (DocMode)
+				if (HootConfOptions.DocMode)
 					_docs.Shutdown();
-
 				_shutdowndone = true;
 			}
 		}
 		#endregion Public Methods
 
-		#region Private Fields
-
-		//private SafeSortedList<string, int> _words = new SafeSortedList<string, int>();
-		private BitmapIndex _bitmaps;
-
-		private BoolIndex _deleted;
-		private KeyStoreString _docs;
-		private int _lastDocNum = 0;
-		private object _lock = new object();
-		private ILog _log = LogManager.GetLogger(typeof(Hoot));
-
-		private bool _shutdowndone = false;
-		private ITokenizer _tokenizer;
-
-		private SafeDictionary<string, int> _words = new SafeDictionary<string, int>();
-		private bool _wordschanged = true;
-		#endregion Private Fields
-
-		#region [  P R I V A T E   M E T H O D S  ]
-
+		#region Private Methods
 		/// <summary>
 		/// Perform Bit Operations
 		/// </summary>
-		/// <param name="bits">
-		/// </param>
-		/// <param name="c">
-		/// </param>
-		/// <param name="op">
-		/// </param>
-		/// <param name="maxsize">
-		/// </param>
-		/// <returns>
-		/// </returns>
+		/// <param name="bits"></param>
+		/// <param name="c"></param>
+		/// <param name="op"></param>
+		/// <param name="maxsize"></param>
+		/// <returns></returns>
 		private static MGRB DoBitOperation(MGRB bits, MGRB c, OPERATION op, int maxsize)
 		{
 			if (bits != null)
@@ -516,10 +444,8 @@ namespace RaptorDB
 		/// <summary>
 		/// Add Text to the index
 		/// </summary>
-		/// <param name="recnum">
-		/// </param>
-		/// <param name="text">
-		/// </param>
+		/// <param name="recnum"></param>
+		/// <param name="text"></param>
 		private void AddtoIndex(int recnum, string text)
 		{
 			if (text == "" || text == null)
@@ -527,7 +453,8 @@ namespace RaptorDB
 
 			text = text.ToLowerInvariant(); // lowercase index
 			string[] keys;
-			if (DocMode)
+
+			if (HootConfOptions.DocMode)
 			{
 				//_log.Debug("text size = " + text.Length);
 				Dictionary<string, int> wordfreq = _tokenizer.GenerateWordFreq(text, HootConfOptions);
@@ -573,12 +500,9 @@ namespace RaptorDB
 		/// <summary>
 		/// Generate an Execution Plan
 		/// </summary>
-		/// <param name="filter">
-		/// </param>
-		/// <param name="maxsize">
-		/// </param>
-		/// <returns>
-		/// </returns>
+		/// <param name="filter"></param>
+		/// <param name="maxsize"></param>
+		/// <returns></returns>
 		private MGRB ExecutionPlan(string filter, int maxsize)
 		{
 			//_log.Debug("query : " + filter);
@@ -669,7 +593,7 @@ namespace RaptorDB
 			//
 			MGRB ret;
 
-			if (DocMode)
+			if (HootConfOptions.DocMode)
 				ret = found.AndNot(_deleted.GetBits());
 			else
 				ret = found;
@@ -689,7 +613,7 @@ namespace RaptorDB
 				_deleted.SaveIndex();
 
 			// save docs
-			if (DocMode)
+			if (HootConfOptions.DocMode)
 				_docs.SaveIndex();
 
 			if (_bitmaps != null)
@@ -698,7 +622,7 @@ namespace RaptorDB
 			if (_words != null && _wordschanged == true)
 			{
 				// save words and bitmaps
-				using (FileStream words = new FileStream(Path.Combine(IndexPath, $"{FileName}.words"), FileMode.Create))
+				using (FileStream words = new FileStream(Path.Combine(HootConfOptions.IndexPath, $"{HootConfOptions.FileName}.words"), FileMode.Create))
 				{
 					using (BinaryWriter bw = new BinaryWriter(words, Encoding.UTF8))
 					{
@@ -726,51 +650,35 @@ namespace RaptorDB
 
 				// new SafeSortedList<string, int>();
 
-				if (File.Exists(Path.Combine(IndexPath, $"{FileName}.words")) == false)
-					return;
-
-				// load words
-				using (FileStream words = new FileStream(Path.Combine(IndexPath, $"{FileName}.words"), FileMode.Open))
+				if (!File.Exists(Path.Combine(HootConfOptions.IndexPath, $"{HootConfOptions.FileName}.words")) == false)
 				{
-					if (words.Length == 0)
-						return;
-
-					using (BinaryReader br = new BinaryReader(words, Encoding.UTF8))
+					// load words
+					using (FileStream words = new FileStream(Path.Combine(HootConfOptions.IndexPath, $"{HootConfOptions.FileName}.words"), FileMode.Open))
 					{
-						string s = br.ReadString();
+						if (words.Length == 0)
+							return;
 
-						while (s != "")
+						using (BinaryReader br = new BinaryReader(words, Encoding.UTF8))
 						{
-							int off = br.ReadInt32();
-							_words.Add(s, off);
-							try
+							string s = br.ReadString();
+
+							while (s != "")
 							{
-								s = br.ReadString();
+								int off = br.ReadInt32();
+								_words.Add(s, off);
+								try
+								{
+									s = br.ReadString();
+								}
+								catch { s = ""; }
 							}
-							catch { s = ""; }
 						}
 					}
+					_log.Debug("Word Count = " + _words.Count());
+					_wordschanged = true;
 				}
-				//byte[] b = File.ReadAllBytes(_Path + _FileName + ".words");
-				//if (b.Length == 0)
-				//    return;
-				//MemoryStream ms = new MemoryStream(b);
-				//BinaryReader br = new BinaryReader(ms, Encoding.UTF8);
-				//string s = br.ReadString();
-				//while (s != "")
-				//{
-				//    int off = br.ReadInt32();
-				//    _words.Add(s, off);
-				//    try
-				//    {
-				//        s = br.ReadString();
-				//    }
-				//    catch { s = ""; }
-				//}
-				_log.Debug("Word Count = " + _words.Count());
-				_wordschanged = true;
 			}
 		}
-		#endregion [  P R I V A T E   M E T H O D S  ]
+		#endregion
 	}
 }

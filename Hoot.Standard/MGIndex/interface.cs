@@ -1,4 +1,6 @@
-﻿namespace RaptorDB
+﻿using System;
+
+namespace RaptorDB
 {
     /// <summary>
     /// High frequency mode Key/Value store with recycled storage file.
@@ -14,7 +16,7 @@
         int CountHF();
         bool ContainsHF(string key);
         string[] GetKeysHF();
-        void CompactStorageHF();
+        void CompactStorageHF(String folder);
         int Increment(string key, int amount);
         decimal Increment(string key, decimal amount);
         int Decrement(string key, int amount);

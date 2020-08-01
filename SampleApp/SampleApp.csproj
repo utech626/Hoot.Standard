@@ -7,12 +7,14 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <AssemblyVersion>1.0.7512.20208</AssemblyVersion>
-    <FileVersion>1.0.7512.20208</FileVersion>
+    <AssemblyVersion>1.0.7518.20214</AssemblyVersion>
+    <FileVersion>1.0.7518.20214</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Hoot.Standard\Hoot.Standard.csproj" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties BuildVersion_BuildVersioningStyle="None.None.DeltaBaseDateInDays.Increment" BuildVersion_StartDate="2000/1/1" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_UseUniversalClock="True" /></VisualStudio></ProjectExtensions>
 
 </Project>
