@@ -12,9 +12,9 @@ namespace RaptorDB
         private bool _caseSensitive = false;
         private KeyStore<int> _db;
 
-        public KeyStoreString(HootConfig config, bool caseSensitve)
+        public KeyStoreString(String filename, bool caseSensitve)
         {
-            _db = KeyStore<int>.Open(config, true);
+            _db = KeyStore<int>.Open(filename, true);
             _caseSensitive = caseSensitve;
         }
 
@@ -155,37 +155,41 @@ namespace RaptorDB
         private object _savelock = new object();
         private object _shutdownlock = new object();
 
-        public KeyStore(HootConfig config, bool AllowDuplicateKeys)
-            : this(config, Global.DefaultStringKeySize, AllowDuplicateKeys)
+        public KeyStore(String filename, bool AllowDuplicateKeys)
+            : this(filename, Global.DefaultStringKeySize, AllowDuplicateKeys)
         {
 
         }
 
-        public KeyStore(HootConfig config, byte MaxKeySize, bool AllowDuplicateKeys)
+        public KeyStore(String filename, byte MaxKeySize, bool AllowDuplicateKeys)
         {
-            Initialize(config, MaxKeySize, AllowDuplicateKeys);
+            Initialize(filename, MaxKeySize, AllowDuplicateKeys);
         }
 
-        public static KeyStore<T> Open(HootConfig config, bool AllowDuplicateKeys)
+        public static KeyStore<T> Open(String filename, bool AllowDuplicateKeys)
         {
-            return new KeyStore<T>(config, AllowDuplicateKeys);
+            return new KeyStore<T>(filename, AllowDuplicateKeys);
         }
 
-        public static KeyStore<T> Open(HootConfig config, byte MaxKeySize, bool AllowDuplicateKeys)
+        public static KeyStore<T> Open(String filename, byte MaxKeySize, bool AllowDuplicateKeys)
         {
-            return new KeyStore<T>(config, MaxKeySize, AllowDuplicateKeys);
+            return new KeyStore<T>(filename, MaxKeySize, AllowDuplicateKeys);
         }
 
+        /// <summary>
+        /// Save the index file
+        /// </summary>
         public void SaveIndex()
         {
-            if (_index == null)
-                return;
-            lock (_savelock)
+            if (_index != null)
             {
-                log.Debug("saving to disk");
-                _index.SaveIndex();
-                _deleted.SaveIndex();
-                log.Debug("index saved");
+                lock (_savelock)
+                {
+                    log.Debug("saving to disk");
+                    _index.SaveIndex();
+                    _deleted.SaveIndex();
+                    log.Debug("index saved");
+                }
             }
         }
 
@@ -250,52 +254,62 @@ namespace RaptorDB
         {
             return SetBytes(key, fastJSON.Reflection.UnicodeGetBytes(data));
         }
-
+        /// <summary>
+        /// Save Record to Storage and save index
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="doc"></param>
+        /// <returns></returns>
         public int SetObject(T key, object doc)
         {
             int recno = -1;
-            // save to storage
-            recno = (int) _archive.WriteObject(key, doc);
-            // save to index
-            _index.Set(key, recno);
 
+            recno = (int) _archive.WriteObject(key, doc);
+            _index.Set(key, recno);
             return recno;
         }
-
+        /// <summary>
+        /// Write Record to Storage and Save Index
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="data"></param>
+        /// <returns></returns>
         public int SetBytes(T key, byte[] data)
         {
             int recno = -1;
-            // save to storage
-            recno = (int)_archive.WriteData(key, data);
-            // save to index
-            _index.Set(key, recno);
 
+            recno = (int)_archive.WriteData(key, data);
+            _index.Set(key, recno);
             return recno;
         }
-
+        /// <summary>
+        /// Shut down the KeyStorage Indexer
+        /// </summary>
         public void Shutdown()
         {
             lock (_shutdownlock)
             {
                 if (_index != null)
+                {
                     log.Debug("Shutting down");
-                else
-                    return;
-                _savetimer.Enabled = false;
-                SaveIndex();
-                SaveLastRecord();
 
-                if (_deleted != null)
-                    _deleted.Shutdown();
-                if (_index != null)
-                    _index.Shutdown();
-                if (_archive != null)
-                    _archive.Shutdown();
-                _index = null;
-                _archive = null;
-                _deleted = null;
-                //log.Debug("Shutting down log");
-                //LogManager.Shutdown();
+                    _savetimer.Enabled = false;
+                    SaveIndex();
+                    SaveLastRecord();
+
+                    if (_deleted != null)
+                        _deleted.Shutdown();
+
+                    if (_index != null)
+                        _index.Shutdown();
+
+                    if (_archive != null)
+                        _archive.Shutdown();
+
+                    _index = null;
+                    _archive = null;
+                    _deleted = null;
+                }
             }
         }
 
@@ -306,25 +320,26 @@ namespace RaptorDB
 
         #region Private Methods
 
+        /// <summary>
+        /// save the last record number in the index file
+        /// </summary>
         private void SaveLastRecord()
         {
-            // save the last record number in the index file
             _index.SaveLastRecordNumber(_archive.Count());
         }
-
-
-        private void Initialize(HootConfig config, byte maxkeysize, bool AllowDuplicateKeys)
+        /// <summary>
+        /// Initialize the Indexer
+        /// </summary>
+        /// <param name="config"></param>
+        /// <param name="maxkeysize"></param>
+        /// <param name="AllowDuplicateKeys"></param>
+        private void Initialize(String filename, byte maxkeysize, bool AllowDuplicateKeys)
         {
-            string _fn = Path.Combine(config.IndexPath, $"{config.FileName}_files.docs");
-
             _MaxKeySize = RDBDataType<T>.GetByteSize(maxkeysize);
             _T = RDBDataType<T>.ByteHandler();
 
-            if (!Directory.Exists(config.IndexPath))
-                Directory.CreateDirectory(config.IndexPath);
-
-            string db = Path.ChangeExtension(_fn, _datExtension);
-            string idx = Path.ChangeExtension(_fn, _idxExtension);
+            string db = Path.ChangeExtension(filename, _datExtension);
+            string idx = Path.ChangeExtension(filename, _idxExtension);
 
             //LogManager.Configure(_Path + Path.DirectorySeparatorChar + _FileName + ".txt", 500, false);
 
@@ -335,7 +350,7 @@ namespace RaptorDB
             else
                 _archive = new StorageFile<T>(db, SF_FORMAT.JSON, false);
 
-            _deleted = new BoolIndex(Path.Combine(config.IndexPath, $"{config.FileName}_deleted.idx"));
+            _deleted = new BoolIndex(Path.Combine(Path.GetDirectoryName(filename),"_deleted.idx"));
 
             log.Debug("Current Count = " + RecordCount().ToString("#,0"));
 
@@ -407,18 +422,25 @@ namespace RaptorDB
             isdeleted = meta.isDeleted;
             return b;
         }
-
+        /// <summary>
+        /// write a delete record
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         internal bool Delete(T id)
         {
-            // write a delete record
             int rec = (int)_archive.Delete(id);
+
             _deleted.Set(true, rec);
             return _index.RemoveKey(id);
         }
-
+        /// <summary>
+        /// write a delete record for replicated object
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         internal bool DeleteReplicated(T id)
         {
-            // write a delete record for replicated object
             int rec = (int)_archive.DeleteReplicated(id);
             _deleted.Set(true, rec);
             return _index.RemoveKey(id);
@@ -448,15 +470,18 @@ namespace RaptorDB
         {
             return _archive.ReadMeta(rowid);
         }
-
+        /// <summary>
+        /// Save to Record Storage and Index
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="doc"></param>
+        /// <returns></returns>
         internal int SetReplicationObject(T key, object doc)
         {
             int recno = -1;
-            // save to storage
-            recno = (int) _archive.WriteReplicationObject(key, doc);
-            // save to index
-            _index.Set(key, recno);
 
+            recno = (int) _archive.WriteReplicationObject(key, doc);
+            _index.Set(key, recno);
             return recno;
         }
     }

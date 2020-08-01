@@ -28,6 +28,8 @@ namespace RaptorDB
         private const int _KILOBYTE = 1024;
         ILog _log = LogManager.GetLogger(typeof(KeyStoreHF));
 
+        private object _dfile = new object();
+
         byte[] _blockheader = new byte[]{
             0,0,0,0,    // 0  block # (used for validate block reads and rebuild)
             0,0,0,0,    // 4  next block # 
@@ -36,24 +38,25 @@ namespace RaptorDB
             0,          // 13 key length 
             0,          // 14 key type 0=guid 1=string
         };
-        private string _Path = "";
-        private string _S = Path.DirectorySeparatorChar.ToString();
+
         private bool _isDirty = false;
         private string _dirtyFilename = "temp.$";
+        private String _filePath = String.Empty;
 
         public KeyStoreHF(string folder)
         {
-            _Path = folder;
-            Directory.CreateDirectory(_Path);
-            if (_Path.EndsWith(_S) == false) _Path += _S;
+            _filePath = folder;
 
-            if (File.Exists(_Path + _dirtyFilename))
+            if (!Directory.Exists(_filePath))
+                Directory.CreateDirectory(_filePath);
+            
+            if (File.Exists(Path.Combine(_filePath, _dirtyFilename)))
             {
                 _log.Error("Last shutdown failed, rebuilding data files...");
                 RebuildDataFiles();
             }
-            _datastore = new StorageFileHF(_Path + "data.mghf", Global.HighFrequencyKVDiskBlockSize);
-            _keys = new MGIndex<string>(_Path, "keys.idx", 255, /*Global.PageItemCount,*/ false);
+            _datastore = new StorageFileHF(Path.Combine(_filePath, "data.mghf"), Global.HighFrequencyKVDiskBlockSize);
+            _keys = new MGIndex<string>(Path.Combine(_filePath, "keys.idx"), 255, /*Global.PageItemCount,*/ false);
             //_datastore.Initialize();
             _BlockSize = _datastore.GetBlockSize();
         }
@@ -62,11 +65,12 @@ namespace RaptorDB
         //    use SaveData() GetData()
         public KeyStoreHF(string folder, string filename)
         {
-            _Path = folder;
-            Directory.CreateDirectory(_Path);
-            if (_Path.EndsWith(_S) == false) _Path += _S;
+            _filePath = folder;
 
-            _datastore = new StorageFileHF(_Path + filename, Global.HighFrequencyKVDiskBlockSize);
+            if (!Directory.Exists(_filePath))
+                Directory.CreateDirectory(_filePath);
+
+            _datastore = new StorageFileHF(Path.Combine(_filePath, filename), Global.HighFrequencyKVDiskBlockSize);
             //_datastore.Initialize();
             _BlockSize = _datastore.GetBlockSize();
         }
@@ -164,43 +168,60 @@ namespace RaptorDB
             return false;
         }
 
-        public void CompactStorageHF()
+        public void CompactStorageHF(String folder)
         {
             lock (_lock)
             {
                 try
                 {
-                    _log.Debug("Compacting storage file ...");
-                    if (Directory.Exists(_Path + "temp"))
-                        Directory.Delete(_Path + "temp", true);
+                    String _path = Path.Combine(folder, "temp");
 
-                    KeyStoreHF newfile = new KeyStoreHF(_Path + "temp");
+                    _log.Debug("Compacting storage file ...");
+
+                    if (Directory.Exists(_path))
+                        Directory.Delete(_path, true);
+
+                    KeyStoreHF newfile = new KeyStoreHF(Path.Combine(_path, "temp"));
+
                     string[] keys = _keys.GetKeys().Cast<string>().ToArray();
+
                     _log.Debug("Number of keys : " + keys.Length);
+ 
                     foreach (var k in keys)
                     {
                         newfile.SetObjectHF(k, GetObjectHF(k));
                     }
                     newfile.Shutdown();
                     _log.Debug("Compact done.");
+                    //
                     // shutdown and move files and restart here
-                    if (Directory.Exists(_Path + "old"))
-                        Directory.Delete(_Path + "old", true);
-                    Directory.CreateDirectory(_Path + "old");
+                    //
+                    _path = Path.Combine(folder, "old");
+
+                    if (Directory.Exists(_path))
+                        Directory.Delete(_path, true);
+
+                    Directory.CreateDirectory(_path);
+
                     _datastore.Shutdown();
                     _keys.Shutdown();
+                    
                     _log.Debug("Moving files...");
-                    foreach (var f in Directory.GetFiles(_Path, "*.*"))
-                        File.Move(f, _Path + "old" + _S + Path.GetFileName(f));
+                    
+                    foreach (var f in Directory.GetFiles(folder, "*.*"))
+                        File.Move(f, Path.Combine(folder,"old", Path.GetFileName(f)));
 
-                    foreach (var f in Directory.GetFiles(_Path + "temp", "*.*"))
-                        File.Move(f, _Path + Path.GetFileName(f));
+                    foreach (var f in Directory.GetFiles(Path.Combine(folder,"temp"), "*.*"))
+                        File.Move(f, Path.Combine(folder, Path.GetFileName(f)));
 
-                    Directory.Delete(_Path + "temp", true);
+                    Directory.Delete(Path.Combine(folder, "temp"), true);
+
                     //Directory.Delete(_Path + "old", true); // FEATURE : delete or keep?
+
                     _log.Debug("Re-opening storage file");
-                    _datastore = new StorageFileHF(_Path + "data.mghf", Global.HighFrequencyKVDiskBlockSize);
-                    _keys = new MGIndex<string>(_Path, "keys.idx", 255, false);
+
+                    _datastore = new StorageFileHF(Path.Combine(folder,"data.mghf"), Global.HighFrequencyKVDiskBlockSize);
+                    _keys = new MGIndex<string>(Path.Combine(folder,"keys.idx"), 255, false);
 
                     _BlockSize = _datastore.GetBlockSize();
                 }
@@ -233,8 +254,8 @@ namespace RaptorDB
             {
                 _keys.Shutdown();
 
-                if (File.Exists(_Path + _dirtyFilename))
-                    File.Delete(_Path + _dirtyFilename);
+                if (File.Exists(Path.Combine(_filePath,_dirtyFilename)))
+                    File.Delete(Path.Combine(_filePath, _dirtyFilename));
             }
         }
 
@@ -244,7 +265,8 @@ namespace RaptorDB
                 _keys.FreeMemory();
         }
 
-        #region [  private methods  ]
+        #region Private Methods
+
         private byte[] readblockdata(AllocationBlock ab)
         {
             byte[] data = new byte[ab.datalength];
@@ -265,14 +287,13 @@ namespace RaptorDB
             return data;
         }
 
-        private object _dfile = new object();
         private void WriteDirtyFile()
         {
             lock (_dfile)
             {
                 _isDirty = true;
-                if (File.Exists(_Path + _dirtyFilename) == false)
-                    File.WriteAllText(_Path + _dirtyFilename, "dirty");
+                if (File.Exists(Path.Combine(_filePath,_dirtyFilename)) == false)
+                    File.WriteAllText(Path.Combine(_filePath, _dirtyFilename), "dirty");
             }
         }
 
@@ -425,19 +446,19 @@ namespace RaptorDB
             try
             {
                 // remove old free list
-                if (File.Exists(_Path + "data.bmp"))
-                    File.Delete(_Path + "data.bmp");
+                if (File.Exists(Path.Combine(_filePath,"data.bmp")))
+                    File.Delete(Path.Combine(_filePath,"data.bmp"));
 
-                _datastore = new StorageFileHF(_Path + "data.mghf", Global.HighFrequencyKVDiskBlockSize);
+                _datastore = new StorageFileHF(Path.Combine(_filePath,"data.mghf"), Global.HighFrequencyKVDiskBlockSize);
                 _BlockSize = _datastore.GetBlockSize();
-                if (File.Exists(_Path + "keys.idx"))
+                if (File.Exists(Path.Combine(_filePath,"keys.idx")))
                 {
                     _log.Debug("removing old keys index");
-                    foreach (var f in Directory.GetFiles(_Path, "keys.*"))
+                    foreach (var f in Directory.GetFiles(_filePath, "keys.*"))
                         File.Delete(f);
                 }
 
-                keys = new MGIndex<string>(_Path, "keys.idx", 255, /*Global.PageItemCount,*/ false);
+                keys = new MGIndex<string>(Path.Combine(_filePath, "keys.idx"), 255, /*Global.PageItemCount,*/ false);
 
                 MGRB visited = new MGRB();
 
@@ -507,8 +528,8 @@ namespace RaptorDB
                 }
 
                 // all ok delete temp.$ file
-                if (File.Exists(_Path + _dirtyFilename))
-                    File.Delete(_Path + _dirtyFilename);
+                if (File.Exists(Path.Combine(_filePath,_dirtyFilename)))
+                    File.Delete(Path.Combine(_filePath,_dirtyFilename));
             }
             catch (Exception ex)
             {

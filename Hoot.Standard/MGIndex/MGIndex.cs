@@ -5,7 +5,7 @@ using RaptorDB.Common;
 
 namespace RaptorDB
 {
-    #region [ internal classes ]
+    #region Internal classes
 
     internal struct PageInfo  // FEATURE : change back to class for count access for query caching
     {
@@ -57,6 +57,7 @@ namespace RaptorDB
     internal class MGIndex<T> where T : IComparable<T>
     {
         ILog _log = LogManager.GetLogger(typeof(MGIndex<T>));
+
         private SafeSortedList<T, PageInfo> _pageList = new SafeSortedList<T, PageInfo>();
 
         //private SafeDictionary<int, Page<T>> _cache = new SafeDictionary<int, Page<T>>();
@@ -69,7 +70,8 @@ namespace RaptorDB
         private object _setlock = new object();
         private double _totalsplits = 0;
 
-        public MGIndex(string filepath, byte keysize, bool allowdups)
+        // path, filename + ".mgidx", keysize, true
+        public MGIndex(String filename, byte keysize, bool allowdups)
         {
             if (Global.UseLessMemoryStructures)
                 _cache = new SafeSortedList<int, Page<T>>();
@@ -78,7 +80,7 @@ namespace RaptorDB
 
             _AllowDuplicates = allowdups;
 
-            _index = new IndexFile<T>(filepath, keysize);
+            _index = new IndexFile<T>(filename, keysize);
             // load page list
             _index.GetPageList(_pageListDiskPages, _pageList, out _LastIndexedRecordNumber);
             if (_pageList.Count() == 0)

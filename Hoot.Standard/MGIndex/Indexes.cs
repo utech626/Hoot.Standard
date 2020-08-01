@@ -7,8 +7,8 @@ namespace RaptorDB
     #region [  TypeIndexes  ]
     internal class TypeIndexes<T> : MGIndex<T>, IIndex where T : IComparable<T>
     {
-        public TypeIndexes(string path, string filename, byte keysize)
-            : base(path, filename + ".mgidx", keysize, true)
+        public TypeIndexes(String filename, byte keysize)
+            : base(Path.ChangeExtension(filename, ".mgidx"), keysize, true)
         {
 
         }
@@ -85,11 +85,12 @@ namespace RaptorDB
         private object _lock = new object();
         private String _filePath;
 
-        public BoolIndex(string filePath)
+        // 
+        public BoolIndex(String filename)
         {
-            _filePath = filePath;
+            _filePath = filename;
 
-            if (File.Exists(filePath))
+            if (File.Exists(filename))
                 ReadFile();
         }
 
@@ -175,182 +176,187 @@ namespace RaptorDB
     }
     #endregion
 
-    #region [  FullTextIndex  ]
-    internal class FullTextIndex : Hoot, IIndex
-    {
-        public FullTextIndex(string IndexPath, string FileName, bool docmode, bool sortable, ITokenizer tokenizer)
-            : base(IndexPath, FileName, docmode, tokenizer)
-        {
-            if (sortable)
-            {
-                _idx = new TypeIndexes<string>(IndexPath, FileName, Global.DefaultStringKeySize);
-                _sortable = true;
-            }
-        }
-        private bool _sortable = false;
-        private IIndex _idx;
+    //#region FullTextIndex
 
-        public void Set(object key, int recnum)
-        {
-            base.Index(recnum, (string)key);
-            if (_sortable)
-                _idx.Set(key, recnum);
-        }
+    //internal class FullTextIndex : Hoot, IIndex
+    //{
+    //    private HootConfig _config;
+    //    private bool _sortable = false;
+    //    private IIndex _idx;
 
-        public MGRB Query(RDBExpression ex, object from, int maxsize)
-        {
-            return base.Query("" + from, maxsize);
-        }
+    //    public FullTextIndex(String filename, bool sortable, ITokenizer tokenizer)
+    //        : base(filename, tokenizer)
+    //    {
+    //        if (sortable)
+    //        {
+    //            _idx = new TypeIndexes<string>(filename, Global.DefaultStringKeySize);
+    //            _sortable = true;
+    //        }
+    //    }
 
-        public void SaveIndex()
-        {
-            base.Save();
-            if (_sortable)
-                _idx.SaveIndex();
-        }
+    //    public void Set(object key, int recnum)
+    //    {
+    //        base.Index(recnum, (string)key);
+    //        if (_sortable)
+    //            _idx.Set(key, recnum);
+    //    }
 
-        public MGRB Query(object fromkey, object tokey, int maxsize)
-        {
-            return base.Query("" + fromkey, maxsize); // range doesn't make sense here just do from  
-        }
+    //    public MGRB Query(RDBExpression ex, object from, int maxsize)
+    //    {
+    //        return base.Query("" + from, maxsize);
+    //    }
 
-        public object[] GetKeys()
-        {
-            if (_sortable)
-                return _idx.GetKeys(); // support get keys 
-            else
-                return new object[] { };
-        }
-        void IIndex.FreeMemory()
-        {
-            base.FreeMemory();
+    //    public void SaveIndex()
+    //    {
+    //        base.Save();
+    //        if (_sortable)
+    //            _idx.SaveIndex();
+    //    }
 
-            this.SaveIndex();
-        }
+    //    public MGRB Query(object fromkey, object tokey, int maxsize)
+    //    {
+    //        return base.Query("" + fromkey, maxsize); // range doesn't make sense here just do from  
+    //    }
 
-        void IIndex.Shutdown()
-        {
-            this.SaveIndex();
-            base.Shutdown();
-            if (_sortable)
-                _idx.Shutdown();
-        }
+    //    public object[] GetKeys()
+    //    {
+    //        if (_sortable)
+    //            return _idx.GetKeys(); // support get keys 
+    //        else
+    //            return new object[] { };
+    //    }
 
-    }
-    #endregion
+    //    void IIndex.FreeMemory()
+    //    {
+    //        base.FreeMemory();
+    //        this.SaveIndex();
+    //    }
 
-    #region [  EnumIndex  ]
-    internal class EnumIndex<T> : MGIndex<string>, IIndex //where T : IComparable<T>
-    {
-        public EnumIndex(string path, string filename)
-            : base(path, filename + ".mgidx", 30, /*Global.PageItemCount,*/ true)
-        {
+    //    void IIndex.Shutdown()
+    //    {
+    //        this.SaveIndex();
+    //        base.Shutdown();
+    //        if (_sortable)
+    //            _idx.Shutdown();
+    //    }
 
-        }
+    //}
+    //#endregion
 
-        public void Set(object key, int recnum)
-        {
-            if (key == null) return; // FEATURE : index null values ??
+    //#region EnumIndex
 
-            base.Set(key.ToString(), recnum);
-        }
+    //internal class EnumIndex<T> : MGIndex<string>, IIndex //where T : IComparable<T>
+    //{
+    //    public EnumIndex(String filename)
+    //        : base(Path.ChangeExtension(filename,".mgidx"), 30, /*Global.PageItemCount,*/ true)
+    //    {
 
-        public MGRB Query(RDBExpression ex, object from, int maxsize)
-        {
-            T f = default(T);
-            if (typeof(T).Equals(from.GetType()) == false)
-                f = Converter(from);
-            else
-                f = (T)from;
+    //    }
 
-            return base.Query(ex, f.ToString(), maxsize);
-        }
+    //    public void Set(object key, int recnum)
+    //    {
+    //        if (key == null) return; // FEATURE : index null values ??
 
-        private T Converter(object from)
-        {
-            if (typeof(T) == typeof(Guid))
-            {
-                object o = new Guid(from.ToString());
-                return (T)o;
-            }
-            else
-                return (T)Convert.ChangeType(from, typeof(T));
-        }
+    //        base.Set(key.ToString(), recnum);
+    //    }
 
-        void IIndex.FreeMemory()
-        {
-            base.SaveIndex();
-            base.FreeMemory();
-        }
+    //    public MGRB Query(RDBExpression ex, object from, int maxsize)
+    //    {
+    //        T f = default(T);
+    //        if (typeof(T).Equals(from.GetType()) == false)
+    //            f = Converter(from);
+    //        else
+    //            f = (T)from;
 
-        void IIndex.Shutdown()
-        {
-            base.SaveIndex();
-            base.Shutdown();
-        }
+    //        return base.Query(ex, f.ToString(), maxsize);
+    //    }
 
-        public MGRB Query(object fromkey, object tokey, int maxsize)
-        {
-            T f = default(T);
-            if (typeof(T).Equals(fromkey.GetType()) == false)
-                f = (T)Convert.ChangeType(fromkey, typeof(T));
-            else
-                f = (T)fromkey;
+    //    private T Converter(object from)
+    //    {
+    //        if (typeof(T) == typeof(Guid))
+    //        {
+    //            object o = new Guid(from.ToString());
+    //            return (T)o;
+    //        }
+    //        else
+    //            return (T)Convert.ChangeType(from, typeof(T));
+    //    }
 
-            T t = default(T);
-            if (typeof(T).Equals(tokey.GetType()) == false)
-                t = (T)Convert.ChangeType(tokey, typeof(T));
-            else
-                t = (T)tokey;
+    //    void IIndex.FreeMemory()
+    //    {
+    //        base.SaveIndex();
+    //        base.FreeMemory();
+    //    }
 
-            return base.Query(f.ToString(), t.ToString(), maxsize);
-        }
+    //    void IIndex.Shutdown()
+    //    {
+    //        base.SaveIndex();
+    //        base.Shutdown();
+    //    }
 
-        object[] IIndex.GetKeys()
-        {
-            return base.GetKeys();
-        }
-    }
-    #endregion
+    //    public MGRB Query(object fromkey, object tokey, int maxsize)
+    //    {
+    //        T f = default(T);
+    //        if (typeof(T).Equals(fromkey.GetType()) == false)
+    //            f = (T)Convert.ChangeType(fromkey, typeof(T));
+    //        else
+    //            f = (T)fromkey;
 
-    #region [  NoIndex  ]
-    internal class NoIndex : IIndex
-    {
-        public void Set(object key, int recnum)
-        {
-            // ignore set
-        }
+    //        T t = default(T);
+    //        if (typeof(T).Equals(tokey.GetType()) == false)
+    //            t = (T)Convert.ChangeType(tokey, typeof(T));
+    //        else
+    //            t = (T)tokey;
 
-        public MGRB Query(RDBExpression ex, object from, int maxsize)
-        {
-            // always return everything
-            return MGRB.Fill(maxsize);
-        }
+    //        return base.Query(f.ToString(), t.ToString(), maxsize);
+    //    }
 
-        public void FreeMemory()
-        {
+    //    object[] IIndex.GetKeys()
+    //    {
+    //        return base.GetKeys();
+    //    }
+    //}
+    //#endregion
 
-        }
+    //#region  NoIndex
 
-        public void Shutdown()
-        {
+    //internal class NoIndex : IIndex
+    //{
+    //    public void Set(object key, int recnum)
+    //    {
+    //        // ignore set
+    //    }
 
-        }
+    //    public MGRB Query(RDBExpression ex, object from, int maxsize)
+    //    {
+    //        // always return everything
+    //        return MGRB.Fill(maxsize);
+    //    }
 
-        public void SaveIndex()
-        {
+    //    public void FreeMemory()
+    //    {
 
-        }
+    //    }
 
-        public object[] GetKeys()
-        {
-            return new object[] { };
-        }
+    //    public void Shutdown()
+    //    {
 
-        public MGRB Query(object fromkey, object tokey, int maxsize)
-        {
-            return MGRB.Fill(maxsize); // TODO : all or none??
-        }
-    }
-    #endregion
+    //    }
+
+    //    public void SaveIndex()
+    //    {
+
+    //    }
+
+    //    public object[] GetKeys()
+    //    {
+    //        return new object[] { };
+    //    }
+
+    //    public MGRB Query(object fromkey, object tokey, int maxsize)
+    //    {
+    //        return MGRB.Fill(maxsize); // TODO : all or none??
+    //    }
+    //}
+    //#endregion
 }

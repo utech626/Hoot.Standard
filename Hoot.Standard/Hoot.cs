@@ -125,15 +125,14 @@ namespace RaptorDB
 
 			if (config.DocMode)
 			{
-				_docs = new KeyStoreString(config, false);
+				_docs = new KeyStoreString(Path.Combine(config.IndexPath, $"files.docs"), false);
 				//
 				// read deleted
 				//
-				_deleted = new BoolIndex(IndexPath, $"{config.FileName}_deleted", ".hoot");
-
+				_deleted = new BoolIndex(Path.Combine(config.IndexPath, $"_deleted.hoot"));
 				_lastDocNum = (int)_docs.Count();
 			}
-			_bitmaps = new BitmapIndex(IndexPath, FileName + $"{config.FileName}_hoot.bmp");
+			_bitmaps = new BitmapIndex(Path.Combine(config.IndexPath, $"{config.FileName}_hoot.bmp"));
 			//
 			// read words
 			//

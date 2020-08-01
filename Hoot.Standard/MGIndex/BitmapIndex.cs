@@ -8,37 +8,10 @@ namespace RaptorDB
 {
     internal class BitmapIndex
     {
-        public BitmapIndex(string path, string filename)
-        {
-            if (Global.UseLessMemoryStructures)
-                _cache = new SafeSortedList<int, MGRB>();
-            else
-                _cache = new SafeDictionary<int, MGRB>();
-
-            _FileName = Path.GetFileNameWithoutExtension(filename);
-            _Path = path;
-
-            Initialize();
-        }
-
-        class L : IDisposable
-        {
-            BitmapIndex _sc;
-            public L(BitmapIndex sc)
-            {
-                _sc = sc;
-                _sc.CheckInternalOP();
-            }
-            void IDisposable.Dispose()
-            {
-                _sc.Done();
-            }
-        }
-
         private string _recExt = ".mgbmr";
         private string _bmpExt = ".mgbmp";
-        private string _FileName = "";
-        private string _Path = "";
+
+        private String _filename;
         private FileStream _bitmapFileWriteOrg;
         private BufferedStream _bitmapFileWrite;
         private FileStream _bitmapFileRead;
@@ -54,8 +27,38 @@ namespace RaptorDB
         private bool _shutdownDone = false;
         private int _workingCount = 0;
         private bool _isDirty = false;
+        private object _oplock = new object();
+        private object _readlock = new object();
 
-        #region
+        public BitmapIndex(String filename)
+        {
+            if (Global.UseLessMemoryStructures)
+                _cache = new SafeSortedList<int, MGRB>();
+            else
+                _cache = new SafeDictionary<int, MGRB>();
+
+            _filename = filename;
+            Initialize();
+        }
+
+        class L : IDisposable
+        {
+            BitmapIndex _sc;
+
+            public L(BitmapIndex sc)
+            {
+                _sc = sc;
+                _sc.CheckInternalOP();
+            }
+            void IDisposable.Dispose()
+            {
+                _sc.Done();
+            }
+        }
+
+
+        #region Public Methods
+
         public void Shutdown()
         {
             using (new L(this))
@@ -83,7 +86,8 @@ namespace RaptorDB
                 return;
             using (new L(this))
             {
-                log.Debug("writing " + _FileName);
+                log.Debug("writing " + _filename);
+
                 int[] keys = _cache.Keys();
                 Array.Sort(keys);
 
@@ -131,25 +135,36 @@ namespace RaptorDB
             }
         }
 
-        private object _oplock = new object();
         public void Optimize()
         {
             lock (_oplock)
+            {
                 lock (_readlock)
+                {
                     lock (_writelock)
                     {
+                        String _filePath = Path.GetDirectoryName(_filename);
+
+                        String _bmpTempName = Path.ChangeExtension(Path.Combine(_filePath, Path.GetFileNameWithoutExtension(_filename) + "$"), _bmpExt);
+                        String _recTempName = Path.ChangeExtension(Path.Combine(_filePath, Path.GetFileNameWithoutExtension(_filename) + "$"), _recExt);
+                        String _bmpName = Path.ChangeExtension(_filename, _bmpExt);
+                        String _recName = Path.ChangeExtension(_filename, _recExt);
+
                         _stopOperations = true;
-                        while (_workingCount > 0) Thread.SpinWait(1);
+
+                        while (_workingCount > 0)
+                            Thread.SpinWait(1);
+
                         Flush();
 
-                        if (File.Exists(_Path + _FileName + "$" + _bmpExt))
-                            File.Delete(_Path + _FileName + "$" + _bmpExt);
+                        if (File.Exists(_bmpTempName))
+                            File.Delete(_bmpTempName);
 
-                        if (File.Exists(_Path + _FileName + "$" + _recExt))
-                            File.Delete(_Path + _FileName + "$" + _recExt);
+                        if (File.Exists(_recTempName))
+                            File.Delete(_recTempName);
 
-                        Stream _newrec = new FileStream(_Path + _FileName + "$" + _recExt, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
-                        Stream _newbmp = new FileStream(_Path + _FileName + "$" + _bmpExt, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
+                        Stream _newrec = new FileStream(_bmpTempName, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
+                        Stream _newbmp = new FileStream(_recTempName, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
 
                         long newoffset = 0;
                         int c = (int)(_recordFileRead.Length / 8);
@@ -176,14 +191,16 @@ namespace RaptorDB
 
                         InternalShutdown();
 
-                        File.Delete(_Path + _FileName + _bmpExt);
-                        File.Delete(_Path + _FileName + _recExt);
-                        File.Move(_Path + _FileName + "$" + _bmpExt, _Path + _FileName + _bmpExt);
-                        File.Move(_Path + _FileName + "$" + _recExt, _Path + _FileName + _recExt);
+                        File.Delete(_bmpName);
+                        File.Delete(_recName);
+                        File.Move(_bmpTempName, _bmpName);
+                        File.Move(_recTempName, _recName);
 
                         Initialize();
                         _stopOperations = false;
                     }
+                }
+            }
         }
 
         internal void FreeMemory()
@@ -208,7 +225,8 @@ namespace RaptorDB
         }
         #endregion
 
-        #region [  P R I V A T E  ]
+        #region Private Methods
+
         private long ReadRecordOffset(int recnum)
         {
             byte[] b = new byte[8];
@@ -220,12 +238,12 @@ namespace RaptorDB
 
         private void Initialize()
         {
-            _recordFileRead = new FileStream(_Path + _FileName + _recExt, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
-            _recordFileWriteOrg = new FileStream(_Path + _FileName + _recExt, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
+            _recordFileRead = new FileStream(Path.ChangeExtension(_filename,_recExt), FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
+            _recordFileWriteOrg = new FileStream(Path.ChangeExtension(_filename,_recExt), FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
             _recordFileWrite = new BufferedStream(_recordFileWriteOrg);
 
-            _bitmapFileRead = new FileStream(_Path + _FileName + _bmpExt, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
-            _bitmapFileWriteOrg = new FileStream(_Path + _FileName + _bmpExt, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
+            _bitmapFileRead = new FileStream(Path.ChangeExtension(_filename,_bmpExt), FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
+            _bitmapFileWriteOrg = new FileStream(Path.ChangeExtension(_filename,_bmpExt), FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
             _bitmapFileWrite = new BufferedStream(_bitmapFileWriteOrg);
 
             _bitmapFileWrite.Seek(0L, SeekOrigin.End);
@@ -236,24 +254,25 @@ namespace RaptorDB
 
         private void InternalShutdown()
         {
-            bool d1 = false;
-            bool d2 = false;
-
             if (_shutdownDone == false)
             {
                 Flush();
-                if (_recordFileWrite.Length == 0) d1 = true;
-                if (_bitmapFileWrite.Length == 0) d2 = true;
+
+                bool d1 = ((_recordFileWrite.Length == 0) ? true : false);
+                bool d2 = ((_bitmapFileWrite.Length == 0) ? true : false);
+
                 _recordFileRead.Close();
                 _bitmapFileRead.Close();
                 _bitmapFileWriteOrg.Close();
                 _recordFileWriteOrg.Close();
                 _recordFileWrite.Close();
                 _bitmapFileWrite.Close();
+
                 if (d1)
-                    File.Delete(_Path + _FileName + _recExt);
+                    File.Delete(Path.ChangeExtension(_filename,_recExt));
                 if (d2)
-                    File.Delete(_Path + _FileName + _bmpExt);
+                    File.Delete(Path.ChangeExtension(_filename,_bmpExt));
+
                 _recordFileWrite = null;
                 _recordFileRead = null;
                 _bitmapFileRead = null;
@@ -288,7 +307,6 @@ namespace RaptorDB
                 _recordFileWriteOrg.Flush();
         }
 
-        private object _readlock = new object();
         private MGRB internalGetBitmap(int recno)
         {
             lock (_readlock)

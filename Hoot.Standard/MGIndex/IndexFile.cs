@@ -10,6 +10,7 @@ namespace RaptorDB
     internal class IndexFile<T>
     {
         FileStream _file = null;
+
         private byte[] _FileHeader = new byte[] {
             (byte)'M', (byte)'G', (byte)'I',
             0,               // 3 = [keysize]   max 255
@@ -27,23 +28,29 @@ namespace RaptorDB
             0,0,0,0          // 11 = [right page number] / [next page number]
         };
 
+        internal HootConfig _config;
         internal byte _maxKeySize;
         internal ushort _PageNodeCount = 5000;
         private int _LastPageNumber = 1; // 0 = page list
         private int _PageLength;
         private int _rowSize;
         private bool _allowDups = true;
+
         ILog log = LogManager.GetLogger(typeof(IndexFile<T>));
+        
         private BitmapIndex _bitmap;
+        
         IGetBytes<T> _T = null;
+        
         private object _fileLock = new object();
 
         private KeyStoreHF _strings;
         private bool _externalStrings = false;
-        //private List<int> _pagelistalllocblock = null;
+
         private string _FileName = "";
 
-        public IndexFile(string filename, byte maxKeySize)//, ushort pageNodeCount)
+        // HootConfig config, ".mgidx"
+        public IndexFile(String filename, byte maxKeySize)//, ushort pageNodeCount)
         {
             _T = RDBDataType<T>.ByteHandler();
             if (typeof(T) == typeof(string) )//&& Global.EnableOptimizedStringIndex)
@@ -57,19 +64,15 @@ namespace RaptorDB
             _PageNodeCount = Global.PageItemCount;// pageNodeCount;
             _rowSize = (_maxKeySize + 1 + 4 + 4);
 
-            _FileName = filename.Substring(0, filename.LastIndexOf('.'));
-            string path = Path.GetDirectoryName(filename);
-
-            Directory.CreateDirectory(path);
             if (File.Exists(filename))
             {
                 // if file exists open and read header
                 _file = File.Open(filename, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite);
+
                 ReadFileHeader();
+
                 if (_externalStrings == false)// if the file says different
-                {
                     _rowSize = (_maxKeySize + 1 + 4 + 4);
-                }
                 // compute last page number from file length 
                 _PageLength = (_BlockHeader.Length + _rowSize * (_PageNodeCount));
                 _LastPageNumber = (int)((_file.Length - _FileHeader.Length) / _PageLength);
@@ -87,16 +90,19 @@ namespace RaptorDB
             }
             if (_externalStrings)
             {
-                _strings = new KeyStoreHF(path, Path.GetFileNameWithoutExtension(filename) + ".strings");
+                _strings = new KeyStoreHF(Path.ChangeExtension(filename,".strings"));
             }
             if (_LastPageNumber == 0)
                 _LastPageNumber = 1;
+
             // bitmap duplicates 
+
             if (_allowDups)
-                _bitmap = new BitmapIndex(Path.GetDirectoryName(filename), Path.GetFileNameWithoutExtension(filename));
+                _bitmap = new BitmapIndex(filename);
         }
 
-        #region [  C o m m o n  ]
+        #region Common
+
         public void SetBitmapDuplicate(int bitmaprec, int rec)
         {
             _bitmap.SetDuplicate(bitmaprec, rec);
@@ -232,7 +238,7 @@ namespace RaptorDB
 
         #endregion
 
-        #region [  P a g e s ]
+        #region Pages
 
         public void GetPageList(List<int> PageListDiskPages, SafeSortedList<T, PageInfo> PageList, out int lastIndexedRow)
         {
