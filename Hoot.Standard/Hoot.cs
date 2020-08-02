@@ -45,7 +45,7 @@ namespace RaptorDB
 		/// <summary>
 		/// Configuration file
 		/// </summary>
-		public HootConfig HootConfOptions { get; set; }
+		public IHootConfig HootConfOptions { get; set; }
 
 		/// <summary>
 		/// Get Word Count
@@ -97,7 +97,7 @@ namespace RaptorDB
 		/// Initialize with the Configuration file
 		/// </summary>
 		/// <param name="config">Configuration File</param>
-		public Hoot(HootConfig config)
+		public Hoot(IHootConfig config)
 			: this(config, new tokenizer())
 		{
 		}
@@ -107,7 +107,7 @@ namespace RaptorDB
 		/// </summary>
 		/// <param name="config">Configuration file</param>
 		/// <param name="tokenizer">Custom Tokenizer to parse text </param>
-		public Hoot(HootConfig config, ITokenizer tokenizer)
+		public Hoot(IHootConfig config, ITokenizer tokenizer)
 		{
 			HootConfOptions = config;
 
