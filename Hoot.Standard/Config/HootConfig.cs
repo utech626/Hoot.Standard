@@ -7,7 +7,7 @@ namespace RaptorDB
 	/// <summary>
 	/// Hoot Configuration file that can be initialized and passed to hoot Constructor
 	/// </summary>
-	public class HootConfig
+	public class HootConfig : IHootConfig
 	{
 		/// <summary>
 		/// Path where index files are stored

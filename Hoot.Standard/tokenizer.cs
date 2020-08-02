@@ -11,7 +11,7 @@ namespace RaptorDB
 	{
 		internal static HashSet<String> m_stopWords = null;
 
-		public Dictionary<string, int> GenerateWordFreq(string text, HootConfig config)
+		public Dictionary<string, int> GenerateWordFreq(string text, IHootConfig config)
 		{
 			Dictionary<string, int> dic = new Dictionary<string, int>(500);
 
@@ -97,7 +97,7 @@ namespace RaptorDB
 				return -1;
 		}
 
-		private static void ParseString(Dictionary<string, int> dic, char[] chars, int end, int start, HootConfig config)
+		private static void ParseString(Dictionary<string, int> dic, char[] chars, int end, int start, IHootConfig config)
 		{
 			// check if upper lower case mix -> extract words
 			int uppers = 0;
@@ -147,7 +147,7 @@ namespace RaptorDB
 		/// </summary>
 		/// <param name="dic"></param>
 		/// <param name="word"></param>
-		private static void AddDictionary(Dictionary<string, int> dic, string word, HootConfig config)
+		private static void AddDictionary(Dictionary<string, int> dic, string word, IHootConfig config)
 		{
 			if (word == null)
 				return;
