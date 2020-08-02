@@ -1,10 +1,10 @@
-Hoot.Standard
-=============
-
 # Hoot.Standard
+[![nuget](https://img.shields.io/nuget/v/Hoot.Standard.svg)](https://www.nuget.org/packages/Hoot.Standard/)  
+
+## Hoot.Standard
 Hoot Full Text Engine for .Net Standard and .Net Core
 
-#Description
+## Description
 Smallest full text search engine (lucene replacement) built from scratch using inverted WAH bitmap index, highly compact storage, operating in database and document modes.
 
 ## Original Project
@@ -53,4 +53,20 @@ Hoot Configuration file that can be initialized and passed to hoot Constructor
     		/// </summary>
     		public bool IgnoreNumerics { get; set; }
     	}
+
+# Usage Examples
+The Unit Tests Project contains example of API usage.  
+
+# Search Markup
+## AND Search
+**Word1** **Word2**  
+Search index for **Word1** and **Word2**  
+## OR Search
+**Word1** **+Word2**  
+Search index for **Word1** or **Word2**  
+## AND NOT Search
+**Word1** **-Word2**  
+Search for **Word1** and not **Word2**  
+## Wild Cards
+wild cards use (*,?) like old style DOS searches and all the results will be ORed together  
 
