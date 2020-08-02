@@ -33,7 +33,7 @@ namespace Hoot.Tests
 
 			_filter.InitializeFilter(null);
 			_result = _filter.FilterText(_htmlSource);
-			Assert.AreEqual(_result, _htmlResult);
+			Assert.AreEqual(_result.Replace("\r", ""), _htmlResult.Replace("\r", ""));
 		}
 	}
 
