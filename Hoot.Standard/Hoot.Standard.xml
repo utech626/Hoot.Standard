@@ -1,0 +1,947 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hoot.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:RaptorDB.HootConfig">
+            <summary>
+            Hoot Configuration file that can be initialized and passed to hoot Constructor
+            </summary>
+        </member>
+        <member name="P:RaptorDB.HootConfig.IndexPath">
+            <summary>
+            Path where index files are stored
+            </summary>
+        </member>
+        <member name="P:RaptorDB.HootConfig.FileName">
+            <summary>
+            Filename prefix for index files. 
+            Defaults to indexx
+            </summary>
+        </member>
+        <member name="P:RaptorDB.HootConfig.DocMode">
+            <summary>
+            Use Document Mode
+            </summary>
+        </member>
+        <member name="P:RaptorDB.HootConfig.UseStopList">
+            <summary>
+            Use Word Stop List
+            </summary>
+        </member>
+        <member name="P:RaptorDB.HootConfig.IgnoreNumerics">
+            <summary>
+            Ignore numeric words, ie 123,555, etc
+            </summary>
+        </member>
+        <member name="M:RaptorDB.Filters.HtmlFilter.FilterText(System.String)">
+            <summary>
+            Filter Html Text
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.Filters.HtmlFilter.InitializeFilter(System.String)">
+            <summary>
+            Initialize the filter, Not used
+            </summary>
+            <param name="filterPath"></param>
+        </member>
+        <member name="M:RaptorDB.Filters.HtmlFilter.ConvertDoc(HtmlAgilityPack.HtmlDocument)">
+            <summary>
+            Use the HtmlAgilityPack to Convert to Plain Text
+            </summary>
+            <param name="doc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.Filters.HtmlFilter.ConvertTo(HtmlAgilityPack.HtmlNode,System.IO.StringWriter)">
+            <summary>
+            Do Convertion here
+            </summary>
+            <param name="documentNode"></param>
+            <param name="sw"></param>
+        </member>
+        <member name="M:RaptorDB.Filters.HtmlFilter.ConvertLineTo(HtmlAgilityPack.HtmlNode,System.IO.StringWriter)">
+            <summary>
+            Convert a Single Line to Text
+            </summary>
+            <param name="subnode"></param>
+            <param name="outText"></param>
+        </member>
+        <member name="M:RaptorDB.Filters.NoFilter.FilterText(System.String)">
+            <summary>
+            Just return the Text in default Filter
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.Filters.NoFilter.InitializeFilter(System.String)">
+            <summary>
+            Do nothing in the default filter
+            </summary>
+            <param name="filterPath">Path to full text folder</param>
+        </member>
+        <member name="F:RaptorDB.Global.DefaultStringKeySize">
+            <summary>
+            Default maximum string key size for indexes
+            </summary>
+        </member>
+        <member name="F:RaptorDB.Global.FreeBitmapMemoryOnSave">
+            <summary>
+            Free bitmap index memory on save 
+            </summary>
+        </member>
+        <member name="F:RaptorDB.Global.PageItemCount">
+            <summary>
+            Number of items in each index page (default = 10000) [Expert only, do not change]
+            </summary>
+        </member>
+        <member name="F:RaptorDB.Global.SaveIndexToDiskTimerSeconds">
+            <summary>
+            KeyStore save to disk timer
+            </summary>
+        </member>
+        <member name="F:RaptorDB.Global.FlushStorageFileImmediately">
+            <summary>
+            Flush the StorageFile stream immediately
+            </summary>
+        </member>
+        <member name="F:RaptorDB.Global.SaveAsBinaryJSON">
+            <summary>
+            Save doc as binary json
+            </summary>
+        </member>
+        <member name="F:RaptorDB.Global.SplitStorageFilesMegaBytes">
+            <summary>
+            Split the data storage files in MegaBytes (default 0 = off) [500 = 500mb]
+            <para> - You can set and unset this value anytime and it will operate from that point on.</para>
+            <para> - If you unset (0) the value previous split files will remain and all the data will go to the last file.</para>
+            </summary>
+        </member>
+        <member name="F:RaptorDB.Global.CompressDocumentOverKiloBytes">
+            <summary>
+            Compress the documents in the storage file if it is over this size (default = 100 Kilobytes) 
+            <para> - You will be trading CPU for disk IO</para>
+            </summary>
+        </member>
+        <member name="F:RaptorDB.Global.HighFrequencyKVDiskBlockSize">
+            <summary>
+            Disk block size for high frequency KV storage file (default = 2048)
+            <para> * Do not use anything under 512 with large string keys</para>
+            </summary>
+        </member>
+        <member name="P:RaptorDB.Hoot.DocumentCount">
+            <summary>
+            Get Document Count
+            </summary>
+        </member>
+        <member name="P:RaptorDB.Hoot.HootConfOptions">
+            <summary>
+            Configuration file
+            </summary>
+        </member>
+        <member name="P:RaptorDB.Hoot.WordCount">
+            <summary>
+            Get Word Count
+            </summary>
+        </member>
+        <member name="P:RaptorDB.Hoot.Words">
+            <summary>
+            Get List of Words
+            </summary>
+        </member>
+        <member name="M:RaptorDB.Hoot.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            Construct a new Hoot Index
+            </summary>
+            <param name="IndexPath">Path to Index File Storage</param>
+            <param name="FileName">Filename prefix for indexes</param>
+            <param name="DocMode">Use Document Mode</param>
+        </member>
+        <member name="M:RaptorDB.Hoot.#ctor(System.String,System.String,System.Boolean,RaptorDB.ITokenizer)">
+            <summary>
+            Construct a new Hoot Index
+            </summary>
+            <param name="IndexPath">Path to Index File Storage</param>
+            <param name="FileName">Filename prefix for indexes</param>
+            <param name="DocMode">Use Document Mode</param>
+            <param name="tokenizer">Custom Tokenizer to parse text </param>
+        </member>
+        <member name="M:RaptorDB.Hoot.#ctor(RaptorDB.IHootConfig)">
+            <summary>
+            Initialize with the Configuration file
+            </summary>
+            <param name="config">Configuration File</param>
+        </member>
+        <member name="M:RaptorDB.Hoot.#ctor(RaptorDB.IHootConfig,RaptorDB.ITokenizer)">
+            <summary>
+            Construct a new object using configuration file and custom tokenizer
+            </summary>
+            <param name="config">Configuration file</param>
+            <param name="tokenizer">Custom Tokenizer to parse text </param>
+        </member>
+        <member name="M:RaptorDB.Hoot.Fetch``1(System.Int32)">
+            <summary>
+            Fetch a Document
+            </summary>
+            <typeparam name="T">Type of Document</typeparam>
+            <param name="docnum">Document Number</param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.Hoot.FindDocumentFileNames(System.String)">
+            <summary>
+            Find Documents File Names
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.Hoot.FindDocuments``1(System.String)">
+            <summary>
+            Find Documents
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.Hoot.FindRows(System.String)">
+            <summary>
+            Find Rows
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.Hoot.FreeMemory">
+            <summary>
+            Free Memory
+            </summary>
+        </member>
+        <member name="M:RaptorDB.Hoot.Index(System.Int32,System.String)">
+            <summary>
+            Index a text String
+            </summary>
+            <param name="recordnumber"></param>
+            <param name="text"></param>
+        </member>
+        <member name="M:RaptorDB.Hoot.Index(System.Int32,System.String,RaptorDB.IHootFilter)">
+            <summary>
+            Index a Text String using a filter
+            </summary>
+            <param name="recordnumber"></param>
+            <param name="text"></param>
+            <param name="filter"></param>
+        </member>
+        <member name="M:RaptorDB.Hoot.Index(hOOt.Document,System.Boolean)">
+            <summary>
+            Index a Document
+            </summary>
+            <param name="doc"></param>
+            <param name="deleteold"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.Hoot.Index(hOOt.Document,System.Boolean,RaptorDB.IHootFilter)">
+            <summary>
+            Index a Document
+            </summary>
+            <param name="doc"></param>
+            <param name="deleteold"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.Hoot.IsIndexed(System.String)">
+            <summary>
+            Check if a File is Indexed
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.Hoot.OptimizeIndex">
+            <summary>
+            Optimize the Index
+            </summary>
+        </member>
+        <member name="M:RaptorDB.Hoot.Query(System.String,System.Int32)">
+            <summary>
+            Query the Index
+            </summary>
+            <param name="filter"></param>
+            <param name="maxsize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.Hoot.RemoveDocument(System.Int32)">
+            <summary>
+            Remove a Document
+            </summary>
+            <param name="number"></param>
+        </member>
+        <member name="M:RaptorDB.Hoot.RemoveDocument(System.String)">
+            <summary>
+            Remove a Document by File Name
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.Hoot.Save">
+            <summary>
+            Save the Index
+            </summary>
+        </member>
+        <member name="M:RaptorDB.Hoot.Shutdown">
+            <summary>
+            Shutdown the Process
+            </summary>
+        </member>
+        <member name="M:RaptorDB.Hoot.DoBitOperation(RaptorDB.MGRB,RaptorDB.MGRB,hOOt.OPERATION,System.Int32)">
+            <summary>
+            Perform Bit Operations
+            </summary>
+            <param name="bits"></param>
+            <param name="c"></param>
+            <param name="op"></param>
+            <param name="maxsize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.Hoot.AddtoIndex(System.Int32,System.String)">
+            <summary>
+            Add Text to the index
+            </summary>
+            <param name="recnum"></param>
+            <param name="text"></param>
+        </member>
+        <member name="M:RaptorDB.Hoot.checkloaded">
+            <summary>
+            Check if the Index is loaded
+            </summary>
+        </member>
+        <member name="M:RaptorDB.Hoot.ExecutionPlan(System.String,System.Int32)">
+            <summary>
+            Generate an Execution Plan
+            </summary>
+            <param name="filter"></param>
+            <param name="maxsize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.Hoot.InternalSave">
+            <summary>
+            Save the Index
+            </summary>
+        </member>
+        <member name="M:RaptorDB.Hoot.LoadWords">
+            <summary>
+            Load Words
+            </summary>
+        </member>
+        <member name="M:RaptorDB.IHootFilter.InitializeFilter(System.String)">
+            <summary>
+            Perform Initialization of Filter
+            </summary>
+            <param name="filterPath">Path of Filter Text to load</param>
+        </member>
+        <member name="M:RaptorDB.IHootFilter.FilterText(System.String)">
+            <summary>
+            Filter the input test
+            </summary>
+            <param name="input">Text to Filter</param>
+            <returns>Filtered Text</returns>
+        </member>
+        <member name="T:RaptorDB.IKeyStoreHF">
+            <summary>
+            High frequency mode Key/Value store with recycled storage file.
+            <para>Use for rapid saves of the same key.</para>
+            <para>Views are not effected by saves in this storage.</para>
+            <para>NOTE : You do not have history of changes in this storage.</para>
+            </summary>
+        </member>
+        <member name="M:RaptorDB.KeyStore`1.SaveIndex">
+            <summary>
+            Save the index file
+            </summary>
+        </member>
+        <member name="M:RaptorDB.KeyStore`1.SetObject(`0,System.Object)">
+            <summary>
+            Save Record to Storage and save index
+            </summary>
+            <param name="key"></param>
+            <param name="doc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.KeyStore`1.SetBytes(`0,System.Byte[])">
+            <summary>
+            Write Record to Storage and Save Index
+            </summary>
+            <param name="key"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.KeyStore`1.Shutdown">
+            <summary>
+            Shut down the KeyStorage Indexer
+            </summary>
+        </member>
+        <member name="M:RaptorDB.KeyStore`1.SaveLastRecord">
+            <summary>
+            save the last record number in the index file
+            </summary>
+        </member>
+        <member name="M:RaptorDB.KeyStore`1.Initialize(System.String,System.Byte,System.Boolean)">
+            <summary>
+            Initialize the Indexer
+            </summary>
+            <param name="config"></param>
+            <param name="maxkeysize"></param>
+            <param name="AllowDuplicateKeys"></param>
+        </member>
+        <member name="M:RaptorDB.KeyStore`1.Delete(`0)">
+            <summary>
+            write a delete record
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.KeyStore`1.DeleteReplicated(`0)">
+            <summary>
+            write a delete record for replicated object
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.KeyStore`1.SetReplicationObject(`0,System.Object)">
+            <summary>
+            Save to Record Storage and Index
+            </summary>
+            <param name="key"></param>
+            <param name="doc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.MGIndex`1.LoadPage(`0,RaptorDB.PageInfo@)">
+            <summary>
+            find page in list of pages
+            </summary>
+            <param name="key"></param>
+            <param name="pageinfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.StorageFile`1.#ctor(System.String)">
+            <summary>
+            View data storage mode (no splits, bson save) 
+            </summary>
+            <param name="filename"></param>
+        </member>
+        <member name="M:RaptorDB.StorageFile`1.#ctor(System.String,RaptorDB.SF_FORMAT,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="filename"></param>
+            <param name="format"></param>
+            <param name="StorageOnlyMode">= true -> don't create mgrec files (used for backup and replication mode)</param>
+        </member>
+        <member name="M:RaptorDB.StorageFile`1.ViewReadRawBytes(System.Int64)">
+            <summary>
+            used for views only
+            </summary>
+            <param name="recnum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.ILog.Fatal(System.Object,System.Object[])">
+            <summary>
+            Fatal log = log level 5
+            </summary>
+            <param name="msg"></param>
+            <param name="objs"></param>
+        </member>
+        <member name="M:RaptorDB.ILog.Error(System.Object,System.Object[])">
+            <summary>
+            Error log = log level 4
+            </summary>
+            <param name="msg"></param>
+            <param name="objs"></param>
+        </member>
+        <member name="M:RaptorDB.ILog.Warn(System.Object,System.Object[])">
+            <summary>
+            Warning log = log level 3
+            </summary>
+            <param name="msg"></param>
+            <param name="objs"></param>
+        </member>
+        <member name="M:RaptorDB.ILog.Debug(System.Object,System.Object[])">
+            <summary>
+            Debug log = log level 2 
+            </summary>
+            <param name="msg"></param>
+            <param name="objs"></param>
+        </member>
+        <member name="M:RaptorDB.ILog.Info(System.Object,System.Object[])">
+            <summary>
+            Info log = log level 1
+            </summary>
+            <param name="msg"></param>
+            <param name="objs"></param>
+        </member>
+        <member name="T:RaptorDB.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:RaptorDB.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:RaptorDB.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:RaptorDB.Properties.Resources.StopList">
+            <summary>
+              Looks up a localized string similar to able,about,above,according,accordingly,across,actually,after,afterwards,again,against,ain&apos;t,all,allow,allows,almost,alone,along,already,also,although,always,am,among,amongst,an,and,another,any,anybody,anyhow,anyone,anything,anyway,anyways,anywhere,apart,appear,appreciate,appropriate,are,aren&apos;t,around,as,a&apos;s,aside,ask,asking,associated,at,available,away,awfully,be,became,because,become,becomes,becoming,been,before,beforehand,behind,being,believe,below,beside,besides,best,better,between,beyond,both,brief,but, [rest of string was truncated]&quot;;.
+            </summary>
+        </member>
+        <member name="M:RaptorDB.tokenizer.InitializeStopList(System.String)">
+            <summary>
+            Initialize the Stop List
+            </summary>
+            <param name="indexFolder"></param>
+        </member>
+        <member name="M:RaptorDB.tokenizer.langtype(System.Char)">
+            <summary>
+            Check for language specific characters
+            </summary>
+            <param name="c"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RaptorDB.tokenizer.AddDictionary(System.Collections.Generic.Dictionary{System.String,System.Int32},System.String,RaptorDB.IHootConfig)">
+            <summary>
+            Add a word to the dictionary
+            </summary>
+            <param name="dic"></param>
+            <param name="word"></param>
+        </member>
+        <member name="M:RaptorDB.tokenizer.addword(System.Collections.Generic.Dictionary{System.String,System.Int32},System.String)">
+            <summary>
+            Add word to dictionary
+            </summary>
+            <param name="dic"></param>
+            <param name="word"></param>
+        </member>
+        <member name="M:RaptorDB.tokenizer.wordIsNumeric(System.String)">
+            <summary>
+            Check is word is pure numeric 
+            </summary>
+            <param name="word"></param>
+            <returns>True if Numeric</returns>
+        </member>
+        <member name="F:fastBinaryJSON.BJSONParameters.UseOptimizedDatasetSchema">
+            <summary> 
+            Optimize the schema for Datasets (default = True)
+            </summary>
+        </member>
+        <member name="F:fastBinaryJSON.BJSONParameters.ShowReadOnlyProperties">
+            <summary>
+            Serialize readonly properties (default = False)
+            </summary>
+        </member>
+        <member name="F:fastBinaryJSON.BJSONParameters.UsingGlobalTypes">
+            <summary>
+            Use global types $types for more compact size when using a lot of classes (default = True)
+            </summary>
+        </member>
+        <member name="F:fastBinaryJSON.BJSONParameters.UseUnicodeStrings">
+            <summary>
+            Use Unicode strings = T (faster), Use UTF8 strings = F (smaller) (default = True)
+            </summary>
+        </member>
+        <member name="F:fastBinaryJSON.BJSONParameters.SerializeNulls">
+            <summary>
+            Serialize Null values to the output (default = False)
+            </summary>
+        </member>
+        <member name="F:fastBinaryJSON.BJSONParameters.UseExtensions">
+            <summary>
+            Enable fastBinaryJSON extensions $types, $type, $map (default = True)
+            </summary>
+        </member>
+        <member name="F:fastBinaryJSON.BJSONParameters.EnableAnonymousTypes">
+            <summary>
+            Anonymous types have read only properties 
+            </summary>
+        </member>
+        <member name="F:fastBinaryJSON.BJSONParameters.UseUTCDateTime">
+            <summary>
+            Use the UTC date format (default = False)
+            </summary>
+        </member>
+        <member name="F:fastBinaryJSON.BJSONParameters.IgnoreAttributes">
+            <summary>
+            Ignore attributes to check for (default : XmlIgnoreAttribute, NonSerialized)
+            </summary>
+        </member>
+        <member name="F:fastBinaryJSON.BJSONParameters.ParametricConstructorOverride">
+            <summary>
+            If you have parametric and no default constructor for you classes (default = False)
+            
+            IMPORTANT NOTE : If True then all initial values within the class will be ignored and will be not set
+            </summary>
+        </member>
+        <member name="F:fastBinaryJSON.BJSONParameters.SerializerMaxDepth">
+            <summary>
+            Maximum depth the serializer will go to to avoid loops (default = 20 levels)
+            </summary>
+        </member>
+        <member name="F:fastBinaryJSON.BJSONParameters.UseTypedArrays">
+            <summary>
+            Use typed arrays t[] into object = t[] not object[] (default = true)
+            </summary>
+        </member>
+        <member name="F:fastBinaryJSON.BJSONParameters.v1_4TypedArray">
+            <summary>
+            Backward compatible Typed array type name as UTF8 (default = false -> fast v1.5 unicode)
+            </summary>
+        </member>
+        <member name="F:fastBinaryJSON.BJSON.Parameters">
+            <summary>
+            Globally set-able parameters for controlling the serializer
+            </summary>
+        </member>
+        <member name="M:fastBinaryJSON.BJSON.Parse(System.Byte[])">
+            <summary>
+            Parse a json and generate a Dictionary&lt;string,object&gt; or List&lt;object&gt; structure
+            </summary>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastBinaryJSON.BJSON.RegisterCustomType(System.Type,fastJSON.Reflection.Serialize,fastJSON.Reflection.Deserialize)">
+            <summary>
+            Register custom type handlers for your own types not natively handled by fastBinaryJSON
+            </summary>
+            <param name="type"></param>
+            <param name="serializer"></param>
+            <param name="deserializer"></param>
+        </member>
+        <member name="M:fastBinaryJSON.BJSON.ToBJSON(System.Object)">
+            <summary>
+            Create a binary json representation for an object
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastBinaryJSON.BJSON.ToBJSON(System.Object,fastBinaryJSON.BJSONParameters)">
+            <summary>
+            Create a binary json representation for an object with parameter override on this call
+            </summary>
+            <param name="obj"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastBinaryJSON.BJSON.FillObject(System.Object,System.Byte[])">
+            <summary>
+            Fill a given object with the binary json represenation
+            </summary>
+            <param name="input"></param>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastBinaryJSON.BJSON.ToObject``1(System.Byte[])">
+            <summary>
+            Create a generic object from the json
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastBinaryJSON.BJSON.ToObject``1(System.Byte[],fastBinaryJSON.BJSONParameters)">
+            <summary>
+            Create a generic object from the json with parameter override on this call
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="json"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastBinaryJSON.BJSON.ToObject(System.Byte[])">
+            <summary>
+            Create an object from the json 
+            </summary>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastBinaryJSON.BJSON.ToObject(System.Byte[],fastBinaryJSON.BJSONParameters)">
+            <summary>
+            Create an object from the json with parameter override on this call
+            </summary>
+            <param name="json"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastBinaryJSON.BJSON.ToObject(System.Byte[],System.Type)">
+            <summary>
+            Create a typed object from the json
+            </summary>
+            <param name="json"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastBinaryJSON.BJSON.ClearReflectionCache">
+            <summary>
+            Clear the internal reflection cache so you can start from new (you will loose performance)
+            </summary>
+        </member>
+        <member name="M:fastBinaryJSON.BJSON.DeepCopy(System.Object)">
+            <summary>
+            Deep copy an object i.e. clone to a new object
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="F:fastJSON.JSONParameters.UseOptimizedDatasetSchema">
+            <summary>
+            Use the optimized fast Dataset Schema format (default = True)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.UseFastGuid">
+            <summary>
+            Use the fast GUID format (default = True)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.SerializeNullValues">
+            <summary>
+            Serialize null values to the output (default = True)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.UseUTCDateTime">
+            <summary>
+            Use the UTC date format (default = True)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.ShowReadOnlyProperties">
+            <summary>
+            Show the readonly properties of types in the output (default = False)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.UsingGlobalTypes">
+            <summary>
+            Use the $types extension to optimise the output json (default = True)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.IgnoreCaseOnDeserialize">
+            <summary>
+            Ignore case when processing json and deserializing 
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.EnableAnonymousTypes">
+            <summary>
+            Anonymous types have read only properties 
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.UseExtensions">
+            <summary>
+            Enable fastJSON extensions $types, $type, $map (default = True)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.UseEscapedUnicode">
+            <summary>
+            Use escaped unicode i.e. \uXXXX format for non ASCII characters (default = True)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.KVStyleStringDictionary">
+            <summary>
+            Output string key dictionaries as "k"/"v" format (default = False) 
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.UseValuesOfEnums">
+            <summary>
+            Output Enum values instead of names (default = False)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.IgnoreAttributes">
+            <summary>
+            Ignore attributes to check for (default : XmlIgnoreAttribute, NonSerialized)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.ParametricConstructorOverride">
+            <summary>
+            If you have parametric and no default constructor for you classes (default = False)
+            
+            IMPORTANT NOTE : If True then all initial values within the class will be ignored and will be not set
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.DateTimeMilliseconds">
+            <summary>
+            Serialize DateTime milliseconds i.e. yyyy-MM-dd HH:mm:ss.nnn (default = false)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.SerializerMaxDepth">
+            <summary>
+            Maximum depth for circular references in inline mode (default = 20)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.InlineCircularReferences">
+            <summary>
+            Inline circular or already seen objects instead of replacement with $i (default = false) 
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.SerializeToLowerCaseNames">
+            <summary>
+            Save property/field names as lowercase (default = false)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.FormatterIndentSpaces">
+            <summary>
+            Formatter indent spaces (default = 3)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSONParameters.AllowNonQuotedKeys">
+            <summary>
+            TESTING - allow non quoted keys in the json like javascript (default = false)
+            </summary>
+        </member>
+        <member name="F:fastJSON.JSON.Parameters">
+            <summary>
+            Globally set-able parameters for controlling the serializer
+            </summary>
+        </member>
+        <member name="M:fastJSON.JSON.ToNiceJSON(System.Object)">
+            <summary>
+            Create a formatted json string (beautified) from an object
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.ToNiceJSON(System.Object,fastJSON.JSONParameters)">
+            <summary>
+            Create a formatted json string (beautified) from an object
+            </summary>
+            <param name="obj"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.ToJSON(System.Object)">
+            <summary>
+            Create a json representation for an object
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.ToJSON(System.Object,fastJSON.JSONParameters)">
+            <summary>
+            Create a json representation for an object with parameter override on this call
+            </summary>
+            <param name="obj"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.Parse(System.String)">
+            <summary>
+            Parse a json string and generate a Dictionary&lt;string,object&gt; or List&lt;object&gt; structure
+            </summary>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.ToObject``1(System.String)">
+            <summary>
+            Create a typed generic object from the json
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.ToObject``1(System.String,fastJSON.JSONParameters)">
+            <summary>
+            Create a typed generic object from the json with parameter override on this call
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="json"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.ToObject(System.String)">
+            <summary>
+            Create an object from the json
+            </summary>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.ToObject(System.String,fastJSON.JSONParameters)">
+            <summary>
+            Create an object from the json with parameter override on this call
+            </summary>
+            <param name="json"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.ToObject(System.String,System.Type)">
+            <summary>
+            Create an object of type from the json
+            </summary>
+            <param name="json"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.ToObject(System.String,System.Type,fastJSON.JSONParameters)">
+            <summary>
+            Create an object of type from the json with parameter override on this call
+            </summary>
+            <param name="json"></param>
+            <param name="type"></param>
+            <param name="par"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.FillObject(System.Object,System.String)">
+            <summary>
+            Fill a given object with the json represenation
+            </summary>
+            <param name="input"></param>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.DeepCopy(System.Object)">
+            <summary>
+            Deep copy an object i.e. clone to a new object
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.DeepCopy``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.Beautify(System.String)">
+            <summary>
+            Create a human readable string from the json 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.Beautify(System.String,System.Byte)">
+            <summary>
+            Create a human readable string from the json with specified indent spaces
+            </summary>
+            <param name="input"></param>
+            <param name="spaces"></param>
+            <returns></returns>
+        </member>
+        <member name="M:fastJSON.JSON.RegisterCustomType(System.Type,fastJSON.Reflection.Serialize,fastJSON.Reflection.Deserialize)">
+            <summary>
+            Register custom type handlers for your own types not natively handled by fastJSON
+            </summary>
+            <param name="type"></param>
+            <param name="serializer"></param>
+            <param name="deserializer"></param>
+        </member>
+        <member name="M:fastJSON.JSON.ClearReflectionCache">
+            <summary>
+            Clear the internal reflection cache so you can start from new (you will loose performance)
+            </summary>
+        </member>
+        <member name="T:fastJSON.JsonParser">
+            <summary>
+            This class encodes and decodes JSON strings.
+            Spec. details, see http://www.json.org/
+            </summary>
+        </member>
+    </members>
+</doc>

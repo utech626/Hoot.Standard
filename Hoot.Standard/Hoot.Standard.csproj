@@ -24,6 +24,7 @@ Ported to .NET Standard from original project by Mehdi Gholam</Description>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>E:\Repos\Hoot.Standard\Hoot.Standard\Hoot.Standard.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
