@@ -17,6 +17,8 @@ Ported to .NET Standard from original project by Mehdi Gholam</Description>
     <AssemblyVersion>5.1.7518.20214</AssemblyVersion>
     <FileVersion>5.1.7518.20214</FileVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -50,6 +52,13 @@ Ported to .NET Standard from original project by Mehdi Gholam</Description>
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties BuildVersion_BuildVersioningStyle="None.None.DeltaBaseYearDayOfYear.YearMonthDayStamp" BuildVersion_IncrementBeforeBuild="False" BuildVersion_ReplaceNonNumerics="False" BuildVersion_StartDate="" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_UseUniversalClock="" /></VisualStudio></ProjectExtensions>
